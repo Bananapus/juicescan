@@ -1,7 +1,6 @@
 "use client";
 
 import { ConnectKitButton } from "@/components/ConnectKitButton";
-import { formatDuration } from "date-fns";
 import {
   DecayRate,
   RedemptionRate,
@@ -10,9 +9,12 @@ import {
 } from "@/lib/juicebox/datatypes";
 import {
   useJbControllerCurrentRulesetOf,
+  useJbControllerMetadataOf,
+  useJbProjectsBalanceOf,
   useJbProjectsOwnerOf,
 } from "@/lib/juicebox/hooks/contract";
-import { FixedInt } from "fpnum";
+import axios from "axios";
+import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 
 function formatSeconds(totalSeconds: number) {
   const secondsPerDay = 86400;
@@ -33,10 +35,22 @@ function useProject(projectId: bigint) {
   const { data: owner } = useJbProjectsOwnerOf({
     args: [projectId],
   });
+  const { data: metadataCid } = useJbControllerMetadataOf({
+    args: [projectId],
+  });
+  const { data: projectMetadata } = useQuery(
+    ["metadata", metadataCid],
+    async () => {
+      const { data } = await axios.get(
+        `https://jbm.infura-ipfs.io/ipfs/${metadataCid}`
+      );
+      return data;
+    }
+  );
 
   const { data: ruleset } = useJbControllerCurrentRulesetOf({
     args: [projectId],
-    select([ruleset, metadata]) {
+    select([ruleset, rulesetMetadata]) {
       return {
         data: {
           ...ruleset,
@@ -44,22 +58,25 @@ function useProject(projectId: bigint) {
           decayRate: new DecayRate(ruleset.decayRate),
         },
         metadata: {
-          ...metadata,
-          redemptionRate: new RedemptionRate(metadata.redemptionRate),
-          reservedRate: new ReservedRate(metadata.reservedRate),
+          ...rulesetMetadata,
+          redemptionRate: new RedemptionRate(rulesetMetadata.redemptionRate),
+          reservedRate: new ReservedRate(rulesetMetadata.reservedRate),
         },
       };
     },
   });
 
   return {
+    projectMetadata,
     owner,
     ruleset,
   };
 }
 
-export function Page() {
-  const { owner, ruleset } = useProject(2n);
+function ProjectPage() {
+  const { owner, ruleset, projectMetadata } = useProject(1n);
+
+  const { data: bal } = useJbProjectsBalanceOf({ args: [1n] });
 
   return (
     <main className="container mx-auto px-4">
@@ -67,7 +84,19 @@ export function Page() {
         <span>juice-v4</span> <ConnectKitButton />
       </nav>
 
-      <h1 className="text-3xl font-bold mb-8">juice-v4</h1>
+      <h1 className="text-3xl font-bold mb-8">{projectMetadata?.name}</h1>
+
+      <h2 className="font-bold mb-2">Treasury</h2>
+      <dl className="divide-y divide-gray-100 mb-12">
+        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt className="text-sm font-medium leading-6 text-gray-900">
+            Balance
+          </dt>
+          <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+            {formatSeconds(Number(ruleset?.data.duration ?? 0))}
+          </dd>
+        </div>
+      </dl>
 
       <h2 className="font-bold mb-2">Ruleset</h2>
       <dl className="divide-y divide-gray-100">
@@ -77,6 +106,14 @@ export function Page() {
           </dt>
           <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
             {formatSeconds(Number(ruleset?.data.duration ?? 0))}
+          </dd>
+        </div>
+        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt className="text-sm font-medium leading-6 text-gray-900">
+            Weight
+          </dt>
+          <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+            {ruleset?.data.weight.val.toString()}
           </dd>
         </div>
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -105,6 +142,15 @@ export function Page() {
         </div>
       </dl>
     </main>
+  );
+}
+
+export function Page() {
+  const queryClient = new QueryClient();
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ProjectPage />
+    </QueryClientProvider>
   );
 }
 
