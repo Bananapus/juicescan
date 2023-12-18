@@ -1,10 +1,10 @@
 "use client";
 
-import { useJbProjectsOwnerOf } from "juice-hooks";
+import { useJbProjectsOwnerOf } from "@/lib/juicebox/hooks/contract";
 
 export function JuiceboxProjectOwner() {
   const { data: address } = useJbProjectsOwnerOf({
-    args: [1n],
+    args: [2n],
   });
 
   return (
