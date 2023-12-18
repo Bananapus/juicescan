@@ -12,6 +12,8 @@
   "dependencies": {
     "@wagmi/cli": "^1.5.2",
     "connectkit": "^1.4.0",
+    "date-fns": "^3.0.0",
+    "fpnum": "^0.0.15",
     "next": "^13.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
