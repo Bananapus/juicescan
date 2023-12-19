@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={twMerge(ibm.variable, "bg-black text-zinc-50 font-mono")}
+        className={twMerge(ibm.variable, "bg-black text-slate-50 font-mono")}
       >
         <Providers>{children}</Providers>
       </body>

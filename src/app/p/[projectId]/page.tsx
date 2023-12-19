@@ -1,6 +1,7 @@
 "use client";
 
 import { ConnectKitButton } from "@/components/ConnectKitButton";
+import { Button } from "@/components/ui/button";
 import {
   DecayRate,
   RedemptionRate,
@@ -8,6 +9,7 @@ import {
   RulesetWeight,
 } from "@/lib/juicebox/datatypes";
 import {
+  jbControllerABI,
   useJbControllerCurrentRulesetOf,
   useJbControllerMetadataOf,
   useJbDirectoryPrimaryTerminalOf,
@@ -19,6 +21,7 @@ import axios from "axios";
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import { formatUnits } from "viem";
 import { sepolia, useNetwork } from "wagmi";
+import { ReadContractResult } from "wagmi/dist/actions";
 
 export const NATIVE_TOKEN = "0x000000000000000000000000000000000000EEEe";
 
@@ -101,6 +104,22 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
 
+  const boolProps: Array<
+    keyof ReadContractResult<typeof jbControllerABI, "currentRulesetOf">[1]
+  > = [
+    "pausePay",
+    "pauseCreditTransfers",
+    "allowOwnerMinting",
+    "allowTerminalMigration",
+    "allowSetTerminals",
+    "allowControllerMigration",
+    "allowSetController",
+    "holdFees",
+    "useTotalSurplusForRedemptions",
+    "useDataHookForPay",
+    "useDataHookForRedeem",
+  ];
+
   return (
     <main className="container mx-auto px-4">
       <nav className="flex justify-between py-4">
@@ -109,11 +128,11 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
 
       <h1 className="text-3xl font-bold mb-8">{projectMetadata?.name}</h1>
 
-      <button onClick={() => write?.()}>Launch random project</button>
+      <Button onClick={() => write?.()}>Launch random project</Button>
 
       <h2 className="font-bold mb-2">Treasury</h2>
       <dl className="divide-y divide-gray-100 mb-12">
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
           <dt className="text-sm font-medium leading-6">Surplus</dt>
           <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {typeof surplus !== "undefined" ? formatUnits(surplus, 18) : null}{" "}
@@ -123,37 +142,46 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
       </dl>
 
       <h2 className="font-bold mb-2">Ruleset</h2>
-      <dl className="divide-y divide-gray-100">
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+
+      <dl className="divide-y divide-zinc-800 border border-zinc-700 rounded-lg mb-10">
+        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
           <dt className="text-sm font-medium leading-6">Duration</dt>
           <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {formatSeconds(Number(ruleset?.data.duration ?? 0))}
           </dd>
         </div>
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
           <dt className="text-sm font-medium leading-6">Weight</dt>
           <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {ruleset?.data.weight.val.toString()}
           </dd>
         </div>
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
           <dt className="text-sm font-medium leading-6">Decay rate</dt>
           <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {ruleset?.data.decayRate.format()}%
           </dd>
         </div>
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
           <dt className="text-sm font-medium leading-6">Redemption rate</dt>
           <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {ruleset?.metadata.redemptionRate.formatPercentage()}%
           </dd>
         </div>
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
           <dt className="text-sm font-medium leading-6">Reserved rate</dt>
           <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {ruleset?.metadata.reservedRate.formatPercentage()}%
           </dd>
         </div>
+        {boolProps.map((prop) => (
+          <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4" key={prop}>
+            <dt className="text-sm font-medium leading-6">{prop}</dt>
+            <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              {ruleset?.metadata[prop] ? "true" : "false"}
+            </dd>
+          </div>
+        ))}
       </dl>
     </main>
   );

@@ -10,16 +10,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "@tailwindcss/forms": "^0.5.7",
     "@wagmi/cli": "^1.5.2",
     "axios": "^1.6.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
     "connectkit": "^1.4.0",
     "date-fns": "^3.0.0",
     "fpnum": "^0.0.15",
+    "lucide-react": "^0.298.0",
     "next": "^13.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
     "tailwind-merge": "^2.1.0",
+    "tailwindcss-animate": "^1.0.7",
     "viem": "~0.3.36",
     "wagmi": "^1.0.6"
   },
