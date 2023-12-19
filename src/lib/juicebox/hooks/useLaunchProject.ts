@@ -1,6 +1,6 @@
-import { NATIVE_TOKEN } from "@/app/page";
+import { NATIVE_TOKEN } from "@/app/p/[projectId]/page";
 import { useJbControllerLaunchProjectFor } from "@/lib/juicebox/hooks/contract";
-import { zeroAddress } from "viem";
+import { parseEther, zeroAddress } from "viem";
 
 export function useLaunchProject() {
   const x = useJbControllerLaunchProjectFor({
@@ -11,8 +11,8 @@ export function useLaunchProject() {
         {
           mustStartAtOrAfter: 1n,
           duration: 60n * 60n * 24n, // 1 day
-          weight: 69_000_000n,
-          decayRate: 100n,
+          weight: parseEther("1"),
+          decayRate: 69_000_000n,
           approvalHook: zeroAddress,
           metadata: {
             reservedRate: 6_900n,
