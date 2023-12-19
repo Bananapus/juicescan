@@ -8,6 +8,8 @@ const MAX_FEE = 1_000_000_000n;
 const MAX_FEE_DISCOUNT = 1_000_000_000n;
 const JB_TOKEN_DECIMALS = 18;
 
+export const NATIVE_TOKEN = "0x000000000000000000000000000000000000EEEe";
+
 /**
  * Reserved rate for a ruleset.
  *

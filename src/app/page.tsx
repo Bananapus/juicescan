@@ -2,7 +2,7 @@
 
 import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
 
-export function Page() {
+function Page() {
   const { write } = useLaunchProject();
 
   return (

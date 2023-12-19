@@ -1,6 +1,6 @@
-import { NATIVE_TOKEN } from "@/app/p/[projectId]/page";
 import { useJbControllerLaunchProjectFor } from "@/lib/juicebox/hooks/contract";
 import { parseEther, zeroAddress } from "viem";
+import { NATIVE_TOKEN } from "../datatypes";
 
 export function useLaunchProject() {
   const x = useJbControllerLaunchProjectFor({

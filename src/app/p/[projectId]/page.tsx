@@ -4,6 +4,7 @@ import { ConnectKitButton } from "@/components/ConnectKitButton";
 import { Button } from "@/components/ui/button";
 import {
   DecayRate,
+  NATIVE_TOKEN,
   RedemptionRate,
   ReservedRate,
   RulesetWeight,
@@ -22,8 +23,6 @@ import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import { formatUnits } from "viem";
 import { sepolia, useNetwork } from "wagmi";
 import { ReadContractResult } from "wagmi/dist/actions";
-
-export const NATIVE_TOKEN = "0x000000000000000000000000000000000000EEEe";
 
 function useNativeTokenSymbol() {
   const symbols: { [k: number]: string } = { [sepolia.id]: "SepoliaETH" };
@@ -191,7 +190,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
   );
 }
 
-export function Page({ params }: { params: { projectId: string } }) {
+function Page({ params }: { params: { projectId: string } }) {
   const queryClient = new QueryClient();
   const projectId = BigInt(params.projectId);
 
