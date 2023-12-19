@@ -114,10 +114,8 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
       <h2 className="font-bold mb-2">Treasury</h2>
       <dl className="divide-y divide-gray-100 mb-12">
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt className="text-sm font-medium leading-6 text-gray-900">
-            Surplus
-          </dt>
-          <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+          <dt className="text-sm font-medium leading-6">Surplus</dt>
+          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {typeof surplus !== "undefined" ? formatUnits(surplus, 18) : null}{" "}
             {nativeTokenSymbol}
           </dd>
@@ -127,42 +125,32 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
       <h2 className="font-bold mb-2">Ruleset</h2>
       <dl className="divide-y divide-gray-100">
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt className="text-sm font-medium leading-6 text-gray-900">
-            Duration
-          </dt>
-          <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+          <dt className="text-sm font-medium leading-6">Duration</dt>
+          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {formatSeconds(Number(ruleset?.data.duration ?? 0))}
           </dd>
         </div>
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt className="text-sm font-medium leading-6 text-gray-900">
-            Weight
-          </dt>
-          <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+          <dt className="text-sm font-medium leading-6">Weight</dt>
+          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {ruleset?.data.weight.val.toString()}
           </dd>
         </div>
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt className="text-sm font-medium leading-6 text-gray-900">
-            Decay rate
-          </dt>
-          <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+          <dt className="text-sm font-medium leading-6">Decay rate</dt>
+          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {ruleset?.data.decayRate.format()}%
           </dd>
         </div>
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt className="text-sm font-medium leading-6 text-gray-900">
-            Redemption rate
-          </dt>
-          <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+          <dt className="text-sm font-medium leading-6">Redemption rate</dt>
+          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {ruleset?.metadata.redemptionRate.formatPercentage()}%
           </dd>
         </div>
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt className="text-sm font-medium leading-6 text-gray-900">
-            Reserved rate
-          </dt>
-          <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+          <dt className="text-sm font-medium leading-6">Reserved rate</dt>
+          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {ruleset?.metadata.reservedRate.formatPercentage()}%
           </dd>
         </div>
