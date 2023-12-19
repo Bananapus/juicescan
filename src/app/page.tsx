@@ -10,11 +10,25 @@ import {
 import {
   useJbControllerCurrentRulesetOf,
   useJbControllerMetadataOf,
+  useJbDirectoryPrimaryTerminalOf,
+  useJbMultiTerminalCurrentSurplusOf,
   useJbProjectsBalanceOf,
   useJbProjectsOwnerOf,
 } from "@/lib/juicebox/hooks/contract";
+import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
 import axios from "axios";
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
+import { formatUnits } from "viem";
+import { sepolia, useAccount, useNetwork } from "wagmi";
+
+export const NATIVE_TOKEN = "0x000000000000000000000000000000000000EEEe";
+
+function useNativeTokenSymbol() {
+  const symbols: { [k: number]: string } = { [sepolia.id]: "SepoliaETH" };
+
+  const { chain } = useNetwork();
+  return symbols[chain?.id ?? 0] ?? "ETH";
+}
 
 function formatSeconds(totalSeconds: number) {
   const secondsPerDay = 86400;
@@ -38,6 +52,15 @@ function useProject(projectId: bigint) {
   const { data: metadataCid } = useJbControllerMetadataOf({
     args: [projectId],
   });
+  const { data: primaryTerminalAddress } = useJbDirectoryPrimaryTerminalOf({
+    args: [projectId, NATIVE_TOKEN],
+  });
+
+  const { data: surplus } = useJbMultiTerminalCurrentSurplusOf({
+    address: primaryTerminalAddress,
+    args: [projectId, 18n, 0n],
+  });
+
   const { data: projectMetadata } = useQuery(
     ["metadata", metadataCid],
     async () => {
@@ -67,6 +90,7 @@ function useProject(projectId: bigint) {
   });
 
   return {
+    surplus,
     projectMetadata,
     owner,
     ruleset,
@@ -74,9 +98,9 @@ function useProject(projectId: bigint) {
 }
 
 function ProjectPage() {
-  const { owner, ruleset, projectMetadata } = useProject(1n);
-
-  const { data: bal } = useJbProjectsBalanceOf({ args: [1n] });
+  const { owner, ruleset, projectMetadata, surplus } = useProject(1n);
+  const { write } = useLaunchProject();
+  const nativeTokenSymbol = useNativeTokenSymbol();
 
   return (
     <main className="container mx-auto px-4">
@@ -86,14 +110,17 @@ function ProjectPage() {
 
       <h1 className="text-3xl font-bold mb-8">{projectMetadata?.name}</h1>
 
+      <button onClick={() => write?.()}>Launch random project</button>
+
       <h2 className="font-bold mb-2">Treasury</h2>
       <dl className="divide-y divide-gray-100 mb-12">
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-sm font-medium leading-6 text-gray-900">
-            Balance
+            Surplus
           </dt>
           <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-            {formatSeconds(Number(ruleset?.data.duration ?? 0))}
+            {typeof surplus !== "undefined" ? formatUnits(surplus, 18) : null}{" "}
+            {nativeTokenSymbol}
           </dd>
         </div>
       </dl>

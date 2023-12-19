@@ -9,9 +9,9 @@ export enum JBContracts {
   JBRulesets = "JBRulesets",
   JBPermissions = "JBPermissions",
   JBProjects = "JBProjects",
-  JBSplits = "JBSplits",
+//   JBSplits = "JBSplits",
   JBTokens = "JBTokens",
-  JBTerminalStore = "JBTerminalStore",
+//   JBTerminalStore = "JBTerminalStore",
 }
 
 async function main() {
