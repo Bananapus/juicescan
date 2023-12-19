@@ -123,12 +123,16 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
   return (
     <main className="container mx-auto px-4">
       <nav className="flex justify-between py-4">
-        <span>juice-v4</span> <ConnectKitButton />
+        <div>
+          <span>juice-v4</span>
+          <Button variant="link" onClick={() => write?.()}>
+            One-click launch
+          </Button>
+        </div>
+        <ConnectKitButton />
       </nav>
 
       <h1 className="text-3xl font-bold mb-8">{projectMetadata?.name}</h1>
-
-      <Button onClick={() => write?.()}>Launch random project</Button>
 
       <h2 className="font-bold mb-2">Treasury</h2>
       <dl className="divide-y divide-gray-100 mb-12">
@@ -143,7 +147,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
 
       <h2 className="font-bold mb-2">Ruleset</h2>
 
-      <dl className="divide-y divide-zinc-800 border border-zinc-700 rounded-lg mb-10">
+      <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
           <dt className="text-sm font-medium leading-6">Duration</dt>
           <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
