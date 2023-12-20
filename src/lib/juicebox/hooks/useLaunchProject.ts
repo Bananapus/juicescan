@@ -17,7 +17,7 @@ export function useLaunchProject() {
           metadata: {
             reservedRate: 6_900n,
             redemptionRate: 4_200n,
-            baseCurrency: 0n,
+            baseCurrency: BigInt(NATIVE_TOKEN),
             pausePay: false,
             pauseCreditTransfers: false,
             allowOwnerMinting: false,
