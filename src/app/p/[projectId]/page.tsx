@@ -44,7 +44,25 @@ function formatSeconds(totalSeconds: number) {
   );
   const seconds = totalSeconds % secondsPerMinute;
 
-  return `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+  const parts = [];
+
+  if (days > 0) {
+    parts.push(`${days} day${days !== 1 ? "s" : ""}`);
+  }
+
+  if (hours > 0) {
+    parts.push(`${hours} hour${hours !== 1 ? "s" : ""}`);
+  }
+
+  if (minutes > 0) {
+    parts.push(`${minutes} minute${minutes !== 1 ? "s" : ""}`);
+  }
+
+  if (seconds > 0) {
+    parts.push(`${seconds} second${seconds !== 1 ? "s" : ""}`);
+  }
+
+  return parts.join(", ");
 }
 
 function useProject(projectId: bigint) {
@@ -175,13 +193,13 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
         <span className="text-zinc-400 text-sm">Owned by {owner}</span>
       </div>
 
-      <div className="grid grid-cols-2 gap-8">
-        <div>
+      <div className="grid grid-cols-5 gap-16">
+        <div className="col-span-3">
           <h2 className="font-bold mb-2">Treasury</h2>
           <dl className="divide-y divide-gray-100 mb-12">
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium leading-6">Balance</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                 {typeof balance !== "undefined"
                   ? formatUnits(balance, 18)
                   : null}{" "}
@@ -190,7 +208,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
             </div>
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium leading-6">Surplus</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                 {typeof surplus !== "undefined"
                   ? formatUnits(surplus, 18)
                   : null}{" "}
@@ -204,31 +222,31 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
           <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium leading-6">Base currency</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                 {Number(ruleset?.metadata.baseCurrency ?? -1)}
               </dd>
             </div>
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium leading-6">Duration</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                 {formatSeconds(Number(ruleset?.data.duration ?? 0))}
               </dd>
             </div>
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium leading-6">Weight</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                 {ruleset?.data.weight.val.toString()}
               </dd>
             </div>
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium leading-6">Decay rate</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                 {ruleset?.data.decayRate.format()}%
               </dd>
             </div>
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium leading-6">Redemption rate</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                 {ruleset?.metadata.redemptionRate.formatPercentage()}%
               </dd>
             </div>
@@ -239,7 +257,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                 key={prop}
               >
                 <dt className="text-sm font-medium leading-6">{prop}</dt>
-                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                   {ruleset?.metadata[prop] ? "true" : "false"}
                 </dd>
               </div>
@@ -250,13 +268,13 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
           <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium leading-6">Reserved rate</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                 {ruleset?.metadata.reservedRate.formatPercentage()}%
               </dd>
             </div>
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium leading-6">Tokens reserved</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                 {typeof pendingReservedTokens !== "undefined"
                   ? formatUnits(pendingReservedTokens, 18)
                   : null}
@@ -273,14 +291,14 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                 <dt className="text-sm font-medium leading-6">
                   {split.beneficiary}
                 </dt>
-                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                   {split.percent.formatPercentage()}%
                 </dd>
               </div>
             ))}
           </dl>
         </div>
-        <div>
+        <div className="col-span-2">
           {/* card */}
           <div className="bg-zinc-800 rounded-lg shadow-lg p-6 mb-6">
             <h2 className="font-bold mb-2">Pay</h2>
