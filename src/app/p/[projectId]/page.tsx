@@ -24,20 +24,13 @@ import {
 } from "@/lib/juicebox/hooks/contract";
 import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
 import axios from "axios";
-import { Split } from "lucide-react";
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import { formatUnits } from "viem";
-import { sepolia, useNetwork } from "wagmi";
 import { ReadContractResult } from "wagmi/dist/actions";
+import { PayForm } from "./components/PayForm";
+import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
-
-function useNativeTokenSymbol() {
-  const symbols: { [k: number]: string } = { [sepolia.id]: "SepoliaETH" };
-
-  const { chain } = useNetwork();
-  return symbols[chain?.id ?? 0] ?? "ETH";
-}
 
 function formatSeconds(totalSeconds: number) {
   const secondsPerDay = 86400;
@@ -177,96 +170,118 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
         </div>
         <ConnectKitButton />
       </nav>
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold mb-1">{projectMetadata?.name}</h1>
+        <span className="text-zinc-400 text-sm">Owned by {owner}</span>
+      </div>
 
-      <h1 className="text-3xl font-bold mb-8">{projectMetadata?.name}</h1>
-      <span>Owned by {owner}</span>
+      <div className="grid grid-cols-2 gap-8">
+        <div>
+          <h2 className="font-bold mb-2">Treasury</h2>
+          <dl className="divide-y divide-gray-100 mb-12">
+            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+              <dt className="text-sm font-medium leading-6">Balance</dt>
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                {typeof balance !== "undefined"
+                  ? formatUnits(balance, 18)
+                  : null}{" "}
+                {nativeTokenSymbol}
+              </dd>
+            </div>
+            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+              <dt className="text-sm font-medium leading-6">Surplus</dt>
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                {typeof surplus !== "undefined"
+                  ? formatUnits(surplus, 18)
+                  : null}{" "}
+                {nativeTokenSymbol}
+              </dd>
+            </div>
+          </dl>
 
-      <h2 className="font-bold mb-2">Treasury</h2>
-      <dl className="divide-y divide-gray-100 mb-12">
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-          <dt className="text-sm font-medium leading-6">Balance</dt>
-          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-            {typeof balance !== "undefined" ? formatUnits(balance, 18) : null}{" "}
-            {nativeTokenSymbol}
-          </dd>
-        </div>
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-          <dt className="text-sm font-medium leading-6">Surplus</dt>
-          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-            {typeof surplus !== "undefined" ? formatUnits(surplus, 18) : null}{" "}
-            {nativeTokenSymbol}
-          </dd>
-        </div>
-      </dl>
+          <h2 className="font-bold mb-2">Ruleset</h2>
 
-      <h2 className="font-bold mb-2">Ruleset</h2>
+          <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+              <dt className="text-sm font-medium leading-6">Duration</dt>
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                {formatSeconds(Number(ruleset?.data.duration ?? 0))}
+              </dd>
+            </div>
+            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+              <dt className="text-sm font-medium leading-6">Weight</dt>
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                {ruleset?.data.weight.val.toString()}
+              </dd>
+            </div>
+            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+              <dt className="text-sm font-medium leading-6">Decay rate</dt>
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                {ruleset?.data.decayRate.format()}%
+              </dd>
+            </div>
+            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+              <dt className="text-sm font-medium leading-6">Redemption rate</dt>
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                {ruleset?.metadata.redemptionRate.formatPercentage()}%
+              </dd>
+            </div>
 
-      <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-          <dt className="text-sm font-medium leading-6">Duration</dt>
-          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-            {formatSeconds(Number(ruleset?.data.duration ?? 0))}
-          </dd>
-        </div>
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-          <dt className="text-sm font-medium leading-6">Weight</dt>
-          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-            {ruleset?.data.weight.val.toString()}
-          </dd>
-        </div>
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-          <dt className="text-sm font-medium leading-6">Decay rate</dt>
-          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-            {ruleset?.data.decayRate.format()}%
-          </dd>
-        </div>
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-          <dt className="text-sm font-medium leading-6">Redemption rate</dt>
-          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-            {ruleset?.metadata.redemptionRate.formatPercentage()}%
-          </dd>
-        </div>
+            {boolProps.map((prop) => (
+              <div
+                className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4"
+                key={prop}
+              >
+                <dt className="text-sm font-medium leading-6">{prop}</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                  {ruleset?.metadata[prop] ? "true" : "false"}
+                </dd>
+              </div>
+            ))}
+          </dl>
 
-        {boolProps.map((prop) => (
-          <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4" key={prop}>
-            <dt className="text-sm font-medium leading-6">{prop}</dt>
-            <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-              {ruleset?.metadata[prop] ? "true" : "false"}
-            </dd>
+          <h2 className="font-bold mb-2">Reserved tokens</h2>
+          <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+              <dt className="text-sm font-medium leading-6">Reserved rate</dt>
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                {ruleset?.metadata.reservedRate.formatPercentage()}%
+              </dd>
+            </div>
+            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+              <dt className="text-sm font-medium leading-6">Tokens reserved</dt>
+              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                {typeof pendingReservedTokens !== "undefined"
+                  ? formatUnits(pendingReservedTokens, 18)
+                  : null}
+              </dd>
+            </div>
+          </dl>
+          <h3>Reserved list</h3>
+          <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+            {reservedTokenSplits?.map((split, idx) => (
+              <div
+                className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4"
+                key={idx}
+              >
+                <dt className="text-sm font-medium leading-6">
+                  {split.beneficiary}
+                </dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+                  {split.percent.formatPercentage()}%
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+        <div>
+          {/* card */}
+          <div className="bg-zinc-800 rounded-lg shadow-lg p-6 mb-6">
+            <h2 className="font-bold mb-2">Pay</h2>
+            <PayForm projectId={projectId} />
           </div>
-        ))}
-      </dl>
-
-      <h2 className="font-bold mb-2">Reserved tokens</h2>
-      <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-          <dt className="text-sm font-medium leading-6">Reserved rate</dt>
-          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-            {ruleset?.metadata.reservedRate.formatPercentage()}%
-          </dd>
         </div>
-        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-          <dt className="text-sm font-medium leading-6">Tokens reserved</dt>
-          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-            {typeof pendingReservedTokens !== "undefined"
-              ? formatUnits(pendingReservedTokens, 18)
-              : null}
-          </dd>
-        </div>
-      </dl>
-      <h3>Reserved list</h3>
-      <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
-        {reservedTokenSplits?.map((split, idx) => (
-          <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4" key={idx}>
-            <dt className="text-sm font-medium leading-6">
-              {split.beneficiary}
-            </dt>
-            <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-              {split.percent.formatPercentage()}%
-            </dd>
-          </div>
-        ))}
-      </dl>
+      </div>
     </main>
   );
 }
