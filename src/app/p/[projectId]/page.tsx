@@ -15,7 +15,9 @@ import {
   useJbControllerMetadataOf,
   useJbDirectoryPrimaryTerminalOf,
   useJbMultiTerminalCurrentSurplusOf,
+  useJbMultiTerminalStore,
   useJbProjectsOwnerOf,
+  useJbTerminalStoreBalanceOf,
 } from "@/lib/juicebox/hooks/contract";
 import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
 import axios from "axios";
@@ -62,6 +64,17 @@ function useProject(projectId: bigint) {
     args: [projectId, 18n, 0n],
   });
 
+  const { data: terminalStore } = useJbMultiTerminalStore({
+    address: primaryTerminalAddress,
+  });
+
+  const { data: balance } = useJbTerminalStoreBalanceOf({
+    address: terminalStore,
+    args: primaryTerminalAddress
+      ? [primaryTerminalAddress, projectId, NATIVE_TOKEN]
+      : undefined,
+  });
+
   const { data: projectMetadata } = useQuery(
     ["metadata", metadataCid],
     async () => {
@@ -91,6 +104,7 @@ function useProject(projectId: bigint) {
   });
 
   return {
+    balance,
     surplus,
     projectMetadata,
     owner,
@@ -99,7 +113,8 @@ function useProject(projectId: bigint) {
 }
 
 function ProjectPage({ projectId }: { projectId: bigint }) {
-  const { owner, ruleset, projectMetadata, surplus } = useProject(projectId);
+  const { owner, ruleset, projectMetadata, surplus, balance } =
+    useProject(projectId);
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
 
@@ -135,6 +150,13 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
 
       <h2 className="font-bold mb-2">Treasury</h2>
       <dl className="divide-y divide-gray-100 mb-12">
+        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+          <dt className="text-sm font-medium leading-6">Balance</dt>
+          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+            {typeof balance !== "undefined" ? formatUnits(balance, 18) : null}{" "}
+            {nativeTokenSymbol}
+          </dd>
+        </div>
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
           <dt className="text-sm font-medium leading-6">Surplus</dt>
           <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
