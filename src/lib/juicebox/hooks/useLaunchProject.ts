@@ -1,6 +1,6 @@
 import { useJbControllerLaunchProjectFor } from "@/lib/juicebox/hooks/contract";
 import { parseEther, zeroAddress } from "viem";
-import { NATIVE_TOKEN } from "../datatypes";
+import { NATIVE_TOKEN, SPLITS_TOTAL_PERCENT } from "../datatypes";
 
 export function useLaunchProject() {
   const x = useJbControllerLaunchProjectFor({
@@ -32,7 +32,21 @@ export function useLaunchProject() {
             dataHook: zeroAddress,
             metadata: 0n,
           },
-          splitGroups: [],
+          splitGroups: [
+            {
+              groupId: 1n,
+              splits: [
+                {
+                  beneficiary: "0x0028C35095D34C9C8a3bc84cB8542cB182fcfa8e",
+                  percent: 512300000n, // 51.23%
+                  preferAddToBalance: false,
+                  lockedUntil: 0n,
+                  projectId: 0n,
+                  hook: zeroAddress,
+                },
+              ],
+            },
+          ],
           fundAccessLimitGroups: [],
         },
       ],

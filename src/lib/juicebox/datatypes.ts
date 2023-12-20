@@ -1,12 +1,12 @@
 import { FixedInt, FixedPortion } from "fpnum";
 
-const MAX_RESERVED_RATE = 10_000n;
-const MAX_REDEMPTION_RATE = 10_000n;
-const MAX_DECAY_RATE = 1_000_000_000n;
-const SPLITS_TOTAL_PERCENT = 1_000_000_000n;
-const MAX_FEE = 1_000_000_000n;
-const MAX_FEE_DISCOUNT = 1_000_000_000n;
-const JB_TOKEN_DECIMALS = 18;
+export const MAX_RESERVED_RATE = 10_000n;
+export const MAX_REDEMPTION_RATE = 10_000n;
+export const MAX_DECAY_RATE = 1_000_000_000n;
+export const SPLITS_TOTAL_PERCENT = 1_000_000_000n;
+export const MAX_FEE = 1_000_000_000n;
+export const MAX_FEE_DISCOUNT = 1_000_000_000n;
+export const JB_TOKEN_DECIMALS = 18;
 
 export const NATIVE_TOKEN = "0x000000000000000000000000000000000000EEEe";
 
@@ -46,6 +46,12 @@ export class RedemptionRate extends FixedPortion<4> {
 export class DecayRate extends FixedPortion<9> {
   constructor(value: bigint) {
     super(value, 9, MAX_DECAY_RATE);
+  }
+}
+
+export class SplitPortion extends FixedPortion<9> {
+  constructor(value: bigint) {
+    super(value, 9, SPLITS_TOTAL_PERCENT);
   }
 }
 

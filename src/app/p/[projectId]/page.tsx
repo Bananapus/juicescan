@@ -8,23 +8,29 @@ import {
   RedemptionRate,
   ReservedRate,
   RulesetWeight,
+  SplitPortion,
 } from "@/lib/juicebox/datatypes";
 import {
   jbControllerABI,
   useJbControllerCurrentRulesetOf,
   useJbControllerMetadataOf,
+  useJbControllerPendingReservedTokenBalanceOf,
   useJbDirectoryPrimaryTerminalOf,
   useJbMultiTerminalCurrentSurplusOf,
   useJbMultiTerminalStore,
   useJbProjectsOwnerOf,
+  useJbSplitsSplitsOf,
   useJbTerminalStoreBalanceOf,
 } from "@/lib/juicebox/hooks/contract";
 import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
 import axios from "axios";
+import { Split } from "lucide-react";
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import { formatUnits } from "viem";
 import { sepolia, useNetwork } from "wagmi";
 import { ReadContractResult } from "wagmi/dist/actions";
+
+const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
 
 function useNativeTokenSymbol() {
   const symbols: { [k: number]: string } = { [sepolia.id]: "SepoliaETH" };
@@ -75,16 +81,6 @@ function useProject(projectId: bigint) {
       : undefined,
   });
 
-  const { data: projectMetadata } = useQuery(
-    ["metadata", metadataCid],
-    async () => {
-      const { data } = await axios.get(
-        `https://jbm.infura-ipfs.io/ipfs/${metadataCid}`
-      );
-      return data;
-    }
-  );
-
   const { data: ruleset } = useJbControllerCurrentRulesetOf({
     args: [projectId],
     select([ruleset, rulesetMetadata]) {
@@ -103,7 +99,36 @@ function useProject(projectId: bigint) {
     },
   });
 
+  const { data: pendingReservedTokens } =
+    useJbControllerPendingReservedTokenBalanceOf({ args: [projectId] });
+
+  const { data: reservedTokenSplits } = useJbSplitsSplitsOf({
+    args: ruleset?.data
+      ? [projectId, ruleset?.data.id, RESERVED_TOKEN_SPLIT_GROUP_ID]
+      : undefined,
+    select(splits) {
+      return splits.map((split) => ({
+        ...split,
+        percent: new SplitPortion(split.percent),
+      }));
+    },
+  });
+
+  console.log(reservedTokenSplits);
+
+  const { data: projectMetadata } = useQuery(
+    ["metadata", metadataCid],
+    async () => {
+      const { data } = await axios.get(
+        `https://jbm.infura-ipfs.io/ipfs/${metadataCid}`
+      );
+      return data;
+    }
+  );
+
   return {
+    pendingReservedTokens,
+    reservedTokenSplits,
     balance,
     surplus,
     projectMetadata,
@@ -113,8 +138,15 @@ function useProject(projectId: bigint) {
 }
 
 function ProjectPage({ projectId }: { projectId: bigint }) {
-  const { owner, ruleset, projectMetadata, surplus, balance } =
-    useProject(projectId);
+  const {
+    pendingReservedTokens,
+    owner,
+    ruleset,
+    projectMetadata,
+    surplus,
+    balance,
+    reservedTokenSplits,
+  } = useProject(projectId);
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
 
@@ -147,6 +179,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
       </nav>
 
       <h1 className="text-3xl font-bold mb-8">{projectMetadata?.name}</h1>
+      <span>Owned by {owner}</span>
 
       <h2 className="font-bold mb-2">Treasury</h2>
       <dl className="divide-y divide-gray-100 mb-12">
@@ -193,17 +226,43 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
             {ruleset?.metadata.redemptionRate.formatPercentage()}%
           </dd>
         </div>
+
+        {boolProps.map((prop) => (
+          <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4" key={prop}>
+            <dt className="text-sm font-medium leading-6">{prop}</dt>
+            <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+              {ruleset?.metadata[prop] ? "true" : "false"}
+            </dd>
+          </div>
+        ))}
+      </dl>
+
+      <h2 className="font-bold mb-2">Reserved tokens</h2>
+      <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
         <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
           <dt className="text-sm font-medium leading-6">Reserved rate</dt>
           <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
             {ruleset?.metadata.reservedRate.formatPercentage()}%
           </dd>
         </div>
-        {boolProps.map((prop) => (
-          <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4" key={prop}>
-            <dt className="text-sm font-medium leading-6">{prop}</dt>
+        <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+          <dt className="text-sm font-medium leading-6">Tokens reserved</dt>
+          <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
+            {typeof pendingReservedTokens !== "undefined"
+              ? formatUnits(pendingReservedTokens, 18)
+              : null}
+          </dd>
+        </div>
+      </dl>
+      <h3>Reserved list</h3>
+      <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+        {reservedTokenSplits?.map((split, idx) => (
+          <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4" key={idx}>
+            <dt className="text-sm font-medium leading-6">
+              {split.beneficiary}
+            </dt>
             <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-              {ruleset?.metadata[prop] ? "true" : "false"}
+              {split.percent.formatPercentage()}%
             </dd>
           </div>
         ))}

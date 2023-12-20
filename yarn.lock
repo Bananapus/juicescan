@@ -3147,10 +3147,10 @@ formdata-polyfill@^4.0.10:
   dependencies:
     fetch-blob "^3.1.2"
 
-fpnum@^0.0.15:
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/fpnum/-/fpnum-0.0.15.tgz#fb0ba27fa1e773bdb40a96c288536df0157144ad"
-  integrity sha512-wbd2xA8qS/s4JeCr5sMA7MVwQLdJNEQL13nbfWN9n3Yhh07un+W9Mm78f4EQLZuUvbFYe/noSZvYquTqF0JZ6w==
+fpnum@^0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/fpnum/-/fpnum-0.0.16.tgz#210b18d591ae1ca15082868de7d046a89fad7ab0"
+  integrity sha512-XjBPC1TG0E6zAy71Tgm4g9RRSi+/EI6KysGP/PyyRjr+gMvXubS1oSs3NLsT4dnOA+bY1vP0L4Y4DIGz/wemaQ==
 
 fraction.js@^4.3.6:
   version "4.3.7"
