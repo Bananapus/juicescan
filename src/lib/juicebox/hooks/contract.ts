@@ -20,7 +20,7 @@ import {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export const jbControllerABI = [
   {
@@ -1497,14 +1497,14 @@ export const jbControllerABI = [
 ] as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export const jbControllerAddress = {
-  11155111: '0x1A0022234969060482e3646D0e8cBad32BA5E434',
+  11155111: '0x15e9030Dd25b27d7e6763598B87445daf222C115',
 } as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export const jbControllerConfig = {
   address: jbControllerAddress,
@@ -1516,7 +1516,7 @@ export const jbControllerConfig = {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export const jbDirectoryABI = [
   {
@@ -1832,14 +1832,14 @@ export const jbDirectoryABI = [
 ] as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export const jbDirectoryAddress = {
-  11155111: '0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89',
+  11155111: '0x862ea57d0C473a5c7c8330d92C7824dbd60269EC',
 } as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export const jbDirectoryConfig = {
   address: jbDirectoryAddress,
@@ -1851,7 +1851,7 @@ export const jbDirectoryConfig = {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export const jbMultiTerminalABI = [
   {
@@ -3012,14 +3012,14 @@ export const jbMultiTerminalABI = [
 ] as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export const jbMultiTerminalAddress = {
-  11155111: '0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F',
+  11155111: '0x4319cb152D46Db72857AfE368B19A4483c0Bff0D',
 } as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export const jbMultiTerminalConfig = {
   address: jbMultiTerminalAddress,
@@ -3031,7 +3031,7 @@ export const jbMultiTerminalConfig = {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export const jbPermissionsABI = [
   { stateMutability: 'nonpayable', type: 'constructor', inputs: [] },
@@ -3150,14 +3150,14 @@ export const jbPermissionsABI = [
 ] as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export const jbPermissionsAddress = {
-  11155111: '0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC',
+  11155111: '0x607763b1458419Edb09f56CE795057A2958e2001',
 } as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export const jbPermissionsConfig = {
   address: jbPermissionsAddress,
@@ -3169,7 +3169,7 @@ export const jbPermissionsConfig = {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export const jbProjectsABI = [
   {
@@ -3721,14 +3721,14 @@ export const jbProjectsABI = [
 ] as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export const jbProjectsAddress = {
-  11155111: '0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8',
+  11155111: '0x95df60b57Ee581680F5c243554E16BD4F3A6a192',
 } as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export const jbProjectsConfig = {
   address: jbProjectsAddress,
@@ -3740,7 +3740,7 @@ export const jbProjectsConfig = {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export const jbRulesetsABI = [
   {
@@ -4051,14 +4051,14 @@ export const jbRulesetsABI = [
 ] as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export const jbRulesetsAddress = {
-  11155111: '0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0',
+  11155111: '0x8951ebfdc76f433E2cC87bCe56A43F46F3955928',
 } as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export const jbRulesetsConfig = {
   address: jbRulesetsAddress,
@@ -4066,11 +4066,625 @@ export const jbRulesetsConfig = {
 } as const
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// JBSplits
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export const jbSplitsABI = [
+  {
+    stateMutability: 'nonpayable',
+    type: 'constructor',
+    inputs: [
+      {
+        name: 'directory',
+        internalType: 'contract IJBDirectory',
+        type: 'address',
+      },
+    ],
+  },
+  { type: 'error', inputs: [], name: 'CONTROLLER_UNAUTHORIZED' },
+  { type: 'error', inputs: [], name: 'INVALID_LOCKED_UNTIL' },
+  { type: 'error', inputs: [], name: 'INVALID_PROJECT_ID' },
+  { type: 'error', inputs: [], name: 'INVALID_SPLIT_PERCENT' },
+  { type: 'error', inputs: [], name: 'INVALID_TOTAL_PERCENT' },
+  { type: 'error', inputs: [], name: 'PREVIOUS_LOCKED_SPLITS_NOT_INCLUDED' },
+  {
+    type: 'event',
+    anonymous: false,
+    inputs: [
+      {
+        name: 'projectId',
+        internalType: 'uint256',
+        type: 'uint256',
+        indexed: true,
+      },
+      {
+        name: 'rulesetId',
+        internalType: 'uint256',
+        type: 'uint256',
+        indexed: true,
+      },
+      {
+        name: 'group',
+        internalType: 'uint256',
+        type: 'uint256',
+        indexed: true,
+      },
+      {
+        name: 'split',
+        internalType: 'struct JBSplit',
+        type: 'tuple',
+        components: [
+          { name: 'preferAddToBalance', internalType: 'bool', type: 'bool' },
+          { name: 'percent', internalType: 'uint256', type: 'uint256' },
+          { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+          {
+            name: 'beneficiary',
+            internalType: 'address payable',
+            type: 'address',
+          },
+          { name: 'lockedUntil', internalType: 'uint256', type: 'uint256' },
+          {
+            name: 'hook',
+            internalType: 'contract IJBSplitHook',
+            type: 'address',
+          },
+        ],
+        indexed: false,
+      },
+      {
+        name: 'caller',
+        internalType: 'address',
+        type: 'address',
+        indexed: false,
+      },
+    ],
+    name: 'SetSplit',
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [],
+    name: 'DIRECTORY',
+    outputs: [
+      { name: '', internalType: 'contract IJBDirectory', type: 'address' },
+    ],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [],
+    name: 'FALLBACK_RULESET_ID',
+    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+  },
+  {
+    stateMutability: 'nonpayable',
+    type: 'function',
+    inputs: [
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'rulesetId', internalType: 'uint256', type: 'uint256' },
+      {
+        name: 'splitGroups',
+        internalType: 'struct JBSplitGroup[]',
+        type: 'tuple[]',
+        components: [
+          { name: 'groupId', internalType: 'uint256', type: 'uint256' },
+          {
+            name: 'splits',
+            internalType: 'struct JBSplit[]',
+            type: 'tuple[]',
+            components: [
+              {
+                name: 'preferAddToBalance',
+                internalType: 'bool',
+                type: 'bool',
+              },
+              { name: 'percent', internalType: 'uint256', type: 'uint256' },
+              { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+              {
+                name: 'beneficiary',
+                internalType: 'address payable',
+                type: 'address',
+              },
+              { name: 'lockedUntil', internalType: 'uint256', type: 'uint256' },
+              {
+                name: 'hook',
+                internalType: 'contract IJBSplitHook',
+                type: 'address',
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    name: 'setSplitGroupsOf',
+    outputs: [],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'rulesetId', internalType: 'uint256', type: 'uint256' },
+      { name: 'groupId', internalType: 'uint256', type: 'uint256' },
+    ],
+    name: 'splitsOf',
+    outputs: [
+      {
+        name: 'splits',
+        internalType: 'struct JBSplit[]',
+        type: 'tuple[]',
+        components: [
+          { name: 'preferAddToBalance', internalType: 'bool', type: 'bool' },
+          { name: 'percent', internalType: 'uint256', type: 'uint256' },
+          { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+          {
+            name: 'beneficiary',
+            internalType: 'address payable',
+            type: 'address',
+          },
+          { name: 'lockedUntil', internalType: 'uint256', type: 'uint256' },
+          {
+            name: 'hook',
+            internalType: 'contract IJBSplitHook',
+            type: 'address',
+          },
+        ],
+      },
+    ],
+  },
+] as const
+
+/**
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export const jbSplitsAddress = {
+  11155111: '0xCecE0DfB0b99460F20d4Fde242ec32F11074b374',
+} as const
+
+/**
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export const jbSplitsConfig = {
+  address: jbSplitsAddress,
+  abi: jbSplitsABI,
+} as const
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// JBTerminalStore
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export const jbTerminalStoreABI = [
+  {
+    stateMutability: 'nonpayable',
+    type: 'constructor',
+    inputs: [
+      {
+        name: 'directory',
+        internalType: 'contract IJBDirectory',
+        type: 'address',
+      },
+      {
+        name: 'rulesets',
+        internalType: 'contract IJBRulesets',
+        type: 'address',
+      },
+      { name: 'prices', internalType: 'contract IJBPrices', type: 'address' },
+    ],
+  },
+  { type: 'error', inputs: [], name: 'INADEQUATE_CONTROLLER_ALLOWANCE' },
+  { type: 'error', inputs: [], name: 'INADEQUATE_TERMINAL_STORE_BALANCE' },
+  { type: 'error', inputs: [], name: 'INSUFFICIENT_TOKENS' },
+  { type: 'error', inputs: [], name: 'INVALID_AMOUNT_TO_SEND_HOOK' },
+  { type: 'error', inputs: [], name: 'INVALID_RULESET' },
+  { type: 'error', inputs: [], name: 'PAYOUT_LIMIT_EXCEEDED' },
+  {
+    type: 'error',
+    inputs: [
+      { name: 'x', internalType: 'uint256', type: 'uint256' },
+      { name: 'y', internalType: 'uint256', type: 'uint256' },
+      { name: 'denominator', internalType: 'uint256', type: 'uint256' },
+    ],
+    name: 'PRBMath_MulDiv_Overflow',
+  },
+  { type: 'error', inputs: [], name: 'RULESET_PAYMENT_PAUSED' },
+  { type: 'error', inputs: [], name: 'ReentrancyGuardReentrantCall' },
+  { type: 'error', inputs: [], name: 'TERMINAL_MIGRATION_NOT_ALLOWED' },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [],
+    name: 'DIRECTORY',
+    outputs: [
+      { name: '', internalType: 'contract IJBDirectory', type: 'address' },
+    ],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [],
+    name: 'PRICES',
+    outputs: [
+      { name: '', internalType: 'contract IJBPrices', type: 'address' },
+    ],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [],
+    name: 'RULESETS',
+    outputs: [
+      { name: '', internalType: 'contract IJBRulesets', type: 'address' },
+    ],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [
+      { name: 'terminal', internalType: 'address', type: 'address' },
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'token', internalType: 'address', type: 'address' },
+    ],
+    name: 'balanceOf',
+    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [
+      { name: 'terminal', internalType: 'address', type: 'address' },
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      {
+        name: 'accountingContexts',
+        internalType: 'struct JBAccountingContext[]',
+        type: 'tuple[]',
+        components: [
+          { name: 'token', internalType: 'address', type: 'address' },
+          { name: 'decimals', internalType: 'uint8', type: 'uint8' },
+          { name: 'currency', internalType: 'uint32', type: 'uint32' },
+        ],
+      },
+      { name: 'decimals', internalType: 'uint256', type: 'uint256' },
+      { name: 'currency', internalType: 'uint256', type: 'uint256' },
+      { name: 'tokenCount', internalType: 'uint256', type: 'uint256' },
+      { name: 'useTotalSurplus', internalType: 'bool', type: 'bool' },
+    ],
+    name: 'currentReclaimableSurplusOf',
+    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'tokenCount', internalType: 'uint256', type: 'uint256' },
+      { name: 'totalSupply', internalType: 'uint256', type: 'uint256' },
+      { name: 'surplus', internalType: 'uint256', type: 'uint256' },
+    ],
+    name: 'currentReclaimableSurplusOf',
+    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [
+      { name: 'terminal', internalType: 'address', type: 'address' },
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      {
+        name: 'accountingContexts',
+        internalType: 'struct JBAccountingContext[]',
+        type: 'tuple[]',
+        components: [
+          { name: 'token', internalType: 'address', type: 'address' },
+          { name: 'decimals', internalType: 'uint8', type: 'uint8' },
+          { name: 'currency', internalType: 'uint32', type: 'uint32' },
+        ],
+      },
+      { name: 'decimals', internalType: 'uint256', type: 'uint256' },
+      { name: 'currency', internalType: 'uint256', type: 'uint256' },
+    ],
+    name: 'currentSurplusOf',
+    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'decimals', internalType: 'uint256', type: 'uint256' },
+      { name: 'currency', internalType: 'uint256', type: 'uint256' },
+    ],
+    name: 'currentTotalSurplusOf',
+    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+  },
+  {
+    stateMutability: 'nonpayable',
+    type: 'function',
+    inputs: [
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'token', internalType: 'address', type: 'address' },
+      { name: 'amount', internalType: 'uint256', type: 'uint256' },
+    ],
+    name: 'recordAddedBalanceFor',
+    outputs: [],
+  },
+  {
+    stateMutability: 'nonpayable',
+    type: 'function',
+    inputs: [
+      { name: 'payer', internalType: 'address', type: 'address' },
+      {
+        name: 'amount',
+        internalType: 'struct JBTokenAmount',
+        type: 'tuple',
+        components: [
+          { name: 'token', internalType: 'address', type: 'address' },
+          { name: 'value', internalType: 'uint256', type: 'uint256' },
+          { name: 'decimals', internalType: 'uint256', type: 'uint256' },
+          { name: 'currency', internalType: 'uint256', type: 'uint256' },
+        ],
+      },
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'beneficiary', internalType: 'address', type: 'address' },
+      { name: 'metadata', internalType: 'bytes', type: 'bytes' },
+    ],
+    name: 'recordPaymentFrom',
+    outputs: [
+      {
+        name: 'ruleset',
+        internalType: 'struct JBRuleset',
+        type: 'tuple',
+        components: [
+          { name: 'cycleNumber', internalType: 'uint256', type: 'uint256' },
+          { name: 'id', internalType: 'uint256', type: 'uint256' },
+          { name: 'basedOnId', internalType: 'uint256', type: 'uint256' },
+          { name: 'start', internalType: 'uint256', type: 'uint256' },
+          { name: 'duration', internalType: 'uint256', type: 'uint256' },
+          { name: 'weight', internalType: 'uint256', type: 'uint256' },
+          { name: 'decayRate', internalType: 'uint256', type: 'uint256' },
+          {
+            name: 'approvalHook',
+            internalType: 'contract IJBRulesetApprovalHook',
+            type: 'address',
+          },
+          { name: 'metadata', internalType: 'uint256', type: 'uint256' },
+        ],
+      },
+      { name: 'tokenCount', internalType: 'uint256', type: 'uint256' },
+      {
+        name: 'hookSpecifications',
+        internalType: 'struct JBPayHookSpecification[]',
+        type: 'tuple[]',
+        components: [
+          {
+            name: 'hook',
+            internalType: 'contract IJBPayHook',
+            type: 'address',
+          },
+          { name: 'amount', internalType: 'uint256', type: 'uint256' },
+          { name: 'metadata', internalType: 'bytes', type: 'bytes' },
+        ],
+      },
+    ],
+  },
+  {
+    stateMutability: 'nonpayable',
+    type: 'function',
+    inputs: [
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      {
+        name: 'accountingContext',
+        internalType: 'struct JBAccountingContext',
+        type: 'tuple',
+        components: [
+          { name: 'token', internalType: 'address', type: 'address' },
+          { name: 'decimals', internalType: 'uint8', type: 'uint8' },
+          { name: 'currency', internalType: 'uint32', type: 'uint32' },
+        ],
+      },
+      { name: 'amount', internalType: 'uint256', type: 'uint256' },
+      { name: 'currency', internalType: 'uint256', type: 'uint256' },
+    ],
+    name: 'recordPayoutFor',
+    outputs: [
+      {
+        name: 'ruleset',
+        internalType: 'struct JBRuleset',
+        type: 'tuple',
+        components: [
+          { name: 'cycleNumber', internalType: 'uint256', type: 'uint256' },
+          { name: 'id', internalType: 'uint256', type: 'uint256' },
+          { name: 'basedOnId', internalType: 'uint256', type: 'uint256' },
+          { name: 'start', internalType: 'uint256', type: 'uint256' },
+          { name: 'duration', internalType: 'uint256', type: 'uint256' },
+          { name: 'weight', internalType: 'uint256', type: 'uint256' },
+          { name: 'decayRate', internalType: 'uint256', type: 'uint256' },
+          {
+            name: 'approvalHook',
+            internalType: 'contract IJBRulesetApprovalHook',
+            type: 'address',
+          },
+          { name: 'metadata', internalType: 'uint256', type: 'uint256' },
+        ],
+      },
+      { name: 'amountPaidOut', internalType: 'uint256', type: 'uint256' },
+    ],
+  },
+  {
+    stateMutability: 'nonpayable',
+    type: 'function',
+    inputs: [
+      { name: 'holder', internalType: 'address', type: 'address' },
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'redeemCount', internalType: 'uint256', type: 'uint256' },
+      {
+        name: 'accountingContext',
+        internalType: 'struct JBAccountingContext',
+        type: 'tuple',
+        components: [
+          { name: 'token', internalType: 'address', type: 'address' },
+          { name: 'decimals', internalType: 'uint8', type: 'uint8' },
+          { name: 'currency', internalType: 'uint32', type: 'uint32' },
+        ],
+      },
+      {
+        name: 'balanceAccountingContexts',
+        internalType: 'struct JBAccountingContext[]',
+        type: 'tuple[]',
+        components: [
+          { name: 'token', internalType: 'address', type: 'address' },
+          { name: 'decimals', internalType: 'uint8', type: 'uint8' },
+          { name: 'currency', internalType: 'uint32', type: 'uint32' },
+        ],
+      },
+      { name: 'metadata', internalType: 'bytes', type: 'bytes' },
+    ],
+    name: 'recordRedemptionFor',
+    outputs: [
+      {
+        name: 'ruleset',
+        internalType: 'struct JBRuleset',
+        type: 'tuple',
+        components: [
+          { name: 'cycleNumber', internalType: 'uint256', type: 'uint256' },
+          { name: 'id', internalType: 'uint256', type: 'uint256' },
+          { name: 'basedOnId', internalType: 'uint256', type: 'uint256' },
+          { name: 'start', internalType: 'uint256', type: 'uint256' },
+          { name: 'duration', internalType: 'uint256', type: 'uint256' },
+          { name: 'weight', internalType: 'uint256', type: 'uint256' },
+          { name: 'decayRate', internalType: 'uint256', type: 'uint256' },
+          {
+            name: 'approvalHook',
+            internalType: 'contract IJBRulesetApprovalHook',
+            type: 'address',
+          },
+          { name: 'metadata', internalType: 'uint256', type: 'uint256' },
+        ],
+      },
+      { name: 'reclaimAmount', internalType: 'uint256', type: 'uint256' },
+      {
+        name: 'hookSpecifications',
+        internalType: 'struct JBRedeemHookSpecification[]',
+        type: 'tuple[]',
+        components: [
+          {
+            name: 'hook',
+            internalType: 'contract IJBRedeemHook',
+            type: 'address',
+          },
+          { name: 'amount', internalType: 'uint256', type: 'uint256' },
+          { name: 'metadata', internalType: 'bytes', type: 'bytes' },
+        ],
+      },
+    ],
+  },
+  {
+    stateMutability: 'nonpayable',
+    type: 'function',
+    inputs: [
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'token', internalType: 'address', type: 'address' },
+    ],
+    name: 'recordTerminalMigration',
+    outputs: [{ name: 'balance', internalType: 'uint256', type: 'uint256' }],
+  },
+  {
+    stateMutability: 'nonpayable',
+    type: 'function',
+    inputs: [
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      {
+        name: 'accountingContext',
+        internalType: 'struct JBAccountingContext',
+        type: 'tuple',
+        components: [
+          { name: 'token', internalType: 'address', type: 'address' },
+          { name: 'decimals', internalType: 'uint8', type: 'uint8' },
+          { name: 'currency', internalType: 'uint32', type: 'uint32' },
+        ],
+      },
+      { name: 'amount', internalType: 'uint256', type: 'uint256' },
+      { name: 'currency', internalType: 'uint256', type: 'uint256' },
+    ],
+    name: 'recordUsedAllowanceOf',
+    outputs: [
+      {
+        name: 'ruleset',
+        internalType: 'struct JBRuleset',
+        type: 'tuple',
+        components: [
+          { name: 'cycleNumber', internalType: 'uint256', type: 'uint256' },
+          { name: 'id', internalType: 'uint256', type: 'uint256' },
+          { name: 'basedOnId', internalType: 'uint256', type: 'uint256' },
+          { name: 'start', internalType: 'uint256', type: 'uint256' },
+          { name: 'duration', internalType: 'uint256', type: 'uint256' },
+          { name: 'weight', internalType: 'uint256', type: 'uint256' },
+          { name: 'decayRate', internalType: 'uint256', type: 'uint256' },
+          {
+            name: 'approvalHook',
+            internalType: 'contract IJBRulesetApprovalHook',
+            type: 'address',
+          },
+          { name: 'metadata', internalType: 'uint256', type: 'uint256' },
+        ],
+      },
+      { name: 'usedAmount', internalType: 'uint256', type: 'uint256' },
+    ],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [
+      { name: 'terminal', internalType: 'address', type: 'address' },
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'token', internalType: 'address', type: 'address' },
+      { name: 'rulesetCycleNumber', internalType: 'uint256', type: 'uint256' },
+      { name: 'currency', internalType: 'uint256', type: 'uint256' },
+    ],
+    name: 'usedPayoutLimitOf',
+    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+  },
+  {
+    stateMutability: 'view',
+    type: 'function',
+    inputs: [
+      { name: 'terminal', internalType: 'address', type: 'address' },
+      { name: 'projectId', internalType: 'uint256', type: 'uint256' },
+      { name: 'token', internalType: 'address', type: 'address' },
+      { name: 'rulesetId', internalType: 'uint256', type: 'uint256' },
+      { name: 'currency', internalType: 'uint256', type: 'uint256' },
+    ],
+    name: 'usedSurplusAllowanceOf',
+    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
+  },
+] as const
+
+/**
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export const jbTerminalStoreAddress = {
+  11155111: '0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5',
+} as const
+
+/**
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export const jbTerminalStoreConfig = {
+  address: jbTerminalStoreAddress,
+  abi: jbTerminalStoreABI,
+} as const
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // JBTokens
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export const jbTokensABI = [
   {
@@ -4446,14 +5060,14 @@ export const jbTokensABI = [
 ] as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export const jbTokensAddress = {
-  11155111: '0xd63b3Fb10A8f43595f8313c85E984593504b7FA9',
+  11155111: '0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b',
 } as const
 
 /**
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export const jbTokensConfig = {
   address: jbTokensAddress,
@@ -4467,7 +5081,7 @@ export const jbTokensConfig = {
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerRead<
   TFunctionName extends string,
@@ -4495,7 +5109,7 @@ export function useJbControllerRead<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"DIRECTORY"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerDirectory<
   TFunctionName extends 'DIRECTORY',
@@ -4524,7 +5138,7 @@ export function useJbControllerDirectory<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"FUND_ACCESS_LIMITS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerFundAccessLimits<
   TFunctionName extends 'FUND_ACCESS_LIMITS',
@@ -4553,7 +5167,7 @@ export function useJbControllerFundAccessLimits<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"PERMISSIONS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerPermissions<
   TFunctionName extends 'PERMISSIONS',
@@ -4582,7 +5196,7 @@ export function useJbControllerPermissions<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"PROJECTS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerProjects<
   TFunctionName extends 'PROJECTS',
@@ -4611,7 +5225,7 @@ export function useJbControllerProjects<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"RULESETS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerRulesets<
   TFunctionName extends 'RULESETS',
@@ -4640,7 +5254,7 @@ export function useJbControllerRulesets<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"SPLITS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSplits<
   TFunctionName extends 'SPLITS',
@@ -4669,7 +5283,7 @@ export function useJbControllerSplits<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"TOKENS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerTokens<
   TFunctionName extends 'TOKENS',
@@ -4698,7 +5312,7 @@ export function useJbControllerTokens<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"currentRulesetOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerCurrentRulesetOf<
   TFunctionName extends 'currentRulesetOf',
@@ -4727,7 +5341,7 @@ export function useJbControllerCurrentRulesetOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"getRulesetOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerGetRulesetOf<
   TFunctionName extends 'getRulesetOf',
@@ -4756,7 +5370,7 @@ export function useJbControllerGetRulesetOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"isTrustedForwarder"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerIsTrustedForwarder<
   TFunctionName extends 'isTrustedForwarder',
@@ -4785,7 +5399,7 @@ export function useJbControllerIsTrustedForwarder<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"latestQueuedRulesetOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerLatestQueuedRulesetOf<
   TFunctionName extends 'latestQueuedRulesetOf',
@@ -4814,7 +5428,7 @@ export function useJbControllerLatestQueuedRulesetOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"metadataOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerMetadataOf<
   TFunctionName extends 'metadataOf',
@@ -4843,7 +5457,7 @@ export function useJbControllerMetadataOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"pendingReservedTokenBalanceOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerPendingReservedTokenBalanceOf<
   TFunctionName extends 'pendingReservedTokenBalanceOf',
@@ -4872,7 +5486,7 @@ export function useJbControllerPendingReservedTokenBalanceOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"setControllerAllowed"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSetControllerAllowed<
   TFunctionName extends 'setControllerAllowed',
@@ -4901,7 +5515,7 @@ export function useJbControllerSetControllerAllowed<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"setTerminalsAllowed"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSetTerminalsAllowed<
   TFunctionName extends 'setTerminalsAllowed',
@@ -4930,7 +5544,7 @@ export function useJbControllerSetTerminalsAllowed<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"supportsInterface"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSupportsInterface<
   TFunctionName extends 'supportsInterface',
@@ -4959,7 +5573,7 @@ export function useJbControllerSupportsInterface<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"totalTokenSupplyWithReservedTokensOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerTotalTokenSupplyWithReservedTokensOf<
   TFunctionName extends 'totalTokenSupplyWithReservedTokensOf',
@@ -4988,7 +5602,7 @@ export function useJbControllerTotalTokenSupplyWithReservedTokensOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"trustedForwarder"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerTrustedForwarder<
   TFunctionName extends 'trustedForwarder',
@@ -5017,7 +5631,7 @@ export function useJbControllerTrustedForwarder<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"upcomingRulesetOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerUpcomingRulesetOf<
   TFunctionName extends 'upcomingRulesetOf',
@@ -5046,7 +5660,7 @@ export function useJbControllerUpcomingRulesetOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerWrite<
   TFunctionName extends string,
@@ -5078,7 +5692,7 @@ export function useJbControllerWrite<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"burnTokensOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerBurnTokensOf<
   TMode extends WriteContractMode = undefined,
@@ -5115,7 +5729,7 @@ export function useJbControllerBurnTokensOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"claimTokensFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerClaimTokensFor<
   TMode extends WriteContractMode = undefined,
@@ -5156,7 +5770,7 @@ export function useJbControllerClaimTokensFor<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"deployERC20For"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerDeployErc20For<
   TMode extends WriteContractMode = undefined,
@@ -5197,7 +5811,7 @@ export function useJbControllerDeployErc20For<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"launchProjectFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerLaunchProjectFor<
   TMode extends WriteContractMode = undefined,
@@ -5238,7 +5852,7 @@ export function useJbControllerLaunchProjectFor<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"launchRulesetsFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerLaunchRulesetsFor<
   TMode extends WriteContractMode = undefined,
@@ -5279,7 +5893,7 @@ export function useJbControllerLaunchRulesetsFor<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"migrateController"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerMigrateController<
   TMode extends WriteContractMode = undefined,
@@ -5320,7 +5934,7 @@ export function useJbControllerMigrateController<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"mintTokensOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerMintTokensOf<
   TMode extends WriteContractMode = undefined,
@@ -5357,7 +5971,7 @@ export function useJbControllerMintTokensOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"queueRulesetsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerQueueRulesetsOf<
   TMode extends WriteContractMode = undefined,
@@ -5398,7 +6012,7 @@ export function useJbControllerQueueRulesetsOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"receiveMigrationFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerReceiveMigrationFrom<
   TMode extends WriteContractMode = undefined,
@@ -5443,7 +6057,7 @@ export function useJbControllerReceiveMigrationFrom<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"sendReservedTokensToSplitsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSendReservedTokensToSplitsOf<
   TMode extends WriteContractMode = undefined,
@@ -5488,7 +6102,7 @@ export function useJbControllerSendReservedTokensToSplitsOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"setMetadataOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSetMetadataOf<
   TMode extends WriteContractMode = undefined,
@@ -5525,7 +6139,7 @@ export function useJbControllerSetMetadataOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"setSplitGroupsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSetSplitGroupsOf<
   TMode extends WriteContractMode = undefined,
@@ -5566,7 +6180,7 @@ export function useJbControllerSetSplitGroupsOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"setTokenFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSetTokenFor<
   TMode extends WriteContractMode = undefined,
@@ -5603,7 +6217,7 @@ export function useJbControllerSetTokenFor<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"transferCreditsFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerTransferCreditsFrom<
   TMode extends WriteContractMode = undefined,
@@ -5646,7 +6260,7 @@ export function useJbControllerTransferCreditsFrom<
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerWrite<TFunctionName extends string>(
   config: Omit<
@@ -5667,7 +6281,7 @@ export function usePrepareJbControllerWrite<TFunctionName extends string>(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"burnTokensOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerBurnTokensOf(
   config: Omit<
@@ -5689,7 +6303,7 @@ export function usePrepareJbControllerBurnTokensOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"claimTokensFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerClaimTokensFor(
   config: Omit<
@@ -5711,7 +6325,7 @@ export function usePrepareJbControllerClaimTokensFor(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"deployERC20For"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerDeployErc20For(
   config: Omit<
@@ -5733,7 +6347,7 @@ export function usePrepareJbControllerDeployErc20For(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"launchProjectFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerLaunchProjectFor(
   config: Omit<
@@ -5758,7 +6372,7 @@ export function usePrepareJbControllerLaunchProjectFor(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"launchRulesetsFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerLaunchRulesetsFor(
   config: Omit<
@@ -5783,7 +6397,7 @@ export function usePrepareJbControllerLaunchRulesetsFor(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"migrateController"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerMigrateController(
   config: Omit<
@@ -5808,7 +6422,7 @@ export function usePrepareJbControllerMigrateController(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"mintTokensOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerMintTokensOf(
   config: Omit<
@@ -5830,7 +6444,7 @@ export function usePrepareJbControllerMintTokensOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"queueRulesetsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerQueueRulesetsOf(
   config: Omit<
@@ -5852,7 +6466,7 @@ export function usePrepareJbControllerQueueRulesetsOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"receiveMigrationFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerReceiveMigrationFrom(
   config: Omit<
@@ -5880,7 +6494,7 @@ export function usePrepareJbControllerReceiveMigrationFrom(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"sendReservedTokensToSplitsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerSendReservedTokensToSplitsOf(
   config: Omit<
@@ -5908,7 +6522,7 @@ export function usePrepareJbControllerSendReservedTokensToSplitsOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"setMetadataOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerSetMetadataOf(
   config: Omit<
@@ -5930,7 +6544,7 @@ export function usePrepareJbControllerSetMetadataOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"setSplitGroupsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerSetSplitGroupsOf(
   config: Omit<
@@ -5955,7 +6569,7 @@ export function usePrepareJbControllerSetSplitGroupsOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"setTokenFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerSetTokenFor(
   config: Omit<
@@ -5977,7 +6591,7 @@ export function usePrepareJbControllerSetTokenFor(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbControllerABI}__ and `functionName` set to `"transferCreditsFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function usePrepareJbControllerTransferCreditsFrom(
   config: Omit<
@@ -6005,7 +6619,7 @@ export function usePrepareJbControllerTransferCreditsFrom(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerEvent<TEventName extends string>(
   config: Omit<
@@ -6026,7 +6640,7 @@ export function useJbControllerEvent<TEventName extends string>(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__ and `eventName` set to `"BurnTokens"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerBurnTokensEvent(
   config: Omit<
@@ -6048,7 +6662,7 @@ export function useJbControllerBurnTokensEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__ and `eventName` set to `"LaunchProject"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerLaunchProjectEvent(
   config: Omit<
@@ -6070,7 +6684,7 @@ export function useJbControllerLaunchProjectEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__ and `eventName` set to `"LaunchRulesets"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerLaunchRulesetsEvent(
   config: Omit<
@@ -6092,7 +6706,7 @@ export function useJbControllerLaunchRulesetsEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__ and `eventName` set to `"MigrateController"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerMigrateControllerEvent(
   config: Omit<
@@ -6114,7 +6728,7 @@ export function useJbControllerMigrateControllerEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__ and `eventName` set to `"MintTokens"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerMintTokensEvent(
   config: Omit<
@@ -6136,7 +6750,7 @@ export function useJbControllerMintTokensEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__ and `eventName` set to `"PrepMigration"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerPrepMigrationEvent(
   config: Omit<
@@ -6158,7 +6772,7 @@ export function useJbControllerPrepMigrationEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__ and `eventName` set to `"QueueRulesets"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerQueueRulesetsEvent(
   config: Omit<
@@ -6180,7 +6794,7 @@ export function useJbControllerQueueRulesetsEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__ and `eventName` set to `"SendReservedTokensToSplit"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSendReservedTokensToSplitEvent(
   config: Omit<
@@ -6205,7 +6819,7 @@ export function useJbControllerSendReservedTokensToSplitEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__ and `eventName` set to `"SendReservedTokensToSplits"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSendReservedTokensToSplitsEvent(
   config: Omit<
@@ -6233,7 +6847,7 @@ export function useJbControllerSendReservedTokensToSplitsEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbControllerABI}__ and `eventName` set to `"SetMetadata"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x1A0022234969060482e3646D0e8cBad32BA5E434)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x15e9030Dd25b27d7e6763598B87445daf222C115)
  */
 export function useJbControllerSetMetadataEvent(
   config: Omit<
@@ -6255,7 +6869,7 @@ export function useJbControllerSetMetadataEvent(
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbDirectoryABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryRead<
   TFunctionName extends string,
@@ -6279,7 +6893,7 @@ export function useJbDirectoryRead<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"PERMISSIONS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryPermissions<
   TFunctionName extends 'PERMISSIONS',
@@ -6304,7 +6918,7 @@ export function useJbDirectoryPermissions<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"PROJECTS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryProjects<
   TFunctionName extends 'PROJECTS',
@@ -6329,7 +6943,7 @@ export function useJbDirectoryProjects<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"controllerOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryControllerOf<
   TFunctionName extends 'controllerOf',
@@ -6354,7 +6968,7 @@ export function useJbDirectoryControllerOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"isAllowedToSetFirstController"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryIsAllowedToSetFirstController<
   TFunctionName extends 'isAllowedToSetFirstController',
@@ -6379,7 +6993,7 @@ export function useJbDirectoryIsAllowedToSetFirstController<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"isTerminalOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryIsTerminalOf<
   TFunctionName extends 'isTerminalOf',
@@ -6404,7 +7018,7 @@ export function useJbDirectoryIsTerminalOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"owner"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryOwner<
   TFunctionName extends 'owner',
@@ -6429,7 +7043,7 @@ export function useJbDirectoryOwner<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"primaryTerminalOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryPrimaryTerminalOf<
   TFunctionName extends 'primaryTerminalOf',
@@ -6454,7 +7068,7 @@ export function useJbDirectoryPrimaryTerminalOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"terminalsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryTerminalsOf<
   TFunctionName extends 'terminalsOf',
@@ -6479,7 +7093,7 @@ export function useJbDirectoryTerminalsOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryWrite<
   TFunctionName extends string,
@@ -6511,7 +7125,7 @@ export function useJbDirectoryWrite<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"renounceOwnership"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryRenounceOwnership<
   TMode extends WriteContractMode = undefined,
@@ -6552,7 +7166,7 @@ export function useJbDirectoryRenounceOwnership<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"setControllerOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectorySetControllerOf<
   TMode extends WriteContractMode = undefined,
@@ -6593,7 +7207,7 @@ export function useJbDirectorySetControllerOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"setIsAllowedToSetFirstController"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectorySetIsAllowedToSetFirstController<
   TMode extends WriteContractMode = undefined,
@@ -6638,7 +7252,7 @@ export function useJbDirectorySetIsAllowedToSetFirstController<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"setPrimaryTerminalOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectorySetPrimaryTerminalOf<
   TMode extends WriteContractMode = undefined,
@@ -6681,7 +7295,7 @@ export function useJbDirectorySetPrimaryTerminalOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"setTerminalsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectorySetTerminalsOf<
   TMode extends WriteContractMode = undefined,
@@ -6718,7 +7332,7 @@ export function useJbDirectorySetTerminalsOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"transferOwnership"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryTransferOwnership<
   TMode extends WriteContractMode = undefined,
@@ -6759,7 +7373,7 @@ export function useJbDirectoryTransferOwnership<
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function usePrepareJbDirectoryWrite<TFunctionName extends string>(
   config: Omit<
@@ -6780,7 +7394,7 @@ export function usePrepareJbDirectoryWrite<TFunctionName extends string>(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"renounceOwnership"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function usePrepareJbDirectoryRenounceOwnership(
   config: Omit<
@@ -6805,7 +7419,7 @@ export function usePrepareJbDirectoryRenounceOwnership(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"setControllerOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function usePrepareJbDirectorySetControllerOf(
   config: Omit<
@@ -6827,7 +7441,7 @@ export function usePrepareJbDirectorySetControllerOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"setIsAllowedToSetFirstController"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function usePrepareJbDirectorySetIsAllowedToSetFirstController(
   config: Omit<
@@ -6855,7 +7469,7 @@ export function usePrepareJbDirectorySetIsAllowedToSetFirstController(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"setPrimaryTerminalOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function usePrepareJbDirectorySetPrimaryTerminalOf(
   config: Omit<
@@ -6883,7 +7497,7 @@ export function usePrepareJbDirectorySetPrimaryTerminalOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"setTerminalsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function usePrepareJbDirectorySetTerminalsOf(
   config: Omit<
@@ -6905,7 +7519,7 @@ export function usePrepareJbDirectorySetTerminalsOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbDirectoryABI}__ and `functionName` set to `"transferOwnership"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function usePrepareJbDirectoryTransferOwnership(
   config: Omit<
@@ -6930,7 +7544,7 @@ export function usePrepareJbDirectoryTransferOwnership(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbDirectoryABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryEvent<TEventName extends string>(
   config: Omit<
@@ -6951,7 +7565,7 @@ export function useJbDirectoryEvent<TEventName extends string>(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbDirectoryABI}__ and `eventName` set to `"AddTerminal"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryAddTerminalEvent(
   config: Omit<
@@ -6973,7 +7587,7 @@ export function useJbDirectoryAddTerminalEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbDirectoryABI}__ and `eventName` set to `"OwnershipTransferred"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectoryOwnershipTransferredEvent(
   config: Omit<
@@ -6995,7 +7609,7 @@ export function useJbDirectoryOwnershipTransferredEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbDirectoryABI}__ and `eventName` set to `"SetController"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectorySetControllerEvent(
   config: Omit<
@@ -7017,7 +7631,7 @@ export function useJbDirectorySetControllerEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbDirectoryABI}__ and `eventName` set to `"SetIsAllowedToSetFirstController"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectorySetIsAllowedToSetFirstControllerEvent(
   config: Omit<
@@ -7045,7 +7659,7 @@ export function useJbDirectorySetIsAllowedToSetFirstControllerEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbDirectoryABI}__ and `eventName` set to `"SetPrimaryTerminal"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectorySetPrimaryTerminalEvent(
   config: Omit<
@@ -7067,7 +7681,7 @@ export function useJbDirectorySetPrimaryTerminalEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbDirectoryABI}__ and `eventName` set to `"SetTerminals"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5aC84A1298327e4Aa350abE6E05A607DE28b1A89)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x862ea57d0C473a5c7c8330d92C7824dbd60269EC)
  */
 export function useJbDirectorySetTerminalsEvent(
   config: Omit<
@@ -7089,7 +7703,7 @@ export function useJbDirectorySetTerminalsEvent(
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalRead<
   TFunctionName extends string,
@@ -7121,7 +7735,7 @@ export function useJbMultiTerminalRead<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"DIRECTORY"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalDirectory<
   TFunctionName extends 'DIRECTORY',
@@ -7154,7 +7768,7 @@ export function useJbMultiTerminalDirectory<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"FEE"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalFee<
   TFunctionName extends 'FEE',
@@ -7187,7 +7801,7 @@ export function useJbMultiTerminalFee<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"FEELESS_ADDRESSES"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalFeelessAddresses<
   TFunctionName extends 'FEELESS_ADDRESSES',
@@ -7220,7 +7834,7 @@ export function useJbMultiTerminalFeelessAddresses<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"PERMISSIONS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalPermissions<
   TFunctionName extends 'PERMISSIONS',
@@ -7253,7 +7867,7 @@ export function useJbMultiTerminalPermissions<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"PERMIT2"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalPermit2<
   TFunctionName extends 'PERMIT2',
@@ -7286,7 +7900,7 @@ export function useJbMultiTerminalPermit2<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"PROJECTS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalProjects<
   TFunctionName extends 'PROJECTS',
@@ -7319,7 +7933,7 @@ export function useJbMultiTerminalProjects<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"SPLITS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalSplits<
   TFunctionName extends 'SPLITS',
@@ -7352,7 +7966,7 @@ export function useJbMultiTerminalSplits<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"STORE"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalStore<
   TFunctionName extends 'STORE',
@@ -7385,7 +7999,7 @@ export function useJbMultiTerminalStore<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"accountingContextForTokenOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalAccountingContextForTokenOf<
   TFunctionName extends 'accountingContextForTokenOf',
@@ -7418,7 +8032,7 @@ export function useJbMultiTerminalAccountingContextForTokenOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"accountingContextsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalAccountingContextsOf<
   TFunctionName extends 'accountingContextsOf',
@@ -7451,7 +8065,7 @@ export function useJbMultiTerminalAccountingContextsOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"currentSurplusOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalCurrentSurplusOf<
   TFunctionName extends 'currentSurplusOf',
@@ -7484,7 +8098,7 @@ export function useJbMultiTerminalCurrentSurplusOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"heldFeesOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalHeldFeesOf<
   TFunctionName extends 'heldFeesOf',
@@ -7517,7 +8131,7 @@ export function useJbMultiTerminalHeldFeesOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"isTrustedForwarder"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalIsTrustedForwarder<
   TFunctionName extends 'isTrustedForwarder',
@@ -7550,7 +8164,7 @@ export function useJbMultiTerminalIsTrustedForwarder<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"supportsInterface"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalSupportsInterface<
   TFunctionName extends 'supportsInterface',
@@ -7583,7 +8197,7 @@ export function useJbMultiTerminalSupportsInterface<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"trustedForwarder"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalTrustedForwarder<
   TFunctionName extends 'trustedForwarder',
@@ -7616,7 +8230,7 @@ export function useJbMultiTerminalTrustedForwarder<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalWrite<
   TFunctionName extends string,
@@ -7652,7 +8266,7 @@ export function useJbMultiTerminalWrite<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"addAccountingContextsFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalAddAccountingContextsFor<
   TMode extends WriteContractMode = undefined,
@@ -7697,7 +8311,7 @@ export function useJbMultiTerminalAddAccountingContextsFor<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"addToBalanceOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalAddToBalanceOf<
   TMode extends WriteContractMode = undefined,
@@ -7738,7 +8352,7 @@ export function useJbMultiTerminalAddToBalanceOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"executePayout"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalExecutePayout<
   TMode extends WriteContractMode = undefined,
@@ -7779,7 +8393,7 @@ export function useJbMultiTerminalExecutePayout<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"executeProcessFee"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalExecuteProcessFee<
   TMode extends WriteContractMode = undefined,
@@ -7824,7 +8438,7 @@ export function useJbMultiTerminalExecuteProcessFee<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"migrateBalanceOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalMigrateBalanceOf<
   TMode extends WriteContractMode = undefined,
@@ -7867,7 +8481,7 @@ export function useJbMultiTerminalMigrateBalanceOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"pay"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalPay<
   TMode extends WriteContractMode = undefined,
@@ -7900,7 +8514,7 @@ export function useJbMultiTerminalPay<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"processHeldFeesOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalProcessHeldFeesOf<
   TMode extends WriteContractMode = undefined,
@@ -7945,7 +8559,7 @@ export function useJbMultiTerminalProcessHeldFeesOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"redeemTokensOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalRedeemTokensOf<
   TMode extends WriteContractMode = undefined,
@@ -7986,7 +8600,7 @@ export function useJbMultiTerminalRedeemTokensOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"sendPayoutsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalSendPayoutsOf<
   TMode extends WriteContractMode = undefined,
@@ -8027,7 +8641,7 @@ export function useJbMultiTerminalSendPayoutsOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"useAllowanceOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalUseAllowanceOf<
   TMode extends WriteContractMode = undefined,
@@ -8068,7 +8682,7 @@ export function useJbMultiTerminalUseAllowanceOf<
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalWrite<TFunctionName extends string>(
   config: Omit<
@@ -8089,7 +8703,7 @@ export function usePrepareJbMultiTerminalWrite<TFunctionName extends string>(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"addAccountingContextsFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalAddAccountingContextsFor(
   config: Omit<
@@ -8117,7 +8731,7 @@ export function usePrepareJbMultiTerminalAddAccountingContextsFor(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"addToBalanceOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalAddToBalanceOf(
   config: Omit<
@@ -8142,7 +8756,7 @@ export function usePrepareJbMultiTerminalAddToBalanceOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"executePayout"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalExecutePayout(
   config: Omit<
@@ -8167,7 +8781,7 @@ export function usePrepareJbMultiTerminalExecutePayout(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"executeProcessFee"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalExecuteProcessFee(
   config: Omit<
@@ -8195,7 +8809,7 @@ export function usePrepareJbMultiTerminalExecuteProcessFee(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"migrateBalanceOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalMigrateBalanceOf(
   config: Omit<
@@ -8223,7 +8837,7 @@ export function usePrepareJbMultiTerminalMigrateBalanceOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"pay"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalPay(
   config: Omit<
@@ -8245,7 +8859,7 @@ export function usePrepareJbMultiTerminalPay(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"processHeldFeesOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalProcessHeldFeesOf(
   config: Omit<
@@ -8273,7 +8887,7 @@ export function usePrepareJbMultiTerminalProcessHeldFeesOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"redeemTokensOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalRedeemTokensOf(
   config: Omit<
@@ -8298,7 +8912,7 @@ export function usePrepareJbMultiTerminalRedeemTokensOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"sendPayoutsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalSendPayoutsOf(
   config: Omit<
@@ -8323,7 +8937,7 @@ export function usePrepareJbMultiTerminalSendPayoutsOf(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `functionName` set to `"useAllowanceOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function usePrepareJbMultiTerminalUseAllowanceOf(
   config: Omit<
@@ -8348,7 +8962,7 @@ export function usePrepareJbMultiTerminalUseAllowanceOf(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalEvent<TEventName extends string>(
   config: Omit<
@@ -8369,7 +8983,7 @@ export function useJbMultiTerminalEvent<TEventName extends string>(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"AddToBalance"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalAddToBalanceEvent(
   config: Omit<
@@ -8391,7 +9005,7 @@ export function useJbMultiTerminalAddToBalanceEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"FeeReverted"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalFeeRevertedEvent(
   config: Omit<
@@ -8413,7 +9027,7 @@ export function useJbMultiTerminalFeeRevertedEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"HoldFee"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalHoldFeeEvent(
   config: Omit<
@@ -8435,7 +9049,7 @@ export function useJbMultiTerminalHoldFeeEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"HookPostRecordPay"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalHookPostRecordPayEvent(
   config: Omit<
@@ -8457,7 +9071,7 @@ export function useJbMultiTerminalHookPostRecordPayEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"HookPostRecordRedeem"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalHookPostRecordRedeemEvent(
   config: Omit<
@@ -8482,7 +9096,7 @@ export function useJbMultiTerminalHookPostRecordRedeemEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"MigrateTerminal"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalMigrateTerminalEvent(
   config: Omit<
@@ -8504,7 +9118,7 @@ export function useJbMultiTerminalMigrateTerminalEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"Pay"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalPayEvent(
   config: Omit<
@@ -8526,7 +9140,7 @@ export function useJbMultiTerminalPayEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"PayoutReverted"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalPayoutRevertedEvent(
   config: Omit<
@@ -8548,7 +9162,7 @@ export function useJbMultiTerminalPayoutRevertedEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"ProcessFee"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalProcessFeeEvent(
   config: Omit<
@@ -8570,7 +9184,7 @@ export function useJbMultiTerminalProcessFeeEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"RedeemTokens"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalRedeemTokensEvent(
   config: Omit<
@@ -8592,7 +9206,7 @@ export function useJbMultiTerminalRedeemTokensEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"ReturnHeldFees"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalReturnHeldFeesEvent(
   config: Omit<
@@ -8614,7 +9228,7 @@ export function useJbMultiTerminalReturnHeldFeesEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"SendPayoutToSplit"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalSendPayoutToSplitEvent(
   config: Omit<
@@ -8636,7 +9250,7 @@ export function useJbMultiTerminalSendPayoutToSplitEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"SendPayouts"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalSendPayoutsEvent(
   config: Omit<
@@ -8658,7 +9272,7 @@ export function useJbMultiTerminalSendPayoutsEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"SetAccountingContext"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalSetAccountingContextEvent(
   config: Omit<
@@ -8683,7 +9297,7 @@ export function useJbMultiTerminalSetAccountingContextEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbMultiTerminalABI}__ and `eventName` set to `"UseAllowance"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x4319cb152D46Db72857AfE368B19A4483c0Bff0D)
  */
 export function useJbMultiTerminalUseAllowanceEvent(
   config: Omit<
@@ -8705,7 +9319,7 @@ export function useJbMultiTerminalUseAllowanceEvent(
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbPermissionsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function useJbPermissionsRead<
   TFunctionName extends string,
@@ -8733,7 +9347,7 @@ export function useJbPermissionsRead<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbPermissionsABI}__ and `functionName` set to `"PERMISSIONS"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function useJbPermissionsPermissions<
   TFunctionName extends 'PERMISSIONS',
@@ -8762,7 +9376,7 @@ export function useJbPermissionsPermissions<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbPermissionsABI}__ and `functionName` set to `"hasPermission"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function useJbPermissionsHasPermission<
   TFunctionName extends 'hasPermission',
@@ -8791,7 +9405,7 @@ export function useJbPermissionsHasPermission<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbPermissionsABI}__ and `functionName` set to `"hasPermissions"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function useJbPermissionsHasPermissions<
   TFunctionName extends 'hasPermissions',
@@ -8820,7 +9434,7 @@ export function useJbPermissionsHasPermissions<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbPermissionsABI}__ and `functionName` set to `"permissionsOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function useJbPermissionsPermissionsOf<
   TFunctionName extends 'permissionsOf',
@@ -8849,7 +9463,7 @@ export function useJbPermissionsPermissionsOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbPermissionsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function useJbPermissionsWrite<
   TFunctionName extends string,
@@ -8881,7 +9495,7 @@ export function useJbPermissionsWrite<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbPermissionsABI}__ and `functionName` set to `"setPermissionsFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function useJbPermissionsSetPermissionsFor<
   TMode extends WriteContractMode = undefined,
@@ -8922,7 +9536,7 @@ export function useJbPermissionsSetPermissionsFor<
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbPermissionsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function usePrepareJbPermissionsWrite<TFunctionName extends string>(
   config: Omit<
@@ -8943,7 +9557,7 @@ export function usePrepareJbPermissionsWrite<TFunctionName extends string>(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbPermissionsABI}__ and `functionName` set to `"setPermissionsFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function usePrepareJbPermissionsSetPermissionsFor(
   config: Omit<
@@ -8968,7 +9582,7 @@ export function usePrepareJbPermissionsSetPermissionsFor(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbPermissionsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function useJbPermissionsEvent<TEventName extends string>(
   config: Omit<
@@ -8989,7 +9603,7 @@ export function useJbPermissionsEvent<TEventName extends string>(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbPermissionsABI}__ and `eventName` set to `"OperatorPermissionsSet"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x340eBA180834a1722FCbB7fA0Bf99aa87eA1AdcC)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x607763b1458419Edb09f56CE795057A2958e2001)
  */
 export function useJbPermissionsOperatorPermissionsSetEvent(
   config: Omit<
@@ -9014,7 +9628,7 @@ export function useJbPermissionsOperatorPermissionsSetEvent(
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsRead<
   TFunctionName extends string,
@@ -9038,7 +9652,7 @@ export function useJbProjectsRead<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"CLOCK_MODE"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsClockMode<
   TFunctionName extends 'CLOCK_MODE',
@@ -9063,7 +9677,7 @@ export function useJbProjectsClockMode<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"balanceOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsBalanceOf<
   TFunctionName extends 'balanceOf',
@@ -9088,7 +9702,7 @@ export function useJbProjectsBalanceOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"clock"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsClock<
   TFunctionName extends 'clock',
@@ -9113,7 +9727,7 @@ export function useJbProjectsClock<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"count"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsCount<
   TFunctionName extends 'count',
@@ -9138,7 +9752,7 @@ export function useJbProjectsCount<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"delegates"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsDelegates<
   TFunctionName extends 'delegates',
@@ -9163,7 +9777,7 @@ export function useJbProjectsDelegates<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"eip712Domain"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsEip712Domain<
   TFunctionName extends 'eip712Domain',
@@ -9188,7 +9802,7 @@ export function useJbProjectsEip712Domain<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"getApproved"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsGetApproved<
   TFunctionName extends 'getApproved',
@@ -9213,7 +9827,7 @@ export function useJbProjectsGetApproved<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"getPastTotalSupply"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsGetPastTotalSupply<
   TFunctionName extends 'getPastTotalSupply',
@@ -9238,7 +9852,7 @@ export function useJbProjectsGetPastTotalSupply<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"getPastVotes"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsGetPastVotes<
   TFunctionName extends 'getPastVotes',
@@ -9263,7 +9877,7 @@ export function useJbProjectsGetPastVotes<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"getVotes"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsGetVotes<
   TFunctionName extends 'getVotes',
@@ -9288,7 +9902,7 @@ export function useJbProjectsGetVotes<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"isApprovedForAll"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsIsApprovedForAll<
   TFunctionName extends 'isApprovedForAll',
@@ -9313,7 +9927,7 @@ export function useJbProjectsIsApprovedForAll<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"name"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsName<
   TFunctionName extends 'name',
@@ -9338,7 +9952,7 @@ export function useJbProjectsName<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"nonces"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsNonces<
   TFunctionName extends 'nonces',
@@ -9363,7 +9977,7 @@ export function useJbProjectsNonces<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"owner"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsOwner<
   TFunctionName extends 'owner',
@@ -9388,7 +10002,7 @@ export function useJbProjectsOwner<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"ownerOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsOwnerOf<
   TFunctionName extends 'ownerOf',
@@ -9413,7 +10027,7 @@ export function useJbProjectsOwnerOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"supportsInterface"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsSupportsInterface<
   TFunctionName extends 'supportsInterface',
@@ -9438,7 +10052,7 @@ export function useJbProjectsSupportsInterface<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"symbol"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsSymbol<
   TFunctionName extends 'symbol',
@@ -9463,7 +10077,7 @@ export function useJbProjectsSymbol<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"tokenURI"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsTokenUri<
   TFunctionName extends 'tokenURI',
@@ -9488,7 +10102,7 @@ export function useJbProjectsTokenUri<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"tokenUriResolver"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsTokenUriResolver<
   TFunctionName extends 'tokenUriResolver',
@@ -9513,7 +10127,7 @@ export function useJbProjectsTokenUriResolver<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsWrite<
   TFunctionName extends string,
@@ -9545,7 +10159,7 @@ export function useJbProjectsWrite<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"approve"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsApprove<
   TMode extends WriteContractMode = undefined,
@@ -9578,7 +10192,7 @@ export function useJbProjectsApprove<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"createFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsCreateFor<
   TMode extends WriteContractMode = undefined,
@@ -9611,7 +10225,7 @@ export function useJbProjectsCreateFor<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"delegate"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsDelegate<
   TMode extends WriteContractMode = undefined,
@@ -9644,7 +10258,7 @@ export function useJbProjectsDelegate<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"delegateBySig"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsDelegateBySig<
   TMode extends WriteContractMode = undefined,
@@ -9681,7 +10295,7 @@ export function useJbProjectsDelegateBySig<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"renounceOwnership"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsRenounceOwnership<
   TMode extends WriteContractMode = undefined,
@@ -9722,7 +10336,7 @@ export function useJbProjectsRenounceOwnership<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"safeTransferFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsSafeTransferFrom<
   TMode extends WriteContractMode = undefined,
@@ -9763,7 +10377,7 @@ export function useJbProjectsSafeTransferFrom<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"setApprovalForAll"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsSetApprovalForAll<
   TMode extends WriteContractMode = undefined,
@@ -9804,7 +10418,7 @@ export function useJbProjectsSetApprovalForAll<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"setTokenUriResolver"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsSetTokenUriResolver<
   TMode extends WriteContractMode = undefined,
@@ -9845,7 +10459,7 @@ export function useJbProjectsSetTokenUriResolver<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"transferFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsTransferFrom<
   TMode extends WriteContractMode = undefined,
@@ -9882,7 +10496,7 @@ export function useJbProjectsTransferFrom<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"transferOwnership"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsTransferOwnership<
   TMode extends WriteContractMode = undefined,
@@ -9923,7 +10537,7 @@ export function useJbProjectsTransferOwnership<
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsWrite<TFunctionName extends string>(
   config: Omit<
@@ -9944,7 +10558,7 @@ export function usePrepareJbProjectsWrite<TFunctionName extends string>(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"approve"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsApprove(
   config: Omit<
@@ -9966,7 +10580,7 @@ export function usePrepareJbProjectsApprove(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"createFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsCreateFor(
   config: Omit<
@@ -9988,7 +10602,7 @@ export function usePrepareJbProjectsCreateFor(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"delegate"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsDelegate(
   config: Omit<
@@ -10010,7 +10624,7 @@ export function usePrepareJbProjectsDelegate(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"delegateBySig"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsDelegateBySig(
   config: Omit<
@@ -10032,7 +10646,7 @@ export function usePrepareJbProjectsDelegateBySig(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"renounceOwnership"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsRenounceOwnership(
   config: Omit<
@@ -10054,7 +10668,7 @@ export function usePrepareJbProjectsRenounceOwnership(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"safeTransferFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsSafeTransferFrom(
   config: Omit<
@@ -10076,7 +10690,7 @@ export function usePrepareJbProjectsSafeTransferFrom(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"setApprovalForAll"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsSetApprovalForAll(
   config: Omit<
@@ -10098,7 +10712,7 @@ export function usePrepareJbProjectsSetApprovalForAll(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"setTokenUriResolver"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsSetTokenUriResolver(
   config: Omit<
@@ -10123,7 +10737,7 @@ export function usePrepareJbProjectsSetTokenUriResolver(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"transferFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsTransferFrom(
   config: Omit<
@@ -10145,7 +10759,7 @@ export function usePrepareJbProjectsTransferFrom(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbProjectsABI}__ and `functionName` set to `"transferOwnership"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function usePrepareJbProjectsTransferOwnership(
   config: Omit<
@@ -10167,7 +10781,7 @@ export function usePrepareJbProjectsTransferOwnership(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbProjectsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsEvent<TEventName extends string>(
   config: Omit<
@@ -10188,7 +10802,7 @@ export function useJbProjectsEvent<TEventName extends string>(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbProjectsABI}__ and `eventName` set to `"Approval"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsApprovalEvent(
   config: Omit<
@@ -10210,7 +10824,7 @@ export function useJbProjectsApprovalEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbProjectsABI}__ and `eventName` set to `"ApprovalForAll"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsApprovalForAllEvent(
   config: Omit<
@@ -10232,7 +10846,7 @@ export function useJbProjectsApprovalForAllEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbProjectsABI}__ and `eventName` set to `"Create"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsCreateEvent(
   config: Omit<
@@ -10254,7 +10868,7 @@ export function useJbProjectsCreateEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbProjectsABI}__ and `eventName` set to `"DelegateChanged"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsDelegateChangedEvent(
   config: Omit<
@@ -10276,7 +10890,7 @@ export function useJbProjectsDelegateChangedEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbProjectsABI}__ and `eventName` set to `"DelegateVotesChanged"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsDelegateVotesChangedEvent(
   config: Omit<
@@ -10298,7 +10912,7 @@ export function useJbProjectsDelegateVotesChangedEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbProjectsABI}__ and `eventName` set to `"EIP712DomainChanged"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsEip712DomainChangedEvent(
   config: Omit<
@@ -10320,7 +10934,7 @@ export function useJbProjectsEip712DomainChangedEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbProjectsABI}__ and `eventName` set to `"OwnershipTransferred"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsOwnershipTransferredEvent(
   config: Omit<
@@ -10342,7 +10956,7 @@ export function useJbProjectsOwnershipTransferredEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbProjectsABI}__ and `eventName` set to `"SetTokenUriResolver"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsSetTokenUriResolverEvent(
   config: Omit<
@@ -10364,7 +10978,7 @@ export function useJbProjectsSetTokenUriResolverEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbProjectsABI}__ and `eventName` set to `"Transfer"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xA699081ef6bCCB2A5fc4680cF4AF927CE88f0Da8)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x95df60b57Ee581680F5c243554E16BD4F3A6a192)
  */
 export function useJbProjectsTransferEvent(
   config: Omit<
@@ -10386,7 +11000,7 @@ export function useJbProjectsTransferEvent(
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbRulesetsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsRead<
   TFunctionName extends string,
@@ -10410,7 +11024,7 @@ export function useJbRulesetsRead<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"DIRECTORY"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsDirectory<
   TFunctionName extends 'DIRECTORY',
@@ -10435,7 +11049,7 @@ export function useJbRulesetsDirectory<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"currentApprovalStatusForLatestRulesetOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsCurrentApprovalStatusForLatestRulesetOf<
   TFunctionName extends 'currentApprovalStatusForLatestRulesetOf',
@@ -10460,7 +11074,7 @@ export function useJbRulesetsCurrentApprovalStatusForLatestRulesetOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"currentOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsCurrentOf<
   TFunctionName extends 'currentOf',
@@ -10485,7 +11099,7 @@ export function useJbRulesetsCurrentOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"getRulesetOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsGetRulesetOf<
   TFunctionName extends 'getRulesetOf',
@@ -10510,7 +11124,7 @@ export function useJbRulesetsGetRulesetOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"latestQueuedRulesetOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsLatestQueuedRulesetOf<
   TFunctionName extends 'latestQueuedRulesetOf',
@@ -10535,7 +11149,7 @@ export function useJbRulesetsLatestQueuedRulesetOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"latestRulesetIdOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsLatestRulesetIdOf<
   TFunctionName extends 'latestRulesetIdOf',
@@ -10560,7 +11174,7 @@ export function useJbRulesetsLatestRulesetIdOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"upcomingRulesetOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsUpcomingRulesetOf<
   TFunctionName extends 'upcomingRulesetOf',
@@ -10585,7 +11199,7 @@ export function useJbRulesetsUpcomingRulesetOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbRulesetsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsWrite<
   TFunctionName extends string,
@@ -10617,7 +11231,7 @@ export function useJbRulesetsWrite<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"queueFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsQueueFor<
   TMode extends WriteContractMode = undefined,
@@ -10650,7 +11264,7 @@ export function useJbRulesetsQueueFor<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"updateRulesetWeightCache"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsUpdateRulesetWeightCache<
   TMode extends WriteContractMode = undefined,
@@ -10695,7 +11309,7 @@ export function useJbRulesetsUpdateRulesetWeightCache<
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbRulesetsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function usePrepareJbRulesetsWrite<TFunctionName extends string>(
   config: Omit<
@@ -10716,7 +11330,7 @@ export function usePrepareJbRulesetsWrite<TFunctionName extends string>(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"queueFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function usePrepareJbRulesetsQueueFor(
   config: Omit<
@@ -10738,7 +11352,7 @@ export function usePrepareJbRulesetsQueueFor(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbRulesetsABI}__ and `functionName` set to `"updateRulesetWeightCache"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function usePrepareJbRulesetsUpdateRulesetWeightCache(
   config: Omit<
@@ -10766,7 +11380,7 @@ export function usePrepareJbRulesetsUpdateRulesetWeightCache(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbRulesetsABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsEvent<TEventName extends string>(
   config: Omit<
@@ -10787,7 +11401,7 @@ export function useJbRulesetsEvent<TEventName extends string>(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbRulesetsABI}__ and `eventName` set to `"RulesetInitialized"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsRulesetInitializedEvent(
   config: Omit<
@@ -10809,7 +11423,7 @@ export function useJbRulesetsRulesetInitializedEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbRulesetsABI}__ and `eventName` set to `"RulesetQueued"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x31d85aB2dFaaa695FD707444c758eD4209A5Bfb0)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x8951ebfdc76f433E2cC87bCe56A43F46F3955928)
  */
 export function useJbRulesetsRulesetQueuedEvent(
   config: Omit<
@@ -10829,9 +11443,1056 @@ export function useJbRulesetsRulesetQueuedEvent(
 }
 
 /**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbSplitsABI}__.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export function useJbSplitsRead<
+  TFunctionName extends string,
+  TSelectData = ReadContractResult<typeof jbSplitsABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<typeof jbSplitsABI, TFunctionName, TSelectData>,
+    'abi' | 'address'
+  > & { chainId?: keyof typeof jbSplitsAddress; address?: Address } = {} as any,
+) {
+  return useContractRead({
+    abi: jbSplitsABI,
+    address: jbSplitsAddress[11155111],
+    ...config,
+  } as UseContractReadConfig<typeof jbSplitsABI, TFunctionName, TSelectData>)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbSplitsABI}__ and `functionName` set to `"DIRECTORY"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export function useJbSplitsDirectory<
+  TFunctionName extends 'DIRECTORY',
+  TSelectData = ReadContractResult<typeof jbSplitsABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<typeof jbSplitsABI, TFunctionName, TSelectData>,
+    'abi' | 'address' | 'functionName'
+  > & { chainId?: keyof typeof jbSplitsAddress; address?: Address } = {} as any,
+) {
+  return useContractRead({
+    abi: jbSplitsABI,
+    address: jbSplitsAddress[11155111],
+    functionName: 'DIRECTORY',
+    ...config,
+  } as UseContractReadConfig<typeof jbSplitsABI, TFunctionName, TSelectData>)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbSplitsABI}__ and `functionName` set to `"FALLBACK_RULESET_ID"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export function useJbSplitsFallbackRulesetId<
+  TFunctionName extends 'FALLBACK_RULESET_ID',
+  TSelectData = ReadContractResult<typeof jbSplitsABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<typeof jbSplitsABI, TFunctionName, TSelectData>,
+    'abi' | 'address' | 'functionName'
+  > & { chainId?: keyof typeof jbSplitsAddress; address?: Address } = {} as any,
+) {
+  return useContractRead({
+    abi: jbSplitsABI,
+    address: jbSplitsAddress[11155111],
+    functionName: 'FALLBACK_RULESET_ID',
+    ...config,
+  } as UseContractReadConfig<typeof jbSplitsABI, TFunctionName, TSelectData>)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbSplitsABI}__ and `functionName` set to `"splitsOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export function useJbSplitsSplitsOf<
+  TFunctionName extends 'splitsOf',
+  TSelectData = ReadContractResult<typeof jbSplitsABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<typeof jbSplitsABI, TFunctionName, TSelectData>,
+    'abi' | 'address' | 'functionName'
+  > & { chainId?: keyof typeof jbSplitsAddress; address?: Address } = {} as any,
+) {
+  return useContractRead({
+    abi: jbSplitsABI,
+    address: jbSplitsAddress[11155111],
+    functionName: 'splitsOf',
+    ...config,
+  } as UseContractReadConfig<typeof jbSplitsABI, TFunctionName, TSelectData>)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbSplitsABI}__.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export function useJbSplitsWrite<
+  TFunctionName extends string,
+  TMode extends WriteContractMode = undefined,
+  TChainId extends number = keyof typeof jbSplitsAddress,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof jbSplitsABI,
+          string
+        >['request']['abi'],
+        TFunctionName,
+        TMode
+      > & { address?: Address; chainId?: TChainId }
+    : UseContractWriteConfig<typeof jbSplitsABI, TFunctionName, TMode> & {
+        abi?: never
+        address?: never
+        chainId?: TChainId
+      } = {} as any,
+) {
+  return useContractWrite<typeof jbSplitsABI, TFunctionName, TMode>({
+    abi: jbSplitsABI,
+    address: jbSplitsAddress[11155111],
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbSplitsABI}__ and `functionName` set to `"setSplitGroupsOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export function useJbSplitsSetSplitGroupsOf<
+  TMode extends WriteContractMode = undefined,
+  TChainId extends number = keyof typeof jbSplitsAddress,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof jbSplitsABI,
+          'setSplitGroupsOf'
+        >['request']['abi'],
+        'setSplitGroupsOf',
+        TMode
+      > & {
+        address?: Address
+        chainId?: TChainId
+        functionName?: 'setSplitGroupsOf'
+      }
+    : UseContractWriteConfig<typeof jbSplitsABI, 'setSplitGroupsOf', TMode> & {
+        abi?: never
+        address?: never
+        chainId?: TChainId
+        functionName?: 'setSplitGroupsOf'
+      } = {} as any,
+) {
+  return useContractWrite<typeof jbSplitsABI, 'setSplitGroupsOf', TMode>({
+    abi: jbSplitsABI,
+    address: jbSplitsAddress[11155111],
+    functionName: 'setSplitGroupsOf',
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbSplitsABI}__.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export function usePrepareJbSplitsWrite<TFunctionName extends string>(
+  config: Omit<
+    UsePrepareContractWriteConfig<typeof jbSplitsABI, TFunctionName>,
+    'abi' | 'address'
+  > & { chainId?: keyof typeof jbSplitsAddress; address?: Address } = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: jbSplitsABI,
+    address: jbSplitsAddress[11155111],
+    ...config,
+  } as UsePrepareContractWriteConfig<typeof jbSplitsABI, TFunctionName>)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbSplitsABI}__ and `functionName` set to `"setSplitGroupsOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export function usePrepareJbSplitsSetSplitGroupsOf(
+  config: Omit<
+    UsePrepareContractWriteConfig<typeof jbSplitsABI, 'setSplitGroupsOf'>,
+    'abi' | 'address' | 'functionName'
+  > & { chainId?: keyof typeof jbSplitsAddress; address?: Address } = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: jbSplitsABI,
+    address: jbSplitsAddress[11155111],
+    functionName: 'setSplitGroupsOf',
+    ...config,
+  } as UsePrepareContractWriteConfig<typeof jbSplitsABI, 'setSplitGroupsOf'>)
+}
+
+/**
+ * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbSplitsABI}__.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export function useJbSplitsEvent<TEventName extends string>(
+  config: Omit<
+    UseContractEventConfig<typeof jbSplitsABI, TEventName>,
+    'abi' | 'address'
+  > & { chainId?: keyof typeof jbSplitsAddress; address?: Address } = {} as any,
+) {
+  return useContractEvent({
+    abi: jbSplitsABI,
+    address: jbSplitsAddress[11155111],
+    ...config,
+  } as UseContractEventConfig<typeof jbSplitsABI, TEventName>)
+}
+
+/**
+ * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbSplitsABI}__ and `eventName` set to `"SetSplit"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xCecE0DfB0b99460F20d4Fde242ec32F11074b374)
+ */
+export function useJbSplitsSetSplitEvent(
+  config: Omit<
+    UseContractEventConfig<typeof jbSplitsABI, 'SetSplit'>,
+    'abi' | 'address' | 'eventName'
+  > & { chainId?: keyof typeof jbSplitsAddress; address?: Address } = {} as any,
+) {
+  return useContractEvent({
+    abi: jbSplitsABI,
+    address: jbSplitsAddress[11155111],
+    eventName: 'SetSplit',
+    ...config,
+  } as UseContractEventConfig<typeof jbSplitsABI, 'SetSplit'>)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTerminalStoreABI}__.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreRead<
+  TFunctionName extends string,
+  TSelectData = ReadContractResult<typeof jbTerminalStoreABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof jbTerminalStoreABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'address'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return useContractRead({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    ...config,
+  } as UseContractReadConfig<
+    typeof jbTerminalStoreABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"DIRECTORY"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreDirectory<
+  TFunctionName extends 'DIRECTORY',
+  TSelectData = ReadContractResult<typeof jbTerminalStoreABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof jbTerminalStoreABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return useContractRead({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'DIRECTORY',
+    ...config,
+  } as UseContractReadConfig<
+    typeof jbTerminalStoreABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"PRICES"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStorePrices<
+  TFunctionName extends 'PRICES',
+  TSelectData = ReadContractResult<typeof jbTerminalStoreABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof jbTerminalStoreABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return useContractRead({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'PRICES',
+    ...config,
+  } as UseContractReadConfig<
+    typeof jbTerminalStoreABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"RULESETS"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreRulesets<
+  TFunctionName extends 'RULESETS',
+  TSelectData = ReadContractResult<typeof jbTerminalStoreABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof jbTerminalStoreABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return useContractRead({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'RULESETS',
+    ...config,
+  } as UseContractReadConfig<
+    typeof jbTerminalStoreABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"balanceOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreBalanceOf<
+  TFunctionName extends 'balanceOf',
+  TSelectData = ReadContractResult<typeof jbTerminalStoreABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof jbTerminalStoreABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return useContractRead({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'balanceOf',
+    ...config,
+  } as UseContractReadConfig<
+    typeof jbTerminalStoreABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"currentReclaimableSurplusOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreCurrentReclaimableSurplusOf<
+  TFunctionName extends 'currentReclaimableSurplusOf',
+  TSelectData = ReadContractResult<typeof jbTerminalStoreABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof jbTerminalStoreABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return useContractRead({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'currentReclaimableSurplusOf',
+    ...config,
+  } as UseContractReadConfig<
+    typeof jbTerminalStoreABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"currentSurplusOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreCurrentSurplusOf<
+  TFunctionName extends 'currentSurplusOf',
+  TSelectData = ReadContractResult<typeof jbTerminalStoreABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof jbTerminalStoreABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return useContractRead({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'currentSurplusOf',
+    ...config,
+  } as UseContractReadConfig<
+    typeof jbTerminalStoreABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"currentTotalSurplusOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreCurrentTotalSurplusOf<
+  TFunctionName extends 'currentTotalSurplusOf',
+  TSelectData = ReadContractResult<typeof jbTerminalStoreABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof jbTerminalStoreABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return useContractRead({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'currentTotalSurplusOf',
+    ...config,
+  } as UseContractReadConfig<
+    typeof jbTerminalStoreABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"usedPayoutLimitOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreUsedPayoutLimitOf<
+  TFunctionName extends 'usedPayoutLimitOf',
+  TSelectData = ReadContractResult<typeof jbTerminalStoreABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof jbTerminalStoreABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return useContractRead({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'usedPayoutLimitOf',
+    ...config,
+  } as UseContractReadConfig<
+    typeof jbTerminalStoreABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"usedSurplusAllowanceOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreUsedSurplusAllowanceOf<
+  TFunctionName extends 'usedSurplusAllowanceOf',
+  TSelectData = ReadContractResult<typeof jbTerminalStoreABI, TFunctionName>,
+>(
+  config: Omit<
+    UseContractReadConfig<
+      typeof jbTerminalStoreABI,
+      TFunctionName,
+      TSelectData
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return useContractRead({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'usedSurplusAllowanceOf',
+    ...config,
+  } as UseContractReadConfig<
+    typeof jbTerminalStoreABI,
+    TFunctionName,
+    TSelectData
+  >)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreWrite<
+  TFunctionName extends string,
+  TMode extends WriteContractMode = undefined,
+  TChainId extends number = keyof typeof jbTerminalStoreAddress,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof jbTerminalStoreABI,
+          string
+        >['request']['abi'],
+        TFunctionName,
+        TMode
+      > & { address?: Address; chainId?: TChainId }
+    : UseContractWriteConfig<
+        typeof jbTerminalStoreABI,
+        TFunctionName,
+        TMode
+      > & {
+        abi?: never
+        address?: never
+        chainId?: TChainId
+      } = {} as any,
+) {
+  return useContractWrite<typeof jbTerminalStoreABI, TFunctionName, TMode>({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordAddedBalanceFor"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreRecordAddedBalanceFor<
+  TMode extends WriteContractMode = undefined,
+  TChainId extends number = keyof typeof jbTerminalStoreAddress,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof jbTerminalStoreABI,
+          'recordAddedBalanceFor'
+        >['request']['abi'],
+        'recordAddedBalanceFor',
+        TMode
+      > & {
+        address?: Address
+        chainId?: TChainId
+        functionName?: 'recordAddedBalanceFor'
+      }
+    : UseContractWriteConfig<
+        typeof jbTerminalStoreABI,
+        'recordAddedBalanceFor',
+        TMode
+      > & {
+        abi?: never
+        address?: never
+        chainId?: TChainId
+        functionName?: 'recordAddedBalanceFor'
+      } = {} as any,
+) {
+  return useContractWrite<
+    typeof jbTerminalStoreABI,
+    'recordAddedBalanceFor',
+    TMode
+  >({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordAddedBalanceFor',
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordPaymentFrom"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreRecordPaymentFrom<
+  TMode extends WriteContractMode = undefined,
+  TChainId extends number = keyof typeof jbTerminalStoreAddress,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof jbTerminalStoreABI,
+          'recordPaymentFrom'
+        >['request']['abi'],
+        'recordPaymentFrom',
+        TMode
+      > & {
+        address?: Address
+        chainId?: TChainId
+        functionName?: 'recordPaymentFrom'
+      }
+    : UseContractWriteConfig<
+        typeof jbTerminalStoreABI,
+        'recordPaymentFrom',
+        TMode
+      > & {
+        abi?: never
+        address?: never
+        chainId?: TChainId
+        functionName?: 'recordPaymentFrom'
+      } = {} as any,
+) {
+  return useContractWrite<
+    typeof jbTerminalStoreABI,
+    'recordPaymentFrom',
+    TMode
+  >({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordPaymentFrom',
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordPayoutFor"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreRecordPayoutFor<
+  TMode extends WriteContractMode = undefined,
+  TChainId extends number = keyof typeof jbTerminalStoreAddress,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof jbTerminalStoreABI,
+          'recordPayoutFor'
+        >['request']['abi'],
+        'recordPayoutFor',
+        TMode
+      > & {
+        address?: Address
+        chainId?: TChainId
+        functionName?: 'recordPayoutFor'
+      }
+    : UseContractWriteConfig<
+        typeof jbTerminalStoreABI,
+        'recordPayoutFor',
+        TMode
+      > & {
+        abi?: never
+        address?: never
+        chainId?: TChainId
+        functionName?: 'recordPayoutFor'
+      } = {} as any,
+) {
+  return useContractWrite<typeof jbTerminalStoreABI, 'recordPayoutFor', TMode>({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordPayoutFor',
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordRedemptionFor"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreRecordRedemptionFor<
+  TMode extends WriteContractMode = undefined,
+  TChainId extends number = keyof typeof jbTerminalStoreAddress,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof jbTerminalStoreABI,
+          'recordRedemptionFor'
+        >['request']['abi'],
+        'recordRedemptionFor',
+        TMode
+      > & {
+        address?: Address
+        chainId?: TChainId
+        functionName?: 'recordRedemptionFor'
+      }
+    : UseContractWriteConfig<
+        typeof jbTerminalStoreABI,
+        'recordRedemptionFor',
+        TMode
+      > & {
+        abi?: never
+        address?: never
+        chainId?: TChainId
+        functionName?: 'recordRedemptionFor'
+      } = {} as any,
+) {
+  return useContractWrite<
+    typeof jbTerminalStoreABI,
+    'recordRedemptionFor',
+    TMode
+  >({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordRedemptionFor',
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordTerminalMigration"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreRecordTerminalMigration<
+  TMode extends WriteContractMode = undefined,
+  TChainId extends number = keyof typeof jbTerminalStoreAddress,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof jbTerminalStoreABI,
+          'recordTerminalMigration'
+        >['request']['abi'],
+        'recordTerminalMigration',
+        TMode
+      > & {
+        address?: Address
+        chainId?: TChainId
+        functionName?: 'recordTerminalMigration'
+      }
+    : UseContractWriteConfig<
+        typeof jbTerminalStoreABI,
+        'recordTerminalMigration',
+        TMode
+      > & {
+        abi?: never
+        address?: never
+        chainId?: TChainId
+        functionName?: 'recordTerminalMigration'
+      } = {} as any,
+) {
+  return useContractWrite<
+    typeof jbTerminalStoreABI,
+    'recordTerminalMigration',
+    TMode
+  >({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordTerminalMigration',
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordUsedAllowanceOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function useJbTerminalStoreRecordUsedAllowanceOf<
+  TMode extends WriteContractMode = undefined,
+  TChainId extends number = keyof typeof jbTerminalStoreAddress,
+>(
+  config: TMode extends 'prepared'
+    ? UseContractWriteConfig<
+        PrepareWriteContractResult<
+          typeof jbTerminalStoreABI,
+          'recordUsedAllowanceOf'
+        >['request']['abi'],
+        'recordUsedAllowanceOf',
+        TMode
+      > & {
+        address?: Address
+        chainId?: TChainId
+        functionName?: 'recordUsedAllowanceOf'
+      }
+    : UseContractWriteConfig<
+        typeof jbTerminalStoreABI,
+        'recordUsedAllowanceOf',
+        TMode
+      > & {
+        abi?: never
+        address?: never
+        chainId?: TChainId
+        functionName?: 'recordUsedAllowanceOf'
+      } = {} as any,
+) {
+  return useContractWrite<
+    typeof jbTerminalStoreABI,
+    'recordUsedAllowanceOf',
+    TMode
+  >({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordUsedAllowanceOf',
+    ...config,
+  } as any)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function usePrepareJbTerminalStoreWrite<TFunctionName extends string>(
+  config: Omit<
+    UsePrepareContractWriteConfig<typeof jbTerminalStoreABI, TFunctionName>,
+    'abi' | 'address'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    ...config,
+  } as UsePrepareContractWriteConfig<typeof jbTerminalStoreABI, TFunctionName>)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordAddedBalanceFor"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function usePrepareJbTerminalStoreRecordAddedBalanceFor(
+  config: Omit<
+    UsePrepareContractWriteConfig<
+      typeof jbTerminalStoreABI,
+      'recordAddedBalanceFor'
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordAddedBalanceFor',
+    ...config,
+  } as UsePrepareContractWriteConfig<
+    typeof jbTerminalStoreABI,
+    'recordAddedBalanceFor'
+  >)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordPaymentFrom"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function usePrepareJbTerminalStoreRecordPaymentFrom(
+  config: Omit<
+    UsePrepareContractWriteConfig<
+      typeof jbTerminalStoreABI,
+      'recordPaymentFrom'
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordPaymentFrom',
+    ...config,
+  } as UsePrepareContractWriteConfig<
+    typeof jbTerminalStoreABI,
+    'recordPaymentFrom'
+  >)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordPayoutFor"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function usePrepareJbTerminalStoreRecordPayoutFor(
+  config: Omit<
+    UsePrepareContractWriteConfig<typeof jbTerminalStoreABI, 'recordPayoutFor'>,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordPayoutFor',
+    ...config,
+  } as UsePrepareContractWriteConfig<
+    typeof jbTerminalStoreABI,
+    'recordPayoutFor'
+  >)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordRedemptionFor"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function usePrepareJbTerminalStoreRecordRedemptionFor(
+  config: Omit<
+    UsePrepareContractWriteConfig<
+      typeof jbTerminalStoreABI,
+      'recordRedemptionFor'
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordRedemptionFor',
+    ...config,
+  } as UsePrepareContractWriteConfig<
+    typeof jbTerminalStoreABI,
+    'recordRedemptionFor'
+  >)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordTerminalMigration"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function usePrepareJbTerminalStoreRecordTerminalMigration(
+  config: Omit<
+    UsePrepareContractWriteConfig<
+      typeof jbTerminalStoreABI,
+      'recordTerminalMigration'
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordTerminalMigration',
+    ...config,
+  } as UsePrepareContractWriteConfig<
+    typeof jbTerminalStoreABI,
+    'recordTerminalMigration'
+  >)
+}
+
+/**
+ * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTerminalStoreABI}__ and `functionName` set to `"recordUsedAllowanceOf"`.
+ *
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x6b2c93da6Af4061Eb6dAe4aCFc15632b54c37DE5)
+ */
+export function usePrepareJbTerminalStoreRecordUsedAllowanceOf(
+  config: Omit<
+    UsePrepareContractWriteConfig<
+      typeof jbTerminalStoreABI,
+      'recordUsedAllowanceOf'
+    >,
+    'abi' | 'address' | 'functionName'
+  > & {
+    chainId?: keyof typeof jbTerminalStoreAddress
+    address?: Address
+  } = {} as any,
+) {
+  return usePrepareContractWrite({
+    abi: jbTerminalStoreABI,
+    address: jbTerminalStoreAddress[11155111],
+    functionName: 'recordUsedAllowanceOf',
+    ...config,
+  } as UsePrepareContractWriteConfig<
+    typeof jbTerminalStoreABI,
+    'recordUsedAllowanceOf'
+  >)
+}
+
+/**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTokensABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensRead<
   TFunctionName extends string,
@@ -10852,7 +12513,7 @@ export function useJbTokensRead<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"DIRECTORY"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensDirectory<
   TFunctionName extends 'DIRECTORY',
@@ -10874,7 +12535,7 @@ export function useJbTokensDirectory<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"creditBalanceOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensCreditBalanceOf<
   TFunctionName extends 'creditBalanceOf',
@@ -10896,7 +12557,7 @@ export function useJbTokensCreditBalanceOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"projectIdOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensProjectIdOf<
   TFunctionName extends 'projectIdOf',
@@ -10918,7 +12579,7 @@ export function useJbTokensProjectIdOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"tokenOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensTokenOf<
   TFunctionName extends 'tokenOf',
@@ -10940,7 +12601,7 @@ export function useJbTokensTokenOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"totalBalanceOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensTotalBalanceOf<
   TFunctionName extends 'totalBalanceOf',
@@ -10962,7 +12623,7 @@ export function useJbTokensTotalBalanceOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"totalCreditSupplyOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensTotalCreditSupplyOf<
   TFunctionName extends 'totalCreditSupplyOf',
@@ -10984,7 +12645,7 @@ export function useJbTokensTotalCreditSupplyOf<
 /**
  * Wraps __{@link useContractRead}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"totalSupplyOf"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensTotalSupplyOf<
   TFunctionName extends 'totalSupplyOf',
@@ -11006,7 +12667,7 @@ export function useJbTokensTotalSupplyOf<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTokensABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensWrite<
   TFunctionName extends string,
@@ -11038,7 +12699,7 @@ export function useJbTokensWrite<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"burnFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensBurnFrom<
   TMode extends WriteContractMode = undefined,
@@ -11071,7 +12732,7 @@ export function useJbTokensBurnFrom<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"claimTokensFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensClaimTokensFor<
   TMode extends WriteContractMode = undefined,
@@ -11108,7 +12769,7 @@ export function useJbTokensClaimTokensFor<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"deployERC20For"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensDeployErc20For<
   TMode extends WriteContractMode = undefined,
@@ -11145,7 +12806,7 @@ export function useJbTokensDeployErc20For<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"mintFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensMintFor<
   TMode extends WriteContractMode = undefined,
@@ -11178,7 +12839,7 @@ export function useJbTokensMintFor<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"setTokenFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensSetTokenFor<
   TMode extends WriteContractMode = undefined,
@@ -11215,7 +12876,7 @@ export function useJbTokensSetTokenFor<
 /**
  * Wraps __{@link useContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"transferCreditsFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensTransferCreditsFrom<
   TMode extends WriteContractMode = undefined,
@@ -11256,7 +12917,7 @@ export function useJbTokensTransferCreditsFrom<
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTokensABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function usePrepareJbTokensWrite<TFunctionName extends string>(
   config: Omit<
@@ -11274,7 +12935,7 @@ export function usePrepareJbTokensWrite<TFunctionName extends string>(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"burnFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function usePrepareJbTokensBurnFrom(
   config: Omit<
@@ -11293,7 +12954,7 @@ export function usePrepareJbTokensBurnFrom(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"claimTokensFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function usePrepareJbTokensClaimTokensFor(
   config: Omit<
@@ -11312,7 +12973,7 @@ export function usePrepareJbTokensClaimTokensFor(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"deployERC20For"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function usePrepareJbTokensDeployErc20For(
   config: Omit<
@@ -11331,7 +12992,7 @@ export function usePrepareJbTokensDeployErc20For(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"mintFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function usePrepareJbTokensMintFor(
   config: Omit<
@@ -11350,7 +13011,7 @@ export function usePrepareJbTokensMintFor(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"setTokenFor"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function usePrepareJbTokensSetTokenFor(
   config: Omit<
@@ -11369,7 +13030,7 @@ export function usePrepareJbTokensSetTokenFor(
 /**
  * Wraps __{@link usePrepareContractWrite}__ with `abi` set to __{@link jbTokensABI}__ and `functionName` set to `"transferCreditsFrom"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function usePrepareJbTokensTransferCreditsFrom(
   config: Omit<
@@ -11388,7 +13049,7 @@ export function usePrepareJbTokensTransferCreditsFrom(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbTokensABI}__.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensEvent<TEventName extends string>(
   config: Omit<
@@ -11406,7 +13067,7 @@ export function useJbTokensEvent<TEventName extends string>(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbTokensABI}__ and `eventName` set to `"Burn"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensBurnEvent(
   config: Omit<
@@ -11425,7 +13086,7 @@ export function useJbTokensBurnEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbTokensABI}__ and `eventName` set to `"ClaimTokens"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensClaimTokensEvent(
   config: Omit<
@@ -11444,7 +13105,7 @@ export function useJbTokensClaimTokensEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbTokensABI}__ and `eventName` set to `"DeployERC20"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensDeployErc20Event(
   config: Omit<
@@ -11463,7 +13124,7 @@ export function useJbTokensDeployErc20Event(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbTokensABI}__ and `eventName` set to `"Mint"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensMintEvent(
   config: Omit<
@@ -11482,7 +13143,7 @@ export function useJbTokensMintEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbTokensABI}__ and `eventName` set to `"SetToken"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensSetTokenEvent(
   config: Omit<
@@ -11501,7 +13162,7 @@ export function useJbTokensSetTokenEvent(
 /**
  * Wraps __{@link useContractEvent}__ with `abi` set to __{@link jbTokensABI}__ and `eventName` set to `"TransferCredits"`.
  *
- * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xd63b3Fb10A8f43595f8313c85E984593504b7FA9)
+ * [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0xdb42B6D08755c3f09AdB8C35A19A558bc1b40C9b)
  */
 export function useJbTokensTransferCreditsEvent(
   config: Omit<

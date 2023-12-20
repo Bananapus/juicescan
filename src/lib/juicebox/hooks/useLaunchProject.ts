@@ -38,7 +38,7 @@ export function useLaunchProject() {
       ],
       [
         {
-          terminal: "0xa731EE2C4A8B513a481b6a916209aC8Ac64cab8F",
+          terminal: "0x4319cb152D46Db72857AfE368B19A4483c0Bff0D",
           tokensToAccept: [NATIVE_TOKEN],
         },
       ],

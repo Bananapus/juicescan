@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "pregenerate": "ts-node --project=tsconfig.json scripts/generateAddresses.ts",
     "generate": "patch-package && wagmi generate",
     "lint": "next lint"
   },
