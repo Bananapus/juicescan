@@ -235,7 +235,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium leading-6">Weight</dt>
               <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                {ruleset?.data.weight.val.toString()}
+                {ruleset?.data.weight.format()} TOKEN / {nativeTokenSymbol}
               </dd>
             </div>
             <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
