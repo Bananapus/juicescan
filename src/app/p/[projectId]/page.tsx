@@ -78,7 +78,7 @@ function useProject(projectId: bigint) {
 
   const { data: surplus } = useJbMultiTerminalCurrentSurplusOf({
     address: primaryTerminalAddress,
-    args: [projectId, 18n, 0n],
+    args: [projectId, 18n, BigInt(NATIVE_TOKEN)],
   });
 
   const { data: terminalStore } = useJbMultiTerminalStore({
