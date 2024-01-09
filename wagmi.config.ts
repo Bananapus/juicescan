@@ -1,7 +1,7 @@
 import { defineConfig } from "@wagmi/cli";
 import { etherscan, react } from "@wagmi/cli/plugins";
 import dotenv from "dotenv";
-import { sepolia } from "wagmi/chains";
+import { optimismSepolia, sepolia } from "wagmi/chains";
 import addresses from "./addresses.json";
 dotenv.config();
 
@@ -10,6 +10,8 @@ const juiceboxContracts = Object.keys(addresses).map((name) => {
     name,
     address: {
       [sepolia.id]: (addresses as any)[name].sepolia as `0x${string}`,
+      [optimismSepolia.id]: (addresses as any)[name]
+        .optimismSepolia as `0x${string}`,
     },
   };
 });

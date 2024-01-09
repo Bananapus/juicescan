@@ -27,7 +27,7 @@
     "react-query": "^3.39.3",
     "tailwind-merge": "^2.1.0",
     "tailwindcss-animate": "^1.0.7",
-    "viem": "~0.3.36",
+    "viem": "^1.0.0",
     "wagmi": "^1.0.6"
   },
   "devDependencies": {

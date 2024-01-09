@@ -1,8 +1,14 @@
-import { useJbControllerLaunchProjectFor } from "@/lib/juicebox/hooks/contract";
+import {
+  jbMultiTerminalAddress,
+  useJbControllerLaunchProjectFor,
+} from "@/lib/juicebox/hooks/contract";
 import { parseEther, zeroAddress } from "viem";
-import { NATIVE_TOKEN, SPLITS_TOTAL_PERCENT } from "../datatypes";
+import { optimismSepolia } from "viem/chains";
+import { sepolia, useNetwork } from "wagmi";
+import { NATIVE_TOKEN } from "../datatypes";
 
 export function useLaunchProject() {
+  const { chain } = useNetwork();
   const x = useJbControllerLaunchProjectFor({
     args: [
       "0x0028C35095D34C9C8a3bc84cB8542cB182fcfa8e",
@@ -52,7 +58,10 @@ export function useLaunchProject() {
       ],
       [
         {
-          terminal: "0x4319cb152D46Db72857AfE368B19A4483c0Bff0D",
+          terminal:
+            jbMultiTerminalAddress[
+              chain?.id as typeof sepolia.id | typeof optimismSepolia.id
+            ],
           tokensToAccept: [NATIVE_TOKEN],
         },
       ],
