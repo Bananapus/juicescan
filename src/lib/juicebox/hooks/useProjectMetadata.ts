@@ -13,6 +13,8 @@ export function useProjectMetadata({
   const chainId = useChainId();
   const publicClient = usePublicClient({ chainId });
 
+  console.log(chainId, publicClient, projectId, jbControllerAddress);
+
   return useQuery([projectId?.toString(), jbControllerAddress], async () => {
     if (!projectId || !jbControllerAddress) return null;
 
@@ -23,7 +25,7 @@ export function useProjectMetadata({
         jbControllerAddress,
       },
       {
-        ipfsGatewayHostname: "https://jbm.infura-ipfs.io",
+        ipfsGatewayHostname: "jbm.infura-ipfs.io",
       }
     );
 

@@ -7,7 +7,6 @@ import { useProjectMetadata } from "@/lib/juicebox/hooks/useProjectMetadata";
 import { NATIVE_TOKEN, SplitPortion } from "juice-sdk-core";
 import {
   JBProjectProvider,
-  JBTerminalContext,
   JBTerminalProvider,
   jbControllerABI,
   useJBContractContext,
@@ -15,14 +14,11 @@ import {
   useJBRulesetMetadata,
   useJBTerminalContext,
   useJbControllerPendingReservedTokenBalanceOf,
-  useJbDirectoryPrimaryTerminalOf,
   useJbMultiTerminalCurrentSurplusOf,
-  useJbMultiTerminalStore,
   useJbProjectsOwnerOf,
   useJbSplitsSplitsOf,
-  useJbTerminalStoreBalanceOf,
+  useJbTerminalStoreBalanceOf
 } from "juice-sdk-react";
-import { QueryClient, QueryClientProvider } from "react-query";
 import { formatUnits } from "viem";
 import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
@@ -300,15 +296,12 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
 }
 
 function Page({ params }: { params: { projectId: string } }) {
-  const queryClient = new QueryClient();
   const projectId = BigInt(params.projectId);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <JBProjectProvider projectId={projectId}>
-        <ProjectPage projectId={projectId} />
-      </JBProjectProvider>
-    </QueryClientProvider>
+    <JBProjectProvider projectId={projectId}>
+      <ProjectPage projectId={projectId} />
+    </JBProjectProvider>
   );
 }
 
