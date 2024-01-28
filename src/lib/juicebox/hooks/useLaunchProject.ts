@@ -1,18 +1,21 @@
+import { NATIVE_TOKEN } from "juice-sdk-core";
 import {
   jbMultiTerminalAddress,
   useJbControllerLaunchProjectFor,
-} from "@/lib/juicebox/hooks/contract";
+} from "juice-sdk-react";
 import { parseEther, zeroAddress } from "viem";
 import { optimismSepolia } from "viem/chains";
 import { sepolia, useNetwork } from "wagmi";
-import { NATIVE_TOKEN } from "../datatypes";
+
+const mockAddress = "0x0028C35095D34C9C8a3bc84cB8542cB182fcfa8e"; // aeolian, chasemcdude.eth
+const mockIpfsMetadata = "Qme7UdAovaq9N9SMtMKoTcAHazD7igPknVXojAQc244Jvi";
 
 export function useLaunchProject() {
   const { chain } = useNetwork();
   const x = useJbControllerLaunchProjectFor({
     args: [
-      "0x0028C35095D34C9C8a3bc84cB8542cB182fcfa8e",
-      "Qme7UdAovaq9N9SMtMKoTcAHazD7igPknVXojAQc244Jvi",
+      mockAddress,
+      mockIpfsMetadata,
       [
         {
           mustStartAtOrAfter: 1n,

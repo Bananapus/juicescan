@@ -2,18 +2,18 @@
 
 import { ConnectKitButton } from "@/components/ConnectKitButton";
 import { Button } from "@/components/ui/button";
+import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
+import { useProjectMetadata } from "@/lib/juicebox/hooks/useProjectMetadata";
+import { NATIVE_TOKEN, SplitPortion } from "juice-sdk-core";
 import {
-  DecayRate,
-  NATIVE_TOKEN,
-  RedemptionRate,
-  ReservedRate,
-  RulesetWeight,
-  SplitPortion,
-} from "@/lib/juicebox/datatypes";
-import {
+  JBProjectProvider,
+  JBTerminalContext,
+  JBTerminalProvider,
   jbControllerABI,
-  useJbControllerCurrentRulesetOf,
-  useJbControllerMetadataOf,
+  useJBContractContext,
+  useJBRuleset,
+  useJBRulesetMetadata,
+  useJBTerminalContext,
   useJbControllerPendingReservedTokenBalanceOf,
   useJbDirectoryPrimaryTerminalOf,
   useJbMultiTerminalCurrentSurplusOf,
@@ -21,10 +21,8 @@ import {
   useJbProjectsOwnerOf,
   useJbSplitsSplitsOf,
   useJbTerminalStoreBalanceOf,
-} from "@/lib/juicebox/hooks/contract";
-import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
-import axios from "axios";
-import { QueryClient, QueryClientProvider, useQuery } from "react-query";
+} from "juice-sdk-react";
+import { QueryClient, QueryClientProvider } from "react-query";
 import { formatUnits } from "viem";
 import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
@@ -65,53 +63,43 @@ function formatSeconds(totalSeconds: number) {
   return parts.join(", ");
 }
 
+function Balance({ projectId }: { projectId: bigint }) {
+  const { store, address } = useJBTerminalContext();
+  const { data: balance } = useJbTerminalStoreBalanceOf({
+    address: store?.data,
+    args: address ? [address, projectId, NATIVE_TOKEN] : undefined,
+  });
+  const nativeTokenSymbol = useNativeTokenSymbol();
+
+  return (
+    <>
+      {typeof balance !== "undefined" ? formatUnits(balance, 18) : null}{" "}
+      {nativeTokenSymbol}
+    </>
+  );
+}
+
 function useProject(projectId: bigint) {
+  const { contracts } = useJBContractContext();
+
+  const ruleset = useJBRuleset();
+  const rulesetMetadata = useJBRulesetMetadata();
+  const { data: primaryNativeTerminalAddress } =
+    contracts.primaryNativeTerminal;
+
+  const { data: surplus } = useJbMultiTerminalCurrentSurplusOf({
+    address: primaryNativeTerminalAddress,
+    args: [projectId, 18n, BigInt(NATIVE_TOKEN)],
+  });
   const { data: owner } = useJbProjectsOwnerOf({
     args: [projectId],
   });
-  const { data: metadataCid } = useJbControllerMetadataOf({
-    args: [projectId],
-  });
-  const { data: primaryTerminalAddress } = useJbDirectoryPrimaryTerminalOf({
-    args: [projectId, NATIVE_TOKEN],
-  });
-
-  const { data: surplus } = useJbMultiTerminalCurrentSurplusOf({
-    address: primaryTerminalAddress,
-    args: [projectId, 18n, BigInt(NATIVE_TOKEN)],
-  });
-
-  const { data: terminalStore } = useJbMultiTerminalStore({
-    address: primaryTerminalAddress,
-  });
-
-  const { data: balance } = useJbTerminalStoreBalanceOf({
-    address: terminalStore,
-    args: primaryTerminalAddress
-      ? [primaryTerminalAddress, projectId, NATIVE_TOKEN]
-      : undefined,
-  });
-
-  const { data: ruleset } = useJbControllerCurrentRulesetOf({
-    args: [projectId],
-    select([ruleset, rulesetMetadata]) {
-      return {
-        data: {
-          ...ruleset,
-          weight: new RulesetWeight(ruleset.weight),
-          decayRate: new DecayRate(ruleset.decayRate),
-        },
-        metadata: {
-          ...rulesetMetadata,
-          redemptionRate: new RedemptionRate(rulesetMetadata.redemptionRate),
-          reservedRate: new ReservedRate(rulesetMetadata.reservedRate),
-        },
-      };
-    },
-  });
 
   const { data: pendingReservedTokens } =
-    useJbControllerPendingReservedTokenBalanceOf({ args: [projectId] });
+    useJbControllerPendingReservedTokenBalanceOf({
+      address: contracts.controller.data,
+      args: [projectId],
+    });
 
   const { data: reservedTokenSplits } = useJbSplitsSplitsOf({
     args: ruleset?.data
@@ -125,26 +113,20 @@ function useProject(projectId: bigint) {
     },
   });
 
-  console.log(reservedTokenSplits);
-
-  const { data: projectMetadata } = useQuery(
-    ["metadata", metadataCid],
-    async () => {
-      const { data } = await axios.get(
-        `https://jbm.infura-ipfs.io/ipfs/${metadataCid}`
-      );
-      return data;
-    }
-  );
+  const { data: projectMetadata } = useProjectMetadata({
+    projectId,
+    jbControllerAddress: contracts.controller.data,
+  });
 
   return {
     pendingReservedTokens,
     reservedTokenSplits,
-    balance,
     surplus,
     projectMetadata,
     owner,
     ruleset,
+    rulesetMetadata,
+    primaryNativeTerminalAddress,
   };
 }
 
@@ -154,9 +136,10 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     owner,
     ruleset,
     projectMetadata,
+    rulesetMetadata,
     surplus,
-    balance,
     reservedTokenSplits,
+    primaryNativeTerminalAddress,
   } = useProject(projectId);
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
@@ -177,136 +160,142 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     "useDataHookForRedeem",
   ];
 
+  if (!primaryNativeTerminalAddress) return;
+
   return (
-    <main className="container mx-auto px-4">
-      <nav className="flex justify-between py-4">
-        <div>
-          <span>juice-v4</span>
-          <Button variant="link" onClick={() => write?.()}>
-            One-click launch
-          </Button>
+    <JBTerminalProvider address={primaryNativeTerminalAddress}>
+      <main className="container mx-auto px-4">
+        <nav className="flex justify-between py-4">
+          <div>
+            <span>juice-v4</span>
+            <Button variant="link" onClick={() => write?.()}>
+              One-click launch
+            </Button>
+          </div>
+          <ConnectKitButton />
+        </nav>
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold mb-1">{projectMetadata?.name}</h1>
+          <span className="text-zinc-400 text-sm">Owned by {owner}</span>
         </div>
-        <ConnectKitButton />
-      </nav>
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-1">{projectMetadata?.name}</h1>
-        <span className="text-zinc-400 text-sm">Owned by {owner}</span>
-      </div>
 
-      <div className="grid grid-cols-5 gap-16">
-        <div className="col-span-3">
-          <h2 className="font-bold mb-2">Treasury</h2>
-          <dl className="divide-y divide-gray-100 mb-12">
-            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-              <dt className="text-sm font-medium leading-6">Balance</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                {typeof balance !== "undefined"
-                  ? formatUnits(balance, 18)
-                  : null}{" "}
-                {nativeTokenSymbol}
-              </dd>
-            </div>
-            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-              <dt className="text-sm font-medium leading-6">Surplus</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                {typeof surplus !== "undefined"
-                  ? formatUnits(surplus, 18)
-                  : null}{" "}
-                {nativeTokenSymbol}
-              </dd>
-            </div>
-          </dl>
-
-          <h2 className="font-bold mb-2">Ruleset</h2>
-
-          <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
-            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-              <dt className="text-sm font-medium leading-6">Base currency</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                {Number(ruleset?.metadata.baseCurrency ?? -1)}
-              </dd>
-            </div>
-            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-              <dt className="text-sm font-medium leading-6">Duration</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                {formatSeconds(Number(ruleset?.data.duration ?? 0))}
-              </dd>
-            </div>
-            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-              <dt className="text-sm font-medium leading-6">Weight</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                {ruleset?.data.weight.format()} TOKEN / {nativeTokenSymbol}
-              </dd>
-            </div>
-            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-              <dt className="text-sm font-medium leading-6">Decay rate</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                {ruleset?.data.decayRate.format()}%
-              </dd>
-            </div>
-            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-              <dt className="text-sm font-medium leading-6">Redemption rate</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                {ruleset?.metadata.redemptionRate.formatPercentage()}%
-              </dd>
-            </div>
-
-            {boolProps.map((prop) => (
-              <div
-                className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4"
-                key={prop}
-              >
-                <dt className="text-sm font-medium leading-6">{prop}</dt>
+        <div className="grid grid-cols-5 gap-16">
+          <div className="col-span-3">
+            <h2 className="font-bold mb-2">Treasury</h2>
+            <dl className="divide-y divide-gray-100 mb-12">
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Balance</dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {ruleset?.metadata[prop] ? "true" : "false"}
+                  <Balance projectId={projectId} />
                 </dd>
               </div>
-            ))}
-          </dl>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Surplus</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {typeof surplus !== "undefined"
+                    ? formatUnits(surplus, 18)
+                    : null}{" "}
+                  {nativeTokenSymbol}
+                </dd>
+              </div>
+            </dl>
 
-          <h2 className="font-bold mb-2">Reserved tokens</h2>
-          <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
-            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-              <dt className="text-sm font-medium leading-6">Reserved rate</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                {ruleset?.metadata.reservedRate.formatPercentage()}%
-              </dd>
-            </div>
-            <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-              <dt className="text-sm font-medium leading-6">Tokens reserved</dt>
-              <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                {typeof pendingReservedTokens !== "undefined"
-                  ? formatUnits(pendingReservedTokens, 18)
-                  : null}
-              </dd>
-            </div>
-          </dl>
-          <h3>Reserved list</h3>
-          <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
-            {reservedTokenSplits?.map((split, idx) => (
-              <div
-                className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4"
-                key={idx}
-              >
+            <h2 className="font-bold mb-2">Ruleset</h2>
+
+            <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Base currency</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {Number(rulesetMetadata?.data?.baseCurrency ?? -1)}
+                </dd>
+              </div>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Duration</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {formatSeconds(Number(ruleset?.data?.duration ?? 0))}
+                </dd>
+              </div>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Weight</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {ruleset?.data?.weight.format()} TOKEN / {nativeTokenSymbol}
+                </dd>
+              </div>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Decay rate</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {ruleset?.data?.decayRate.format()}%
+                </dd>
+              </div>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
                 <dt className="text-sm font-medium leading-6">
-                  {split.beneficiary}
+                  Redemption rate
                 </dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {split.percent.formatPercentage()}%
+                  {rulesetMetadata?.data?.redemptionRate.formatPercentage()}%
                 </dd>
               </div>
-            ))}
-          </dl>
-        </div>
-        <div className="col-span-2">
-          {/* card */}
-          <div className="bg-zinc-800 rounded-lg shadow-lg p-6 mb-6">
-            <h2 className="font-bold mb-2">Pay</h2>
-            <PayForm projectId={projectId} />
+
+              {boolProps.map((prop) => (
+                <div
+                  className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4"
+                  key={prop}
+                >
+                  <dt className="text-sm font-medium leading-6">{prop}</dt>
+                  <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                    {rulesetMetadata?.data?.[prop] ? "true" : "false"}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+
+            <h2 className="font-bold mb-2">Reserved tokens</h2>
+            <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Reserved rate</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {rulesetMetadata?.data?.reservedRate.formatPercentage()}%
+                </dd>
+              </div>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">
+                  Tokens reserved
+                </dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {typeof pendingReservedTokens !== "undefined"
+                    ? formatUnits(pendingReservedTokens, 18)
+                    : null}
+                </dd>
+              </div>
+            </dl>
+            <h3>Reserved list</h3>
+            <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+              {reservedTokenSplits?.map((split, idx) => (
+                <div
+                  className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4"
+                  key={idx}
+                >
+                  <dt className="text-sm font-medium leading-6">
+                    {split.beneficiary}
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                    {split.percent.formatPercentage()}%
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+          <div className="col-span-2">
+            {/* card */}
+            <div className="bg-zinc-800 rounded-lg shadow-lg p-6 mb-6">
+              <h2 className="font-bold mb-2">Pay</h2>
+
+              <PayForm projectId={projectId} />
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </JBTerminalProvider>
   );
 }
 
@@ -316,7 +305,9 @@ function Page({ params }: { params: { projectId: string } }) {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ProjectPage projectId={projectId} />
+      <JBProjectProvider projectId={projectId}>
+        <ProjectPage projectId={projectId} />
+      </JBProjectProvider>
     </QueryClientProvider>
   );
 }

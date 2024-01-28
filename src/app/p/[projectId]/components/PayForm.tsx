@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { NATIVE_TOKEN } from "@/lib/juicebox/datatypes";
-import { useJbMultiTerminalPay } from "@/lib/juicebox/hooks/contract";
 import { parseUnits } from "viem";
 import { useAccount } from "wagmi";
 import { useNativeTokenSymbol } from "../hooks/useNativeTokenSymbol";
+import { useJBTerminalContext, useJbMultiTerminalPay } from "juice-sdk-react";
+import { NATIVE_TOKEN } from "juice-sdk-core";
 
 export function PayForm({ projectId }: { projectId: bigint }) {
+  const { address: terminalAddress } = useJBTerminalContext();
   const nativeTokenSymbol = useNativeTokenSymbol();
   const { address } = useAccount();
 
@@ -27,7 +28,7 @@ export function PayForm({ projectId }: { projectId: bigint }) {
         value,
         address,
         0n,
-        "payed on jbv4.vercel.app",
+        "payed on juicescan.io",
         "0x0",
       ]
     : undefined;
@@ -35,7 +36,7 @@ export function PayForm({ projectId }: { projectId: bigint }) {
   console.log("payargs", args);
 
   const { write } = useJbMultiTerminalPay({
-    // address: todo
+    address: terminalAddress,
     args: address
       ? [
           projectId,
@@ -43,7 +44,7 @@ export function PayForm({ projectId }: { projectId: bigint }) {
           value,
           address,
           0n,
-          "payed on jbv4.vercel.app",
+          "payed on juicescan.io",
           "0x0",
         ]
       : undefined,
