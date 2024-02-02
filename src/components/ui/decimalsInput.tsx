@@ -8,14 +8,12 @@ interface DecimalsInputProps extends Omit<InputProps, "onChange" | "value"> {
 }
 
 const DecimalsInput: React.FC<DecimalsInputProps> = ({ value, onChange, decimals = 18, ...props }) => {
-  const decimalRegex = new RegExp(`^-?\\d*\\.?\\d{0,${decimals}}$`);
+  const decimalsRegex = new RegExp(`^\\d*\\.?\\d{0,${decimals}}$`);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = event.target.value;
-    if (decimalRegex.test(newValue)) {
+    if (newValue === "" || decimalsRegex.test(newValue)) {
       onChange(newValue);
-    } else if (newValue === "") {
-      onChange("0");      
     } else {
       console.error("Rejected invalid input: ", newValue);
     }
