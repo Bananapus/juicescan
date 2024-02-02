@@ -8,7 +8,7 @@ import DecimalsInput from "@/components/ui/decimalsInput";
 import { useState } from "react";
 
 export function PayForm({ projectId }: { projectId: bigint }) {
-  const [value, setValue] = useState("0.069");
+  const [value, setValue] = useState("0");
 
   const { address: terminalAddress } = useJBTerminalContext();
   const nativeTokenSymbol = useNativeTokenSymbol();
