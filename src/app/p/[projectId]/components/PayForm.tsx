@@ -4,11 +4,17 @@ import { useAccount } from "wagmi";
 import { useNativeTokenSymbol } from "../hooks/useNativeTokenSymbol";
 import { useJBTerminalContext, useJbMultiTerminalPay } from "juice-sdk-react";
 import { NATIVE_TOKEN } from "juice-sdk-core";
+import DecimalsInput from "@/components/ui/decimalsInput";
+import { useState } from "react";
 
 export function PayForm({ projectId }: { projectId: bigint }) {
+  const [value, setValue] = useState("0.069");
+
   const { address: terminalAddress } = useJBTerminalContext();
   const nativeTokenSymbol = useNativeTokenSymbol();
   const { address } = useAccount();
+  
+  const decimals = 18;
 
   /**
    *    uint256 projectId,
@@ -19,16 +25,15 @@ export function PayForm({ projectId }: { projectId: bigint }) {
         string calldata memo,
         bytes calldata metadata
    */
-  const value = parseUnits("0.069", 18);
 
   const args = address
     ? [
         projectId,
         NATIVE_TOKEN,
-        value,
+        value ? parseUnits(value, decimals) : 0n,
         address,
         0n,
-        "payed on juicescan.io",
+        "paid on juicescan.io",
         "0x0",
       ]
     : undefined;
@@ -41,20 +46,21 @@ export function PayForm({ projectId }: { projectId: bigint }) {
       ? [
           projectId,
           NATIVE_TOKEN,
-          value,
+          value ? parseUnits(value, decimals) : 0n,
           address,
           0n,
-          "payed on juicescan.io",
+          "paid on juicescan.io",
           "0x0",
         ]
       : undefined,
-    value,
+    value: value ? parseUnits(value, decimals) : 0n,
   });
 
   return (
-    <div>
+    <div className="flex flex-col gap-2">
+      <DecimalsInput value={value} onChange={setValue} size="lg"/>
       <Button size="lg" className="w-full" onClick={() => write?.()}>
-        Pay 0.069 {nativeTokenSymbol}
+        Pay {value ? value : "0"} {nativeTokenSymbol}
       </Button>
     </div>
   );
