@@ -1,6 +1,7 @@
 "use client";
 
 import { ConnectKitButton } from "@/components/ConnectKitButton";
+import EtherscanLink from "@/components/EtherscanLink";
 import { Button } from "@/components/ui/button";
 import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
 import { useProjectMetadata } from "@/lib/juicebox/hooks/useProjectMetadata";
@@ -17,12 +18,14 @@ import {
   useJbMultiTerminalCurrentSurplusOf,
   useJbProjectsOwnerOf,
   useJbSplitsSplitsOf,
-  useJbTerminalStoreBalanceOf
+  useJbTerminalStoreBalanceOf,
 } from "juice-sdk-react";
+import Link from "next/link";
 import { formatUnits } from "viem";
 import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
 import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
+import Image from "next/image";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
 
@@ -62,7 +65,7 @@ function formatSeconds(totalSeconds: number) {
 function Balance({ projectId }: { projectId: bigint }) {
   const { store, address } = useJBTerminalContext();
   const { data: balance } = useJbTerminalStoreBalanceOf({
-    address: store?.data,
+    address: store?.data ?? undefined,
     args: address ? [address, projectId, NATIVE_TOKEN] : undefined,
   });
   const nativeTokenSymbol = useNativeTokenSymbol();
@@ -84,7 +87,7 @@ function useProject(projectId: bigint) {
     contracts.primaryNativeTerminal;
 
   const { data: surplus } = useJbMultiTerminalCurrentSurplusOf({
-    address: primaryNativeTerminalAddress,
+    address: primaryNativeTerminalAddress ?? undefined,
     args: [projectId, 18n, BigInt(NATIVE_TOKEN)],
   });
   const { data: owner } = useJbProjectsOwnerOf({
@@ -93,7 +96,7 @@ function useProject(projectId: bigint) {
 
   const { data: pendingReservedTokens } =
     useJbControllerPendingReservedTokenBalanceOf({
-      address: contracts.controller.data,
+      address: contracts.controller.data ?? undefined,
       args: [projectId],
     });
 
@@ -111,7 +114,7 @@ function useProject(projectId: bigint) {
 
   const { data: projectMetadata } = useProjectMetadata({
     projectId,
-    jbControllerAddress: contracts.controller.data,
+    jbControllerAddress: contracts.controller.data ?? undefined,
   });
 
   return {
@@ -137,6 +140,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     reservedTokenSplits,
     primaryNativeTerminalAddress,
   } = useProject(projectId);
+
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
 
@@ -163,7 +167,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
       <main className="container mx-auto px-4">
         <nav className="flex justify-between py-4">
           <div>
-            <span>juice-v4</span>
+            <Link href="/">juicescan.io</Link>
             <Button variant="link" onClick={() => write?.()}>
               One-click launch
             </Button>
@@ -172,7 +176,14 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
         </nav>
         <div className="mb-8">
           <h1 className="text-3xl font-bold mb-1">{projectMetadata?.name}</h1>
-          <span className="text-zinc-400 text-sm">Owned by {owner}</span>
+          {owner ? (
+            <span className="text-zinc-400 text-sm">
+              Owned by{" "}
+              <EtherscanLink value={owner} type="address">
+                {owner}
+              </EtherscanLink>
+            </span>
+          ) : null}
         </div>
 
         <div className="grid grid-cols-5 gap-16">
@@ -284,7 +295,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
           <div className="col-span-2">
             {/* card */}
             <div className="bg-zinc-800 rounded-lg shadow-lg p-6 mb-6">
-              <h2 className="font-bold mb-2">Pay</h2>
+              <h2 className="font-bold mb-2">Pay {nativeTokenSymbol}</h2>
 
               <PayForm projectId={projectId} />
             </div>

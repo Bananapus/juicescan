@@ -23548,22 +23548,6 @@
         "description": null,
         "fields": [
           {
-            "name": "allocator",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Bytes",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "beneficiary",
             "description": null,
             "args": [],
@@ -23676,7 +23660,7 @@
             "deprecationReason": null
           },
           {
-            "name": "preferClaimed",
+            "name": "preferAddToBalance",
             "description": null,
             "args": [],
             "type": {
@@ -23806,142 +23790,6 @@
               "kind": "INPUT_OBJECT",
               "name": "BlockChangedFilter",
               "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "allocator",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "Bytes",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "allocator_contains",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "Bytes",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "allocator_gt",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "Bytes",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "allocator_gte",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "Bytes",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "allocator_in",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Bytes",
-                  "ofType": null
-                }
-              }
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "allocator_lt",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "Bytes",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "allocator_lte",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "Bytes",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "allocator_not",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "Bytes",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "allocator_not_contains",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "Bytes",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "allocator_not_in",
-            "description": null,
-            "type": {
-              "kind": "LIST",
-              "name": null,
-              "ofType": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "Bytes",
-                  "ofType": null
-                }
-              }
             },
             "defaultValue": null,
             "isDeprecated": false,
@@ -24992,7 +24840,7 @@
             "deprecationReason": null
           },
           {
-            "name": "preferClaimed",
+            "name": "preferAddToBalance",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -25004,7 +24852,7 @@
             "deprecationReason": null
           },
           {
-            "name": "preferClaimed_in",
+            "name": "preferAddToBalance_in",
             "description": null,
             "type": {
               "kind": "LIST",
@@ -25024,7 +24872,7 @@
             "deprecationReason": null
           },
           {
-            "name": "preferClaimed_not",
+            "name": "preferAddToBalance_not",
             "description": null,
             "type": {
               "kind": "SCALAR",
@@ -25036,7 +24884,7 @@
             "deprecationReason": null
           },
           {
-            "name": "preferClaimed_not_in",
+            "name": "preferAddToBalance_not_in",
             "description": null,
             "type": {
               "kind": "LIST",
@@ -25921,12 +25769,6 @@
         "interfaces": null,
         "enumValues": [
           {
-            "name": "allocator",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "beneficiary",
             "description": null,
             "isDeprecated": false,
@@ -26035,7 +25877,7 @@
             "deprecationReason": null
           },
           {
-            "name": "preferClaimed",
+            "name": "preferAddToBalance",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -68284,12 +68126,6 @@
             "deprecationReason": null
           },
           {
-            "name": "distributeToReservedTokenSplitEvent__allocator",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "distributeToReservedTokenSplitEvent__beneficiary",
             "description": null,
             "isDeprecated": false,
@@ -68326,7 +68162,7 @@
             "deprecationReason": null
           },
           {
-            "name": "distributeToReservedTokenSplitEvent__preferClaimed",
+            "name": "distributeToReservedTokenSplitEvent__preferAddToBalance",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null

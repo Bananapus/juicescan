@@ -13,8 +13,6 @@ export function useProjectMetadata({
   const chainId = useChainId();
   const publicClient = usePublicClient({ chainId });
 
-  console.log(chainId, publicClient, projectId, jbControllerAddress);
-
   return useQuery([projectId?.toString(), jbControllerAddress], async () => {
     if (!projectId || !jbControllerAddress) return null;
 

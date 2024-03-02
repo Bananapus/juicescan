@@ -1,6 +1,11 @@
 "use client";
 
-import { ProjectsQuery, useProjectsQuery } from "@/generated/graphql";
+import {
+  OrderDirection,
+  Project_OrderBy,
+  ProjectsQuery,
+  useProjectsQuery,
+} from "@/generated/graphql";
 import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
 import { useProjectMetadata } from "@/lib/juicebox/hooks/useProjectMetadata";
 import { useJbDirectoryControllerOf } from "juice-sdk-react";
@@ -32,11 +37,16 @@ function ProjectRow({ project }: { project: ProjectsQuery["projects"][0] }) {
 
 function Page() {
   const { write } = useLaunchProject();
-  const projects = useProjectsQuery();
+  const projects = useProjectsQuery({
+    variables: {
+      orderBy: Project_OrderBy.projectId,
+      orderDirection: OrderDirection.asc,
+    },
+  });
 
   return (
     <main className="container mx-auto px-4 py-10">
-      <h1 className="text-4xl mb-6">juicescan</h1>
+      <h1 className="text-4xl mb-6">juicescan.io</h1>
 
       <div className="border border-zinc-800 rounded-md">
         <div className="py-2 px-4 bg-zinc-900 flex justify-between">

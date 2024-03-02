@@ -10,7 +10,7 @@ const inputVariants = cva(
     variants: {
       variant: {
         // Leaving room for more variants later on.
-        default: "border border-zinc-800 bg-gray-100 text-zinc-800",
+        default: "border border-zinc-600 bg-zinc-700 text-white",
       },
       size: {
         default: "py-2 px-3",
