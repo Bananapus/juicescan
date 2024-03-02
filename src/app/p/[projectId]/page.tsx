@@ -1,6 +1,7 @@
 "use client";
 
 import { ConnectKitButton } from "@/components/ConnectKitButton";
+import EtherscanLink from "@/components/EtherscanLink";
 import { Button } from "@/components/ui/button";
 import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
 import { useProjectMetadata } from "@/lib/juicebox/hooks/useProjectMetadata";
@@ -19,12 +20,11 @@ import {
   useJbSplitsSplitsOf,
   useJbTerminalStoreBalanceOf,
 } from "juice-sdk-react";
+import Link from "next/link";
 import { formatUnits } from "viem";
 import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
 import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
-import Link from "next/link";
-import EtherscanLink from "@/components/EtherscanLink";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
 
@@ -139,6 +139,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     reservedTokenSplits,
     primaryNativeTerminalAddress,
   } = useProject(projectId);
+
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
 
