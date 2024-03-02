@@ -44,7 +44,7 @@ function createMockDeployData(chain: Chain | undefined) {
             groupId: 1n,
             splits: [
               {
-                beneficiary: "0x0028C35095D34C9C8a3bc84cB8542cB182fcfa8e",
+                beneficiary: mockAddress,
                 percent: 512300000n, // 51.23%
                 preferAddToBalance: false,
                 lockedUntil: 0n,

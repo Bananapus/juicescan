@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import DecimalsInput from "@/components/ui/decimalsInput";
-import { NATIVE_TOKEN } from "juice-sdk-core";
+import { DEFAULT_METADATA, NATIVE_TOKEN } from "juice-sdk-core";
 import { useJBTerminalContext, useJbMultiTerminalPay } from "juice-sdk-react";
 import { useState } from "react";
 import { parseUnits } from "viem";
@@ -25,30 +25,20 @@ export function PayForm({ projectId }: { projectId: bigint }) {
    */
 
   const args = address
-    ? [
+    ? ([
         projectId,
         NATIVE_TOKEN,
         value ? parseUnits(value, decimals) : 0n,
         address,
         0n,
         "paid on juicescan.io",
-        "0x0",
-      ]
+        DEFAULT_METADATA,
+      ] as const)
     : undefined;
 
   const { write } = useJbMultiTerminalPay({
     address: terminalAddress,
-    args: address
-      ? [
-          projectId,
-          NATIVE_TOKEN,
-          value ? parseUnits(value, decimals) : 0n,
-          address,
-          0n,
-          "paid on juicescan.io",
-          "0x0",
-        ]
-      : undefined,
+    args,
     value: value ? parseUnits(value, decimals) : 0n,
   });
 
