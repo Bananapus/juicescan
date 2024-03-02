@@ -25,6 +25,7 @@ import { formatUnits } from "viem";
 import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
 import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
+import Image from "next/image";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
 
