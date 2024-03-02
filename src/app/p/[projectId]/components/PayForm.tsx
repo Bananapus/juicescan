@@ -36,8 +36,6 @@ export function PayForm({ projectId }: { projectId: bigint }) {
       ]
     : undefined;
 
-  console.log("payargs", args);
-
   const { write } = useJbMultiTerminalPay({
     address: terminalAddress,
     args: address

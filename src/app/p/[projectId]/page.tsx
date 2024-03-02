@@ -24,6 +24,7 @@ import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
 import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
 import Link from "next/link";
+import EtherscanLink from "@/components/EtherscanLink";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
 
@@ -174,7 +175,12 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
         <div className="mb-8">
           <h1 className="text-3xl font-bold mb-1">{projectMetadata?.name}</h1>
           {owner ? (
-            <span className="text-zinc-400 text-sm">Owned by {owner}</span>
+            <span className="text-zinc-400 text-sm">
+              Owned by{" "}
+              <EtherscanLink value={owner} type="address">
+                {owner}
+              </EtherscanLink>
+            </span>
           ) : null}
         </div>
 
