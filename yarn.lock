@@ -5156,21 +5156,29 @@ jsonparse@^1.2.0:
     object.assign "^4.1.4"
     object.values "^1.1.6"
 
-juice-sdk-core@^2.0.7-alpha:
-  version "2.0.7-alpha"
-  resolved "https://registry.yarnpkg.com/juice-sdk-core/-/juice-sdk-core-2.0.7-alpha.tgz#59634dc7bccbc6797aa5fbc6c10989475fcb4845"
-  integrity sha512-hleKHS5AdUK1uOOyt3CqPRqypmLFC/usEytZi/4VQIBzbBnz2B1IX7wpVXlkYuPGyvOdA7KmRy9JlfITUoGBaA==
+juice-sdk-core@^2.0.11-alpha:
+  version "2.0.11-alpha"
+  resolved "https://registry.yarnpkg.com/juice-sdk-core/-/juice-sdk-core-2.0.11-alpha.tgz#1934e712610588f9c751869f158156064ee98412"
+  integrity sha512-nJHhwh0nzqikWkkR9sxou29tpej+mJIkmj0srEhUAOKi857phI32ofz++SHV05Yh1BjvdGBD4nemrRRLV0PU7Q==
   dependencies:
     bs58 "^5.0.0"
     fpnum "^0.0.16"
 
-juice-sdk-react@^0.0.4-alpha:
-  version "0.0.4-alpha"
-  resolved "https://registry.yarnpkg.com/juice-sdk-react/-/juice-sdk-react-0.0.4-alpha.tgz#b64f035aa17fe7ed1495a0a11c723b46b438f143"
-  integrity sha512-xTpn0Lt7MX/whZD3x72WQrNsVCK5BkiU+sThOXu+v9SK0vNV65oC4Op6yVO5099MVpAaG82LQIRlDX6OVIpBfg==
+juice-sdk-core@^2.0.12-alpha:
+  version "2.0.12-alpha"
+  resolved "https://registry.yarnpkg.com/juice-sdk-core/-/juice-sdk-core-2.0.12-alpha.tgz#356d2aa4f25552a4b9f192f006d20178f9d1d227"
+  integrity sha512-flBUzwqZKGdwAVc6JhVE7CGdn4HCjBHUl/awpEYr9OxqIMKU8QX1OoP04i/AKljZ2SmSEQjJ4G7insYDjgtmcQ==
+  dependencies:
+    bs58 "^5.0.0"
+    fpnum "^0.0.16"
+
+juice-sdk-react@^0.0.13-alpha:
+  version "0.0.13-alpha"
+  resolved "https://registry.yarnpkg.com/juice-sdk-react/-/juice-sdk-react-0.0.13-alpha.tgz#eacd10a68f9c734d84112abec514138b4b387701"
+  integrity sha512-RP9vT7qLezYUC+JlW3p7eRW8LDXTKGk+4eDgOx2r/tVcZvR70vvHg+Zw3WPSmCuTnbYwfG6lB9ajNZfueTQSOQ==
   dependencies:
     fpnum "^0.0.16"
-    juice-sdk-core "^2.0.7-alpha"
+    juice-sdk-core "^2.0.11-alpha"
 
 keccak@^3.0.1:
   version "3.0.4"
@@ -6263,6 +6271,11 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-is@^18.2.0:
+  version "18.2.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
+  integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
 react-query@^3.39.3:
   version "3.39.3"
   resolved "https://registry.yarnpkg.com/react-query/-/react-query-3.39.3.tgz#4cea7127c6c26bdea2de5fb63e51044330b03f35"
@@ -7345,6 +7358,20 @@ viem@^1.0.0:
   version "1.20.1"
   resolved "https://registry.yarnpkg.com/viem/-/viem-1.20.1.tgz#ea92f9bab2fded4be556be4d4be724805d11780e"
   integrity sha512-PaYyfuCVkNFzdaVoV8HefMIt5YtjIG6UPqxOz0rYchN52cD05YcRJlO0h/XrehQfo8ib2RSOkZ0ChJ6Adlh1Jg==
+  dependencies:
+    "@adraffy/ens-normalize" "1.10.0"
+    "@noble/curves" "1.2.0"
+    "@noble/hashes" "1.3.2"
+    "@scure/bip32" "1.3.2"
+    "@scure/bip39" "1.2.1"
+    abitype "0.9.8"
+    isows "1.0.3"
+    ws "8.13.0"
+
+viem@^1.21.4:
+  version "1.21.4"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-1.21.4.tgz#883760e9222540a5a7e0339809202b45fe6a842d"
+  integrity sha512-BNVYdSaUjeS2zKQgPs+49e5JKocfo60Ib2yiXOWBT6LuVxY1I/6fFX3waEtpXvL1Xn4qu+BVitVtMh9lyThyhQ==
   dependencies:
     "@adraffy/ens-normalize" "1.10.0"
     "@noble/curves" "1.2.0"

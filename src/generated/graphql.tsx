@@ -2047,7 +2047,6 @@ export enum DistributeToPayoutSplitEvent_OrderBy {
 }
 
 export type DistributeToReservedTokenSplitEvent = {
-  allocator: Scalars['Bytes']['output'];
   beneficiary: Scalars['Bytes']['output'];
   caller: Scalars['Bytes']['output'];
   distributeReservedTokensEvent: DistributeReservedTokensEvent;
@@ -2055,7 +2054,7 @@ export type DistributeToReservedTokenSplitEvent = {
   id: Scalars['ID']['output'];
   lockedUntil: Scalars['Int']['output'];
   percent: Scalars['Int']['output'];
-  preferClaimed: Scalars['Boolean']['output'];
+  preferAddToBalance: Scalars['Boolean']['output'];
   project: Project;
   projectId: Scalars['Int']['output'];
   splitProjectId: Scalars['Int']['output'];
@@ -2067,16 +2066,6 @@ export type DistributeToReservedTokenSplitEvent = {
 export type DistributeToReservedTokenSplitEvent_Filter = {
   /** Filter for the block changed event. */
   _change_block?: InputMaybe<BlockChangedFilter>;
-  allocator?: InputMaybe<Scalars['Bytes']['input']>;
-  allocator_contains?: InputMaybe<Scalars['Bytes']['input']>;
-  allocator_gt?: InputMaybe<Scalars['Bytes']['input']>;
-  allocator_gte?: InputMaybe<Scalars['Bytes']['input']>;
-  allocator_in?: InputMaybe<Array<Scalars['Bytes']['input']>>;
-  allocator_lt?: InputMaybe<Scalars['Bytes']['input']>;
-  allocator_lte?: InputMaybe<Scalars['Bytes']['input']>;
-  allocator_not?: InputMaybe<Scalars['Bytes']['input']>;
-  allocator_not_contains?: InputMaybe<Scalars['Bytes']['input']>;
-  allocator_not_in?: InputMaybe<Array<Scalars['Bytes']['input']>>;
   and?: InputMaybe<Array<InputMaybe<DistributeToReservedTokenSplitEvent_Filter>>>;
   beneficiary?: InputMaybe<Scalars['Bytes']['input']>;
   beneficiary_contains?: InputMaybe<Scalars['Bytes']['input']>;
@@ -2154,10 +2143,10 @@ export type DistributeToReservedTokenSplitEvent_Filter = {
   percent_lte?: InputMaybe<Scalars['Int']['input']>;
   percent_not?: InputMaybe<Scalars['Int']['input']>;
   percent_not_in?: InputMaybe<Array<Scalars['Int']['input']>>;
-  preferClaimed?: InputMaybe<Scalars['Boolean']['input']>;
-  preferClaimed_in?: InputMaybe<Array<Scalars['Boolean']['input']>>;
-  preferClaimed_not?: InputMaybe<Scalars['Boolean']['input']>;
-  preferClaimed_not_in?: InputMaybe<Array<Scalars['Boolean']['input']>>;
+  preferAddToBalance?: InputMaybe<Scalars['Boolean']['input']>;
+  preferAddToBalance_in?: InputMaybe<Array<Scalars['Boolean']['input']>>;
+  preferAddToBalance_not?: InputMaybe<Scalars['Boolean']['input']>;
+  preferAddToBalance_not_in?: InputMaybe<Array<Scalars['Boolean']['input']>>;
   project?: InputMaybe<Scalars['String']['input']>;
   projectId?: InputMaybe<Scalars['Int']['input']>;
   projectId_gt?: InputMaybe<Scalars['Int']['input']>;
@@ -2224,7 +2213,6 @@ export type DistributeToReservedTokenSplitEvent_Filter = {
 };
 
 export enum DistributeToReservedTokenSplitEvent_OrderBy {
-  allocator = 'allocator',
   beneficiary = 'beneficiary',
   caller = 'caller',
   distributeReservedTokensEvent = 'distributeReservedTokensEvent',
@@ -2243,7 +2231,7 @@ export enum DistributeToReservedTokenSplitEvent_OrderBy {
   id = 'id',
   lockedUntil = 'lockedUntil',
   percent = 'percent',
-  preferClaimed = 'preferClaimed',
+  preferAddToBalance = 'preferAddToBalance',
   project = 'project',
   projectId = 'projectId',
   project__contributorsCount = 'project__contributorsCount',
@@ -5963,14 +5951,13 @@ export enum ProjectEvent_OrderBy {
   distributeToPayoutSplitEvent__timestamp = 'distributeToPayoutSplitEvent__timestamp',
   distributeToPayoutSplitEvent__txHash = 'distributeToPayoutSplitEvent__txHash',
   distributeToReservedTokenSplitEvent = 'distributeToReservedTokenSplitEvent',
-  distributeToReservedTokenSplitEvent__allocator = 'distributeToReservedTokenSplitEvent__allocator',
   distributeToReservedTokenSplitEvent__beneficiary = 'distributeToReservedTokenSplitEvent__beneficiary',
   distributeToReservedTokenSplitEvent__caller = 'distributeToReservedTokenSplitEvent__caller',
   distributeToReservedTokenSplitEvent__from = 'distributeToReservedTokenSplitEvent__from',
   distributeToReservedTokenSplitEvent__id = 'distributeToReservedTokenSplitEvent__id',
   distributeToReservedTokenSplitEvent__lockedUntil = 'distributeToReservedTokenSplitEvent__lockedUntil',
   distributeToReservedTokenSplitEvent__percent = 'distributeToReservedTokenSplitEvent__percent',
-  distributeToReservedTokenSplitEvent__preferClaimed = 'distributeToReservedTokenSplitEvent__preferClaimed',
+  distributeToReservedTokenSplitEvent__preferAddToBalance = 'distributeToReservedTokenSplitEvent__preferAddToBalance',
   distributeToReservedTokenSplitEvent__projectId = 'distributeToReservedTokenSplitEvent__projectId',
   distributeToReservedTokenSplitEvent__splitProjectId = 'distributeToReservedTokenSplitEvent__splitProjectId',
   distributeToReservedTokenSplitEvent__timestamp = 'distributeToReservedTokenSplitEvent__timestamp',
@@ -9531,6 +9518,8 @@ export type ProjectsQueryVariables = Exact<{
   where?: InputMaybe<Project_Filter>;
   first?: InputMaybe<Scalars['Int']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
+  orderBy?: InputMaybe<Project_OrderBy>;
+  orderDirection?: InputMaybe<OrderDirection>;
 }>;
 
 
@@ -10027,7 +10016,6 @@ export type DistributeToPayoutSplitEventResolvers<ContextType = any, ParentType 
 };
 
 export type DistributeToReservedTokenSplitEventResolvers<ContextType = any, ParentType extends ResolversParentTypes['DistributeToReservedTokenSplitEvent'] = ResolversParentTypes['DistributeToReservedTokenSplitEvent']> = {
-  allocator?: Resolver<ResolversTypes['Bytes'], ParentType, ContextType>;
   beneficiary?: Resolver<ResolversTypes['Bytes'], ParentType, ContextType>;
   caller?: Resolver<ResolversTypes['Bytes'], ParentType, ContextType>;
   distributeReservedTokensEvent?: Resolver<ResolversTypes['DistributeReservedTokensEvent'], ParentType, ContextType>;
@@ -10035,7 +10023,7 @@ export type DistributeToReservedTokenSplitEventResolvers<ContextType = any, Pare
   id?: Resolver<ResolversTypes['ID'], ParentType, ContextType>;
   lockedUntil?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   percent?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
-  preferClaimed?: Resolver<ResolversTypes['Boolean'], ParentType, ContextType>;
+  preferAddToBalance?: Resolver<ResolversTypes['Boolean'], ParentType, ContextType>;
   project?: Resolver<ResolversTypes['Project'], ParentType, ContextType>;
   projectId?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
   splitProjectId?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
@@ -10743,8 +10731,14 @@ export type DirectiveResolvers<ContextType = any> = {
 
 
 export const ProjectsDocument = gql`
-    query Projects($where: Project_filter, $first: Int, $skip: Int) {
-  projects(where: $where, first: $first, skip: $skip) {
+    query Projects($where: Project_filter, $first: Int, $skip: Int, $orderBy: Project_orderBy, $orderDirection: OrderDirection) {
+  projects(
+    where: $where
+    first: $first
+    skip: $skip
+    orderBy: $orderBy
+    orderDirection: $orderDirection
+  ) {
     projectId
     metadata
     handle
@@ -10769,6 +10763,8 @@ export const ProjectsDocument = gql`
  *      where: // value for 'where'
  *      first: // value for 'first'
  *      skip: // value for 'skip'
+ *      orderBy: // value for 'orderBy'
+ *      orderDirection: // value for 'orderDirection'
  *   },
  * });
  */
