@@ -287,7 +287,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
           <div className="col-span-2">
             {/* card */}
             <div className="bg-zinc-800 rounded-lg shadow-lg p-6 mb-6">
-              <h2 className="font-bold mb-2">Pay</h2>
+              <h2 className="font-bold mb-2">Pay {nativeTokenSymbol}</h2>
 
               <PayForm projectId={projectId} />
             </div>
