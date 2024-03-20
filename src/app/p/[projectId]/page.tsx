@@ -5,7 +5,13 @@ import EtherscanLink from "@/components/EtherscanLink";
 import { Button } from "@/components/ui/button";
 import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
 import { useProjectMetadata } from "@/lib/juicebox/hooks/useProjectMetadata";
-import { NATIVE_TOKEN, SplitPortion } from "juice-sdk-core";
+import {
+  Ether,
+  JB_TOKEN_DECIMALS,
+  NATIVE_CURRENCY,
+  NATIVE_TOKEN,
+  SplitPortion,
+} from "juice-sdk-core";
 import {
   JBProjectProvider,
   JBTerminalProvider,
@@ -15,6 +21,7 @@ import {
   useJBRulesetMetadata,
   useJBTerminalContext,
   useJbControllerPendingReservedTokenBalanceOf,
+  useJbFundAccessLimitsSurplusAllowanceOf,
   useJbMultiTerminalCurrentSurplusOf,
   useJbProjectsOwnerOf,
   useJbSplitsSplitsOf,
@@ -129,7 +136,25 @@ function useProject(projectId: bigint) {
     jbControllerAddress: contracts.controller.data ?? undefined,
   });
 
+  const { data: overflowAllowance } = useJbFundAccessLimitsSurplusAllowanceOf({
+    address: contracts.fundAccessLimits.data ?? undefined,
+    args:
+      ruleset.data && contracts.primaryNativeTerminal.data
+        ? [
+            projectId,
+            ruleset.data?.id,
+            contracts.primaryNativeTerminal.data,
+            NATIVE_TOKEN,
+            NATIVE_CURRENCY,
+          ]
+        : undefined,
+    select(data) {
+      return new Ether(data);
+    },
+  });
+
   return {
+    overflowAllowance,
     payoutSplits,
     pendingReservedTokens,
     reservedTokenSplits,
@@ -153,6 +178,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     reservedTokenSplits,
     primaryNativeTerminalAddress,
     payoutSplits,
+    overflowAllowance
   } = useProject(projectId);
   const { contracts } = useJBContractContext();
 
@@ -277,6 +303,14 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                 </dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                   {rulesetMetadata?.data?.redemptionRate.formatPercentage()}%
+                </dd>
+              </div>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">
+                  Overflow Allowance
+                </dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {overflowAllowance?.format()} {nativeTokenSymbol}
                 </dd>
               </div>
 
