@@ -28,6 +28,7 @@ import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
 import Image from "next/image";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
+const PAYOUT_SPLIT_GROUP_ID = 2n;
 
 function formatSeconds(totalSeconds: number) {
   const secondsPerDay = 86400;
@@ -112,12 +113,25 @@ function useProject(projectId: bigint) {
     },
   });
 
+  const { data: payoutSplits } = useJbSplitsSplitsOf({
+    args: ruleset?.data
+      ? [projectId, ruleset?.data.id, PAYOUT_SPLIT_GROUP_ID]
+      : undefined,
+    select(splits) {
+      return splits.map((split) => ({
+        ...split,
+        percent: new SplitPortion(split.percent),
+      }));
+    },
+  });
+
   const { data: projectMetadata } = useProjectMetadata({
     projectId,
     jbControllerAddress: contracts.controller.data ?? undefined,
   });
 
   return {
+    payoutSplits,
     pendingReservedTokens,
     reservedTokenSplits,
     surplus,
@@ -139,6 +153,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     surplus,
     reservedTokenSplits,
     primaryNativeTerminalAddress,
+    payoutSplits,
   } = useProject(projectId);
 
   const { write } = useLaunchProject();
@@ -275,21 +290,47 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                 </dd>
               </div>
             </dl>
-            <h3>Reserved list</h3>
+
+            <h2 className="font-bold mb-2">Payouts</h2>
             <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
-              {reservedTokenSplits?.map((split, idx) => (
-                <div
-                  className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4"
-                  key={idx}
-                >
-                  <dt className="text-sm font-medium leading-6">
-                    {split.beneficiary}
-                  </dt>
-                  <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                    {split.percent.formatPercentage()}%
-                  </dd>
-                </div>
-              ))}
+              {payoutSplits && payoutSplits.length > 0 ? (
+                payoutSplits.map((split, idx) => (
+                  <div
+                    className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4"
+                    key={idx}
+                  >
+                    <dt className="text-sm font-medium leading-6">
+                      {split.beneficiary}
+                    </dt>
+                    <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                      {split.percent.formatPercentage()}%
+                    </dd>
+                  </div>
+                ))
+              ) : (
+                <div className="px-4 py-3 text-sm">No payouts</div>
+              )}
+            </dl>
+
+            <h2 className="font-bold mb-2">Reserved token recipients</h2>
+            <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+              {reservedTokenSplits && reservedTokenSplits.length > 0 ? (
+                reservedTokenSplits.map((split, idx) => (
+                  <div
+                    className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4"
+                    key={idx}
+                  >
+                    <dt className="text-sm font-medium leading-6">
+                      {split.beneficiary}
+                    </dt>
+                    <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                      {split.percent.formatPercentage()}%
+                    </dd>
+                  </div>
+                ))
+              ) : (
+                <div className="px-4 py-3 text-sm">No payouts</div>
+              )}
             </dl>
           </div>
           <div className="col-span-2">
