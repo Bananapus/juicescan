@@ -136,7 +136,7 @@ function useProject(projectId: bigint) {
     jbControllerAddress: contracts.controller.data ?? undefined,
   });
 
-  const { data: overflowAllowance } = useJbFundAccessLimitsSurplusAllowanceOf({
+  const { data: surplusAllowance } = useJbFundAccessLimitsSurplusAllowanceOf({
     address: contracts.fundAccessLimits.data ?? undefined,
     args:
       ruleset.data && contracts.primaryNativeTerminal.data
@@ -154,7 +154,7 @@ function useProject(projectId: bigint) {
   });
 
   return {
-    overflowAllowance,
+    surplusAllowance,
     payoutSplits,
     pendingReservedTokens,
     reservedTokenSplits,
@@ -178,7 +178,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     reservedTokenSplits,
     primaryNativeTerminalAddress,
     payoutSplits,
-    overflowAllowance
+    surplusAllowance
   } = useProject(projectId);
   const { contracts } = useJBContractContext();
 
@@ -307,10 +307,10 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
                 <dt className="text-sm font-medium leading-6">
-                  Overflow Allowance
+                  Surplus Allowance
                 </dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {overflowAllowance?.format()} {nativeTokenSymbol}
+                  {surplusAllowance?.format()} {nativeTokenSymbol}
                 </dd>
               </div>
 
