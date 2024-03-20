@@ -8,13 +8,12 @@ import { useProjectMetadata } from "@/lib/juicebox/hooks/useProjectMetadata";
 import {
   DecayRate,
   Ether,
-  JB_TOKEN_DECIMALS,
   NATIVE_CURRENCY,
   NATIVE_TOKEN,
   RedemptionRate,
   ReservedRate,
   RulesetWeight,
-  SplitPortion,
+  SplitPortion
 } from "juice-sdk-core";
 import {
   JBProjectProvider,
@@ -34,12 +33,12 @@ import {
   useJbTokensTokenOf,
 } from "juice-sdk-react";
 import Link from "next/link";
+import { useState } from "react";
 import { formatUnits } from "viem";
+import { useToken } from "wagmi";
 import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
 import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
-import { useToken } from "wagmi";
-import { useState } from "react";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
 const PAYOUT_SPLIT_GROUP_ID = 2n;
