@@ -25,7 +25,6 @@ import { formatUnits } from "viem";
 import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
 import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
-import Image from "next/image";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
 const PAYOUT_SPLIT_GROUP_ID = 2n;
@@ -223,6 +222,28 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
               </div>
             </dl>
 
+            <h2 className="font-bold mb-2">Metadata</h2>
+
+            <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+              {projectMetadata
+                ? (
+                    Object.keys(
+                      projectMetadata
+                    ) as (keyof typeof projectMetadata)[]
+                  ).map((key) => (
+                    <div
+                      className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4"
+                      key={key}
+                    >
+                      <dt className="text-sm font-medium leading-6">{key}</dt>
+                      <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right overflow-auto">
+                        {projectMetadata[key]}
+                      </dd>
+                    </div>
+                  ))
+                : null}
+            </dl>
+
             <h2 className="font-bold mb-2">Ruleset</h2>
 
             <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
@@ -359,7 +380,9 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                 </dd>
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                <dt className="text-sm font-medium leading-6">Fund Access Limits</dt>
+                <dt className="text-sm font-medium leading-6">
+                  Fund Access Limits
+                </dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                   {contracts.fundAccessLimits.data ? (
                     <EtherscanLink
