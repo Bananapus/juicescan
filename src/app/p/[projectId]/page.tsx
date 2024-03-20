@@ -26,12 +26,14 @@ import {
   useJbProjectsOwnerOf,
   useJbSplitsSplitsOf,
   useJbTerminalStoreBalanceOf,
+  useJbTokensTokenOf,
 } from "juice-sdk-react";
 import Link from "next/link";
 import { formatUnits } from "viem";
 import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
 import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
+import { useToken } from "wagmi";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
 const PAYOUT_SPLIT_GROUP_ID = 2n;
@@ -153,7 +155,11 @@ function useProject(projectId: bigint) {
     },
   });
 
+  const { data: tokenAddress } = useJbTokensTokenOf({ args: [projectId] });
+  const token = useToken({ address: tokenAddress ?? undefined });
+
   return {
+    token,
     surplusAllowance,
     payoutSplits,
     pendingReservedTokens,
@@ -179,6 +185,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     primaryNativeTerminalAddress,
     payoutSplits,
     surplusAllowance,
+    token,
   } = useProject(projectId);
   const { contracts } = useJBContractContext();
 
@@ -218,13 +225,20 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
         <div className="mb-8">
           <h1 className="text-3xl font-bold mb-1">{projectMetadata?.name}</h1>
           {owner ? (
-            <span className="text-zinc-400 text-sm">
+            <div className="text-zinc-400 text-sm">
               Owned by{" "}
               <EtherscanLink value={owner} type="address">
                 {owner}
               </EtherscanLink>
-            </span>
+            </div>
           ) : null}
+          {token?.data ? (
+            <div className="text-zinc-400 text-sm">
+              <EtherscanLink value={token.data.address} type="address">
+                {token.data.name} (${token.data.symbol})
+              </EtherscanLink>
+            </div>
+          ) : <div className="text-zinc-400 text-sm">No ERC-20 token</div>}
         </div>
 
         <div className="grid grid-cols-5 gap-16">
@@ -270,6 +284,23 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                 : null}
             </dl>
 
+            <h2 className="font-bold mb-2">token</h2>
+
+            <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Name</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right overflow-auto">
+                  {token?.data?.symbol}
+                </dd>
+              </div>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Name</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right overflow-auto">
+                  {token?.data?.symbol}
+                </dd>
+              </div>
+            </dl>
+
             <h2 className="font-bold mb-2">Ruleset</h2>
 
             <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
@@ -288,7 +319,8 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
                 <dt className="text-sm font-medium leading-6">Weight</dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {ruleset?.data?.weight.format()} TOKEN / {nativeTokenSymbol}
+                  {ruleset?.data?.weight.format()}{" "}
+                  {token.data?.symbol ?? "TOKEN"} / {nativeTokenSymbol}
                 </dd>
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
