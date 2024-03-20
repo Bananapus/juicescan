@@ -6,10 +6,14 @@ import { Button } from "@/components/ui/button";
 import { useLaunchProject } from "@/lib/juicebox/hooks/useLaunchProject";
 import { useProjectMetadata } from "@/lib/juicebox/hooks/useProjectMetadata";
 import {
+  DecayRate,
   Ether,
   JB_TOKEN_DECIMALS,
   NATIVE_CURRENCY,
   NATIVE_TOKEN,
+  RedemptionRate,
+  ReservedRate,
+  RulesetWeight,
   SplitPortion,
 } from "juice-sdk-core";
 import {
@@ -20,6 +24,7 @@ import {
   useJBRuleset,
   useJBRulesetMetadata,
   useJBTerminalContext,
+  useJbControllerCurrentRulesetOf,
   useJbControllerPendingReservedTokenBalanceOf,
   useJbFundAccessLimitsSurplusAllowanceOf,
   useJbMultiTerminalCurrentSurplusOf,
@@ -34,6 +39,7 @@ import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
 import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
 import { useToken } from "wagmi";
+import { useState } from "react";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
 const PAYOUT_SPLIT_GROUP_ID = 2n;
@@ -158,6 +164,25 @@ function useProject(projectId: bigint) {
   const { data: tokenAddress } = useJbTokensTokenOf({ args: [projectId] });
   const token = useToken({ address: tokenAddress ?? undefined });
 
+  const { data: queuedRuleset, isLoading } = useJbControllerCurrentRulesetOf({
+    address: contracts?.controller?.data ?? undefined,
+    args: [projectId],
+    select([ruleset, rulesetMetadata]) {
+      return {
+        data: {
+          ...ruleset,
+          weight: new RulesetWeight(ruleset.weight),
+          decayRate: new DecayRate(ruleset.decayRate),
+        },
+        metadata: {
+          ...rulesetMetadata,
+          redemptionRate: new RedemptionRate(rulesetMetadata.redemptionRate),
+          reservedRate: new ReservedRate(rulesetMetadata.reservedRate),
+        },
+      };
+    },
+  });
+
   return {
     token,
     surplusAllowance,
@@ -169,6 +194,8 @@ function useProject(projectId: bigint) {
     owner,
     ruleset,
     rulesetMetadata,
+    queuedRuleset: queuedRuleset?.data,
+    queuedRulesetMetadata: queuedRuleset?.metadata,
     primaryNativeTerminalAddress,
   };
 }
@@ -178,8 +205,10 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     pendingReservedTokens,
     owner,
     ruleset,
-    projectMetadata,
     rulesetMetadata,
+    queuedRuleset,
+    queuedRulesetMetadata,
+    projectMetadata,
     surplus,
     reservedTokenSplits,
     primaryNativeTerminalAddress,
@@ -192,6 +221,18 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
 
+  const [rulesetToRenderToggle, setRulesetToRenderToggle] = useState<
+    "current" | "nextQueued"
+  >("current");
+
+  const rulesetToRender =
+    rulesetToRenderToggle === "current" ? ruleset : queuedRuleset;
+  const rulesetMetadataToRender =
+    rulesetToRenderToggle === "current"
+      ? rulesetMetadata
+      : queuedRulesetMetadata;
+
+  queuedRuleset;
   const boolProps: Array<
     keyof ReadContractResult<typeof jbControllerABI, "currentRulesetOf">[1]
   > = [
@@ -238,7 +279,9 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                 {token.data.name} (${token.data.symbol})
               </EtherscanLink>
             </div>
-          ) : <div className="text-zinc-400 text-sm">No ERC-20 token</div>}
+          ) : (
+            <div className="text-zinc-400 text-sm">No ERC-20 token</div>
+          )}
         </div>
 
         <div className="grid grid-cols-5 gap-16">
@@ -284,24 +327,31 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                 : null}
             </dl>
 
-            <h2 className="font-bold mb-2">token</h2>
-
-            <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
-              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                <dt className="text-sm font-medium leading-6">Name</dt>
-                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right overflow-auto">
-                  {token?.data?.symbol}
-                </dd>
+            <div className="flex items-center mb-2 justify-between">
+              <h2 className="font-bold">Ruleset</h2>
+              <div className="text-sm">
+                <Button
+                  variant="link"
+                  onClick={() => setRulesetToRenderToggle("current")}
+                  size="sm"
+                  className={
+                    rulesetToRenderToggle === "current" ? "underline" : ""
+                  }
+                >
+                  Current
+                </Button>
+                <Button
+                  variant="link"
+                  onClick={() => setRulesetToRenderToggle("nextQueued")}
+                  size="sm"
+                  className={
+                    rulesetToRenderToggle === "nextQueued" ? "underline" : ""
+                  }
+                >
+                  Next
+                </Button>
               </div>
-              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                <dt className="text-sm font-medium leading-6">Name</dt>
-                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right overflow-auto">
-                  {token?.data?.symbol}
-                </dd>
-              </div>
-            </dl>
-
-            <h2 className="font-bold mb-2">Ruleset</h2>
+            </div>
 
             <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
