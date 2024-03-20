@@ -155,6 +155,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     primaryNativeTerminalAddress,
     payoutSplits,
   } = useProject(projectId);
+  const { contracts } = useJBContractContext();
 
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
@@ -331,6 +332,43 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
               ) : (
                 <div className="px-4 py-3 text-sm">No payouts</div>
               )}
+            </dl>
+
+            <h2 className="font-bold mb-2">Project contracts</h2>
+            <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Terminal</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {contracts.primaryNativeTerminal.data ? (
+                    <EtherscanLink
+                      value={contracts.primaryNativeTerminal.data}
+                      type="address"
+                    />
+                  ) : null}
+                </dd>
+              </div>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Controller</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {contracts.controller.data ? (
+                    <EtherscanLink
+                      value={contracts.controller.data}
+                      type="address"
+                    />
+                  ) : null}
+                </dd>
+              </div>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Fund Access Limits</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {contracts.fundAccessLimits.data ? (
+                    <EtherscanLink
+                      value={contracts.fundAccessLimits.data}
+                      type="address"
+                    />
+                  ) : null}
+                </dd>
+              </div>
             </dl>
           </div>
           <div className="col-span-2">
