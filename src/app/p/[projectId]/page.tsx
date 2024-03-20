@@ -178,7 +178,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     reservedTokenSplits,
     primaryNativeTerminalAddress,
     payoutSplits,
-    surplusAllowance
+    surplusAllowance,
   } = useProject(projectId);
   const { contracts } = useJBContractContext();
 
@@ -303,6 +303,21 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                 </dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                   {rulesetMetadata?.data?.redemptionRate.formatPercentage()}%
+                </dd>
+              </div>
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">
+                  Ruleset approval hook
+                </dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  {ruleset.data?.approvalHook ? (
+                    <EtherscanLink
+                      value={ruleset.data?.approvalHook}
+                      type="address"
+                    />
+                  ) : (
+                    <span>None</span>
+                  )}
                 </dd>
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
