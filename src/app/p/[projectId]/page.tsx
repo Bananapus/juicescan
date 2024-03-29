@@ -25,11 +25,13 @@ import {
   useJBTerminalContext,
   useJbControllerCurrentRulesetOf,
   useJbControllerPendingReservedTokenBalanceOf,
+  useJbFundAccessLimitsPayoutLimitOf,
   useJbFundAccessLimitsSurplusAllowanceOf,
   useJbMultiTerminalCurrentSurplusOf,
   useJbProjectsOwnerOf,
   useJbSplitsSplitsOf,
   useJbTerminalStoreBalanceOf,
+  useJbTerminalStoreUsedPayoutLimitOf,
   useJbTerminalStoreUsedSurplusAllowanceOf,
   useJbTokensTokenOf,
 } from "juice-sdk-react";
@@ -160,7 +162,7 @@ function useProject(projectId: bigint) {
       },
     });
 
-  const { store, address } = useJBTerminalContext();
+  const { store } = useJBTerminalContext();
 
   const { data: usedSurplus } = useJbTerminalStoreUsedSurplusAllowanceOf({
     address: store.data ?? undefined,
@@ -214,6 +216,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     token,
   } = useProject(projectId);
   const { contracts } = useJBContractContext();
+  const { store } = useJBTerminalContext();
 
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
@@ -228,6 +231,36 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     rulesetToRenderToggle === "current"
       ? rulesetMetadata
       : queuedRulesetMetadata;
+
+  const { data: payoutLimit } = useJbFundAccessLimitsPayoutLimitOf({
+    address: contracts.fundAccessLimits.data ?? undefined,
+    args:
+      rulesetToRender?.data && contracts.primaryNativeTerminal?.data
+        ? [
+            projectId,
+            rulesetToRender?.data?.id,
+            contracts.primaryNativeTerminal.data,
+            NATIVE_TOKEN,
+            NATIVE_CURRENCY,
+          ]
+        : undefined,
+  });
+
+  console.log('payoutLimit', payoutLimit)
+
+  const { data: usedPayoutLimit } = useJbTerminalStoreUsedPayoutLimitOf({
+    address: store.data ?? undefined,
+    args:
+      rulesetToRender?.data && contracts.primaryNativeTerminal?.data
+        ? [
+            contracts.primaryNativeTerminal.data,
+            projectId,
+            NATIVE_TOKEN,
+            rulesetToRender?.data?.cycleNumber,
+            NATIVE_CURRENCY,
+          ]
+        : undefined,
+  });
 
   const { data: reservedTokenSplits } = useJbSplitsSplitsOf({
     args: rulesetToRender?.data
@@ -475,6 +508,24 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
             </dl>
 
             <h2 className="font-bold mb-2">Payouts</h2>
+            <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
+              <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                <dt className="text-sm font-medium leading-6">Payout limit</dt>
+                <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                  <span>
+                    {payoutLimit ? formatUnits(payoutLimit, 18) : 0}{" "}
+                    {nativeTokenSymbol}
+                  </span>
+                  {usedPayoutLimit ? (
+                    <span>
+                      {" "}
+                      (used {formatUnits(usedPayoutLimit, 18)}{" "}
+                      {nativeTokenSymbol})
+                    </span>
+                  ) : null}
+                </dd>
+              </div>
+            </dl>
             <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
               {payoutSplits && payoutSplits.length > 0 ? (
                 payoutSplits.map((split, idx) => (
