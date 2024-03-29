@@ -115,30 +115,6 @@ function useProject(projectId: bigint) {
       args: [projectId],
     });
 
-  const { data: reservedTokenSplits } = useJbSplitsSplitsOf({
-    args: ruleset?.data
-      ? [projectId, ruleset?.data.id, RESERVED_TOKEN_SPLIT_GROUP_ID]
-      : undefined,
-    select(splits) {
-      return splits.map((split) => ({
-        ...split,
-        percent: new SplitPortion(split.percent),
-      }));
-    },
-  });
-
-  const { data: payoutSplits } = useJbSplitsSplitsOf({
-    args: ruleset?.data
-      ? [projectId, ruleset?.data.id, PAYOUT_SPLIT_GROUP_ID]
-      : undefined,
-    select(splits) {
-      return splits.map((split) => ({
-        ...split,
-        percent: new SplitPortion(split.percent),
-      }));
-    },
-  });
-
   const { data: projectMetadata } = useProjectMetadata({
     projectId,
     jbControllerAddress: contracts.controller.data ?? undefined,
@@ -164,24 +140,25 @@ function useProject(projectId: bigint) {
   const { data: tokenAddress } = useJbTokensTokenOf({ args: [projectId] });
   const token = useToken({ address: tokenAddress ?? undefined });
 
-  const { data: queuedRuleset, isLoading } = useJbControllerCurrentRulesetOf({
-    address: contracts?.controller?.data ?? undefined,
-    args: [projectId],
-    select([ruleset, rulesetMetadata]) {
-      return {
-        data: {
-          ...ruleset,
-          weight: new RulesetWeight(ruleset.weight),
-          decayRate: new DecayRate(ruleset.decayRate),
-        },
-        metadata: {
-          ...rulesetMetadata,
-          redemptionRate: new RedemptionRate(rulesetMetadata.redemptionRate),
-          reservedRate: new ReservedRate(rulesetMetadata.reservedRate),
-        },
-      };
-    },
-  });
+  const { data: queuedRuleset, isLoading: queuedRulesetIsLoading } =
+    useJbControllerCurrentRulesetOf({
+      address: contracts?.controller?.data ?? undefined,
+      args: [projectId],
+      select([ruleset, rulesetMetadata]) {
+        return {
+          data: {
+            ...ruleset,
+            weight: new RulesetWeight(ruleset.weight),
+            decayRate: new DecayRate(ruleset.decayRate),
+          },
+          metadata: {
+            ...rulesetMetadata,
+            redemptionRate: new RedemptionRate(rulesetMetadata.redemptionRate),
+            reservedRate: new ReservedRate(rulesetMetadata.reservedRate),
+          },
+        };
+      },
+    });
 
   const { store, address } = useJBTerminalContext();
 
@@ -202,17 +179,21 @@ function useProject(projectId: bigint) {
   return {
     token,
     surplusAllowance,
-    payoutSplits,
     pendingReservedTokens,
-    reservedTokenSplits,
     surplus,
     usedSurplus,
     projectMetadata,
     owner,
     ruleset,
     rulesetMetadata,
-    queuedRuleset: queuedRuleset?.data,
-    queuedRulesetMetadata: queuedRuleset?.metadata,
+    queuedRuleset: {
+      data: queuedRuleset?.data,
+      isLoading: queuedRulesetIsLoading,
+    },
+    queuedRulesetMetadata: {
+      data: queuedRuleset?.metadata,
+      isLoading: queuedRulesetIsLoading,
+    },
     primaryNativeTerminalAddress,
   };
 }
@@ -228,9 +209,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     projectMetadata,
     usedSurplus,
     surplus,
-    reservedTokenSplits,
     primaryNativeTerminalAddress,
-    payoutSplits,
     surplusAllowance,
     token,
   } = useProject(projectId);
@@ -250,7 +229,30 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
       ? rulesetMetadata
       : queuedRulesetMetadata;
 
-  queuedRuleset;
+  const { data: reservedTokenSplits } = useJbSplitsSplitsOf({
+    args: rulesetToRender?.data
+      ? [projectId, rulesetToRender?.data.id, RESERVED_TOKEN_SPLIT_GROUP_ID]
+      : undefined,
+    select(splits) {
+      return splits.map((split) => ({
+        ...split,
+        percent: new SplitPortion(split.percent),
+      }));
+    },
+  });
+
+  const { data: payoutSplits } = useJbSplitsSplitsOf({
+    args: rulesetToRender?.data
+      ? [projectId, rulesetToRender?.data.id, PAYOUT_SPLIT_GROUP_ID]
+      : undefined,
+    select(splits) {
+      return splits.map((split) => ({
+        ...split,
+        percent: new SplitPortion(split.percent),
+      }));
+    },
+  });
+
   const boolProps: Array<
     keyof ReadContractResult<typeof jbControllerABI, "currentRulesetOf">[1]
   > = [
@@ -383,26 +385,26 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
                 <dt className="text-sm font-medium leading-6">Base currency</dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {Number(rulesetMetadata?.data?.baseCurrency ?? -1)}
+                  {Number(rulesetMetadataToRender?.data?.baseCurrency ?? -1)}
                 </dd>
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
                 <dt className="text-sm font-medium leading-6">Duration</dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {formatSeconds(Number(ruleset?.data?.duration ?? 0))}
+                  {formatSeconds(Number(rulesetToRender?.data?.duration ?? 0))}
                 </dd>
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
                 <dt className="text-sm font-medium leading-6">Weight</dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {ruleset?.data?.weight.format()}{" "}
+                  {rulesetToRender?.data?.weight.format()}{" "}
                   {token.data?.symbol ?? "TOKEN"} / {nativeTokenSymbol}
                 </dd>
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
                 <dt className="text-sm font-medium leading-6">Decay rate</dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {ruleset?.data?.decayRate.format()}%
+                  {rulesetToRender?.data?.decayRate.format()}%
                 </dd>
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
@@ -410,7 +412,8 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                   Redemption rate
                 </dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {rulesetMetadata?.data?.redemptionRate.formatPercentage()}%
+                  {rulesetMetadataToRender?.data?.redemptionRate.formatPercentage()}
+                  %
                 </dd>
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
@@ -418,9 +421,9 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                   Ruleset approval hook
                 </dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {ruleset.data?.approvalHook ? (
+                  {rulesetToRender.data?.approvalHook ? (
                     <EtherscanLink
-                      value={ruleset.data?.approvalHook}
+                      value={rulesetToRender.data?.approvalHook}
                       type="address"
                     />
                   ) : (
@@ -444,7 +447,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                 >
                   <dt className="text-sm font-medium leading-6">{prop}</dt>
                   <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                    {rulesetMetadata?.data?.[prop] ? "true" : "false"}
+                    {rulesetMetadataToRender?.data?.[prop] ? "true" : "false"}
                   </dd>
                 </div>
               ))}
@@ -455,7 +458,8 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
                 <dt className="text-sm font-medium leading-6">Reserved rate</dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {rulesetMetadata?.data?.reservedRate.formatPercentage()}%
+                  {rulesetMetadataToRender?.data?.reservedRate.formatPercentage()}
+                  %
                 </dd>
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
