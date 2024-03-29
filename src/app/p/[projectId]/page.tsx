@@ -570,7 +570,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
             <h2 className="font-bold mb-2">Project contracts</h2>
             <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                <dt className="text-sm font-medium leading-6">Terminal</dt>
+                <dt className="text-sm font-medium leading-6">Primary Terminal</dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                   {contracts.primaryNativeTerminal.data ? (
                     <EtherscanLink
