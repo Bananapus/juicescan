@@ -13,7 +13,7 @@ import {
   RedemptionRate,
   ReservedRate,
   RulesetWeight,
-  SplitPortion
+  SplitPortion,
 } from "juice-sdk-core";
 import {
   JBProjectProvider,
@@ -30,6 +30,7 @@ import {
   useJbProjectsOwnerOf,
   useJbSplitsSplitsOf,
   useJbTerminalStoreBalanceOf,
+  useJbTerminalStoreUsedSurplusAllowanceOf,
   useJbTokensTokenOf,
 } from "juice-sdk-react";
 import Link from "next/link";
@@ -182,6 +183,22 @@ function useProject(projectId: bigint) {
     },
   });
 
+  const { store, address } = useJBTerminalContext();
+
+  const { data: usedSurplus } = useJbTerminalStoreUsedSurplusAllowanceOf({
+    address: store.data ?? undefined,
+    args:
+      contracts.primaryNativeTerminal?.data && ruleset.data?.id
+        ? [
+            contracts.primaryNativeTerminal.data,
+            projectId,
+            NATIVE_TOKEN,
+            ruleset.data?.id,
+            NATIVE_CURRENCY,
+          ]
+        : undefined,
+  });
+
   return {
     token,
     surplusAllowance,
@@ -189,6 +206,7 @@ function useProject(projectId: bigint) {
     pendingReservedTokens,
     reservedTokenSplits,
     surplus,
+    usedSurplus,
     projectMetadata,
     owner,
     ruleset,
@@ -208,6 +226,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
     queuedRuleset,
     queuedRulesetMetadata,
     projectMetadata,
+    usedSurplus,
     surplus,
     reservedTokenSplits,
     primaryNativeTerminalAddress,
@@ -296,10 +315,18 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
                 <dt className="text-sm font-medium leading-6">Surplus</dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {typeof surplus !== "undefined"
-                    ? formatUnits(surplus, 18)
-                    : null}{" "}
-                  {nativeTokenSymbol}
+                  <span>
+                    {typeof surplus !== "undefined"
+                      ? formatUnits(surplus, 18)
+                      : null}{" "}
+                    {nativeTokenSymbol}
+                  </span>
+                  {usedSurplus ? (
+                    <span>
+                      {" "}
+                      (used {formatUnits(usedSurplus, 18)} {nativeTokenSymbol})
+                    </span>
+                  ) : null}
                 </dd>
               </div>
             </dl>
