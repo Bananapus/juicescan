@@ -174,7 +174,7 @@ function useProject(projectId: bigint) {
             projectId,
             NATIVE_TOKEN,
             ruleset.data?.id,
-            NATIVE_CURRENCY,
+            NATIVE_CURRENCY_ID,
           ]
         : undefined,
   });
@@ -244,7 +244,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
             rulesetToRender?.data?.id,
             contracts.primaryNativeTerminal.data,
             NATIVE_TOKEN,
-            NATIVE_CURRENCY,
+            NATIVE_CURRENCY_ID,
           ]
         : undefined,
   });
@@ -258,7 +258,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
             projectId,
             NATIVE_TOKEN,
             rulesetToRender?.data?.cycleNumber,
-            NATIVE_CURRENCY,
+            NATIVE_CURRENCY_ID,
           ]
         : undefined,
   });
