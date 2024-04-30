@@ -8,7 +8,7 @@ import { useProjectMetadata } from "@/lib/juicebox/hooks/useProjectMetadata";
 import {
   DecayRate,
   Ether,
-  NATIVE_CURRENCY,
+  NATIVE_CURRENCY_ID,
   NATIVE_TOKEN,
   RedemptionRate,
   ReservedRate,
@@ -19,6 +19,7 @@ import {
   JBProjectProvider,
   JBTerminalProvider,
   jbControllerABI,
+  useFind721DataHook,
   useJBContractContext,
   useJBRuleset,
   useJBRulesetMetadata,
@@ -131,7 +132,7 @@ function useProject(projectId: bigint) {
             ruleset.data?.id,
             contracts.primaryNativeTerminal.data,
             NATIVE_TOKEN,
-            NATIVE_CURRENCY,
+            NATIVE_CURRENCY_ID,
           ]
         : undefined,
     select(data) {
@@ -220,6 +221,8 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
 
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
+  const dataHook721Res = useFind721DataHook();
+  console.log("721DataHook", dataHook721Res);
 
   const [rulesetToRenderToggle, setRulesetToRenderToggle] = useState<
     "current" | "nextQueued"
@@ -245,8 +248,6 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
           ]
         : undefined,
   });
-
-  console.log('payoutLimit', payoutLimit)
 
   const { data: usedPayoutLimit } = useJbTerminalStoreUsedPayoutLimitOf({
     address: store.data ?? undefined,
@@ -570,7 +571,9 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
             <h2 className="font-bold mb-2">Project contracts</h2>
             <dl className="divide-y divide-zinc-800 border border-zinc-800 rounded-lg mb-10">
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
-                <dt className="text-sm font-medium leading-6">Primary Terminal</dt>
+                <dt className="text-sm font-medium leading-6">
+                  Primary Terminal
+                </dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
                   {contracts.primaryNativeTerminal.data ? (
                     <EtherscanLink

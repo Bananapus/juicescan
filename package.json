@@ -20,10 +20,9 @@
     "clsx": "^2.0.0",
     "connectkit": "^1.4.0",
     "date-fns": "^3.0.0",
-    "fpnum": "^0.0.16",
     "graphql": "^16.8.1",
-    "juice-sdk-core": "^2.0.22-alpha",
-    "juice-sdk-react": "^0.0.27-alpha",
+    "juice-sdk-core": "^7.1.1-alpha",
+    "juice-sdk-react": "^7.0.0-alpha",
     "lucide-react": "^0.298.0",
     "next": "^13.4.0",
     "react": "^18.2.0",
@@ -54,5 +53,6 @@
     "postcss": "^8.4.28",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.4"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }

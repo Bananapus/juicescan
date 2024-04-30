@@ -1,4 +1,4 @@
-import { useChain } from "@/hooks/useNetwork";
+import { useChain } from "juice-sdk-react";
 import { etherscanLink, formatEthAddress } from "@/lib/utils";
 import { twMerge } from "tailwind-merge";
 import { ExternalLink } from "./ExternalLink";
