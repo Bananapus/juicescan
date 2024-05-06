@@ -221,8 +221,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
 
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
-  const dataHook721Res = useFind721DataHook();
-  console.log("721DataHook", dataHook721Res);
+  const { data: _721DataHook } = useFind721DataHook();
 
   const [rulesetToRenderToggle, setRulesetToRenderToggle] = useState<
     "current" | "nextQueued"
@@ -485,6 +484,17 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
                   </dd>
                 </div>
               ))}
+
+              {_721DataHook ? (
+                <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6">
+                    721 data hook
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
+                    <EtherscanLink type="address" value={_721DataHook} />
+                  </dd>
+                </div>
+              ) : null}
             </dl>
 
             <h2 className="font-bold mb-2">Reserved tokens</h2>
