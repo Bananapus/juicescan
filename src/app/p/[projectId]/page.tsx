@@ -222,7 +222,7 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
   const { write } = useLaunchProject();
   const nativeTokenSymbol = useNativeTokenSymbol();
   const { data: _721DataHook } = useFind721DataHook();
-
+  console.log("_721DataHook", _721DataHook);
   const [rulesetToRenderToggle, setRulesetToRenderToggle] = useState<
     "current" | "nextQueued"
   >("current");

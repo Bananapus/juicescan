@@ -5282,18 +5282,18 @@ jsonparse@^1.2.0:
     object.assign "^4.1.4"
     object.values "^1.1.6"
 
-juice-sdk-core@^7.1.2-alpha:
-  version "7.1.2-alpha"
-  resolved "https://registry.yarnpkg.com/juice-sdk-core/-/juice-sdk-core-7.1.2-alpha.tgz#c3bfb7901fcbf05670773fda9cd611557f1d9eed"
-  integrity sha512-6BWjKlnaIdt52JQ9B+5pc0HJyqXu5ajqOiws99lMR8lNhXUk5B3nWvwrpDz14wLN8m/YjdsOHAB6W/5qpnx2fA==
+juice-sdk-core@^8.0.0-alpha:
+  version "8.0.0-alpha"
+  resolved "https://registry.yarnpkg.com/juice-sdk-core/-/juice-sdk-core-8.0.0-alpha.tgz#655fb5b26b732851c61b54aaab33358b290bef3f"
+  integrity sha512-ozHY7G46nR2Ocj9K5mkyXMcSfH9YEqchfQ5yGGMb36jNPC8vimt++gy+hss28iyfmKYGYy61R8KKEd8elcKCMw==
   dependencies:
     bs58 "^5.0.0"
     fpnum "^1.0.0"
 
-juice-sdk-react@^7.2.0-alpha:
-  version "7.2.0-alpha"
-  resolved "https://registry.yarnpkg.com/juice-sdk-react/-/juice-sdk-react-7.2.0-alpha.tgz#073343114ccf51159bf049a2f27c6d32290765a9"
-  integrity sha512-SSiKuHqCrfcCUxtIv0Ib/hBCaIOQ8tg1zlroF13WjHE73YkExekl36XSzShOHCJWBY/ndC8SLNy2UtMeFwFafg==
+juice-sdk-react@^8.0.1-alpha:
+  version "8.0.1-alpha"
+  resolved "https://registry.yarnpkg.com/juice-sdk-react/-/juice-sdk-react-8.0.1-alpha.tgz#3f66cd5b889ed73e7d3fd96d0d9ad31d7f802383"
+  integrity sha512-gk07D3k6VPHIHga89IyQKt1tSOgxJU4f7KLNROuuOy503ivp3qS+IYNqEdbhLrqatNk/kk/NuBuZ96cZv+hpxg==
 
 keccak@^3.0.1:
   version "3.0.4"

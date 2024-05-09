@@ -20,7 +20,7 @@ function ProjectRow({ project }: { project: ProjectsQuery["projects"][0] }) {
     projectId,
     jbControllerAddress,
   });
-  console.log(metadata);
+
   return (
     <div className="border-t border-zinc-800 py-2 px-4 text-sm">
       <div>
