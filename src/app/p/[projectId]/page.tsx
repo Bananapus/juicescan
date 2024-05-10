@@ -44,6 +44,11 @@ import { useToken } from "wagmi";
 import { ReadContractResult } from "wagmi/dist/actions";
 import { PayForm } from "./components/PayForm";
 import { useNativeTokenSymbol } from "./hooks/useNativeTokenSymbol";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const RESERVED_TOKEN_SPLIT_GROUP_ID = 1n;
 const PAYOUT_SPLIT_GROUP_ID = 2n;
@@ -438,7 +443,14 @@ function ProjectPage({ projectId }: { projectId: bigint }) {
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
                 <dt className="text-sm font-medium leading-6">Decay rate</dt>
                 <dd className="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0 text-right">
-                  {rulesetToRender?.data?.decayRate.format()}%
+                  <Tooltip>
+                    <TooltipTrigger>
+                      {rulesetToRender?.data?.decayRate.format()}%
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      {rulesetToRender?.data?.decayRate.value.toString()}
+                    </TooltipContent>
+                  </Tooltip>
                 </dd>
               </div>
               <div className="px-4 py-3 sm:grid sm:grid-cols-3 sm:gap-4">
